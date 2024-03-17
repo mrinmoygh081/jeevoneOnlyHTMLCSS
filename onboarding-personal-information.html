@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="./css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<section class="container">
+			<img
+				src="./images/company.png"
+				alt="logo"
+				class="onboarding_logo" />
+			<nav class="onboarding_nav">
+				<ul>
+					<li class="active">
+						<a href="onboarding-personal-information.html"
+							>1. Personal Information
+						</a>
+					</li>
+					<li>
+						<a href="onboarding-allergies.html">2. Allergies</a>
+					</li>
+					<li>
+						<a href="onboarding-lifestyle.html">3. Lifestyle</a>
+					</li>
+					<li>
+						<a href="onboarding-medical-history.html"
+							>4. Medical history</a
+						>
+					</li>
+					<li>
+						<a href="onboarding-family-history.html"
+							>5. family Medical History</a
+						>
+					</li>
+					<li>
+						<a href="onboarding-insurance.html">6. Insurance</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section>
+			<form action="">
+				<div class="container">
+					<div class="onboarding_row mt-14">
+						<div class="onboarding_col">
+							<label
+								>Choose Title<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<select>
+								<option>Select</option>
+								<option>Mr</option>
+								<option>Miss</option>
+								<option>Mrs</option>
+							</select>
+						</div>
+						<div class="onboarding_col">
+							<label
+								>First Name<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<input type="text" placeholder="Enter Your Name" />
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Last Name<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<input type="text" placeholder="Enter Last Name" />
+						</div>
+					</div>
+					<div class="onboarding_row mt-10">
+						<div class="onboarding_col">
+							<label
+								>Gender<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<select>
+								<option>Select</option>
+								<option>Male</option>
+								<option>Female</option>
+							</select>
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Date of Birth<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<input type="date" placeholder="Enter Your DOB" />
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Nationality<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<select>
+								<option>Select</option>
+								<option>Indian</option>
+							</select>
+						</div>
+					</div>
+					<div class="onboarding_row mt-10">
+						<div class="onboarding_col">
+							<label
+								>Blood Group<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<select>
+								<option>Select</option>
+								<option>A+</option>
+								<option>B+</option>
+							</select>
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Family Physician<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<input
+								type="text"
+								placeholder="Family Physician?" />
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Email ID<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<input type="email" placeholder="Email ID" />
+						</div>
+					</div>
+					<div class="onboarding_row mt-16">
+						<div class="onboarding_col">
+							<label>Height</label><br />
+							<div class="height_select">
+								<select>
+									<option>Select</option>
+									<option>5</option>
+									<option>10</option>
+									<option>15</option>
+								</select>
+								<select>
+									<option>Select</option>
+									<option>5</option>
+									<option>10</option>
+									<option>15</option>
+								</select>
+								<select>
+									<option>Select</option>
+									<option>Ft in</option>
+								</select>
+							</div>
+						</div>
+						<div class="onboarding_col">
+							<label>Weight</label><br />
+							<div class="width_select">
+								<select>
+									<option>Select</option>
+									<option>70</option>
+								</select>
+								<select>
+									<option>Select</option>
+									<option>Kgs</option>
+								</select>
+							</div>
+						</div>
+						<div class="onboarding_col">
+							<label>BMI</label><br />
+							<input
+								type="text"
+								placeholder="Enter BMI"
+								class="bmi" />
+						</div>
+					</div>
+					<div class="onboarding_row mt-16">
+						<div class="onboarding_col">
+							<label
+								>Home Address<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<div class="home_address">
+								<input
+									type="text"
+									placeholder="Enter Address 1" />
+								<input
+									type="text"
+									placeholder="Enter Address 2" />
+								<div class="home_address_inner">
+									<input type="text" placeholder="City" />
+									<input type="text" placeholder="State" />
+								</div>
+								<input type="text" placeholder="Pincode" />
+							</div>
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Office Address<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<div class="home_address">
+								<input
+									type="text"
+									placeholder="Enter Address 1" />
+								<input
+									type="text"
+									placeholder="Enter Address 2" />
+								<div class="home_address_inner">
+									<input type="text" placeholder="City" />
+									<input type="text" placeholder="State" />
+								</div>
+								<input type="text" placeholder="Pincode" />
+							</div>
+						</div>
+					</div>
+					<div class="onboarding_row mt-16">
+						<div class="onboarding_col">
+							<label
+								>Emergency Contact<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<div class="home_address mb-10">
+								<input type="text" placeholder="Name" />
+							</div>
+							<label>
+								Contact Number*<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<div class="home_address">
+								<input
+									type="text"
+									placeholder="Enter the mobile number" />
+							</div>
+						</div>
+						<div class="onboarding_col">
+							<label
+								>Emergency Address<span style="color: #f60006"
+									>*</span
+								></label
+							><br />
+							<div class="home_address">
+								<input
+									type="text"
+									placeholder="Enter Address 1" />
+								<input
+									type="text"
+									placeholder="Enter Address 2" />
+								<div class="home_address_inner">
+									<input type="text" placeholder="City" />
+									<input type="text" placeholder="State" />
+								</div>
+								<input type="text" placeholder="Pincode" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="onboarding-allergies.html"
+					><div class="select-box-button-onboarding mt-16 mb-16">
+						NEXT
+					</div>
+				</a>
+			</form>
+		</section>
+	</body>
+</html>

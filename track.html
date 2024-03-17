@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeevone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- =============== Hero Section Start ================= -->
+    <section>
+      <div class="track_bg_bnner">
+        <!--================ navbar section Start ==================-->
+        <nav
+          class="bg-white text-gray-200 nav_radius"
+          style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px"
+        >
+          <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center pl-8">
+              <img src="./images/Jeeone-Logo.png" alt="logo" height="50px" />
+            </a>
+
+            <!-- MOBILE NAV ICON -->
+            <div class="lg:hidden block absolute top-4 right-8 fixed">
+              <button
+                aria-label="navigation"
+                type="button"
+                onclick="resNav()"
+                class="lg:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white hamburger"
+              >
+                <i class="fa-solid fa-bars fa-2x" id="bars"></i>
+              </button>
+            </div>
+
+            <!-- NAVIGATION - LARGE SCREENS -->
+            <div class="hidden lg:flex">
+              <ul class="hidden lg:flex">
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="index.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="about.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >About Us</a
+                  >
+                </li>
+                <!-- <li class="text-lg pr-8 flex items-center">
+									<a
+										href="creators.html"
+										class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+										style="text-underline-offset: 8px"
+										>CREATORS</a
+									>
+								</li> -->
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="track.html"
+                    class="flex items-center gap-2 text-lg transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Track</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="shop.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Shop</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="reminders.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Reminders</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="profile.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Profile</a
+                  >
+                </li>
+
+                <li class="dropdown inline-block relative">
+                  <a
+                    class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+                  >
+                    <span class="mr-1">Pages</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    class="dropdown-menu absolute hidden text-gray-700 pt-1 w-52 z-10"
+                  >
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="about.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="appointment-confirm.html"
+                        >Appointment Confirm</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-doctor.html"
+                        >Book a Doctor</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-Lab-Test.html"
+                        >Book a Lab Test</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine-sort-list.html"
+                        >Book Medicine Sort List</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine.html"
+                        >Book-Medicine</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="insurance.html"
+                        >Insurance</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="payment.html"
+                        >Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-medicine-list.html"
+                        >Re-order Medicine List</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-payment.html"
+                        >Re-order Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order.html"
+                        >Re-order</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="reminders.html"
+                        >Reminders</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="shop.html"
+                        >Shop</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="track.html"
+                        >Track</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="vacctination.html"
+                        >Vacctination</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex nav_icon">
+              <div class="notification-icon" id="notificationIcon">
+                <i
+                  class="fa-solid fa-bell text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i>
+              </div>
+              <div class="notification-popup" id="notificationPopup">
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+              </div>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-cart-shopping text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-magnifying-glass text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div
+            id="mobileMenu"
+            class="hidden flex w-full mx-auto py-8 text-center"
+          >
+            <div class="flex flex-col justify-center items-center w-full">
+              <a
+                href="index.html"
+                class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >About Us</a
+              >
+              <a
+                href="track.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                TRACK
+              </a>
+              <a
+                href="shop.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                SHOP
+              </a>
+              <a
+                href="reminders.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                REMINDERS
+              </a>
+              <a
+                href="profile.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                PROFILE
+              </a>
+            </div>
+          </div>
+        </nav>
+        <!--================ navbar section End ==================-->
+        <!--================ banner section================= -->
+        <div class="p-10 breadcam_heading breadcam_heading_track">
+          <h2 class="text-white text-3xl md:text-4xl px-0 md:px-10">
+            <b class="uppercase">Track</b>
+          </h2>
+          <p class="text-white text-2xl px-0 md:px-10">What matters to you</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================banner section end================ -->
+
+    <!-- =============== Main Section Start ================= -->
+    <section class="relative">
+      <div class="absolute round1 top-2/4">
+        <img src="./images/round-2.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="flex justify-center flex-wrap md:flex-nowrap gap-8 mb-16">
+          <div class="w-full lg:w-1/4 pt-5">
+            <!--  Profile Circle-2-->
+            <div class="outer-circle circle_track circle-2">
+              <span class="sq sq-1"></span>
+              <span class="inner-circle circle_track">
+                <img src="images/track-profile-image.png" />
+              </span>
+              <span class="sq sq-2"></span>
+            </div>
+            <!-- End of Profile Circle-2   -->
+          </div>
+          <div
+            class="grid place-items-center grid-cols-1 lg:grid-cols-4 gap-4 b-skills w-3/4"
+          >
+            <div class="skill-item center-block">
+              <div class="chart-container">
+                <div class="chart" data-percent="25" data-bar-color="#23afe3">
+                  <span class="percent" data-after="%">25</span>
+                </div>
+              </div>
+
+              <p class="font-semibold pt-2">BMI</p>
+            </div>
+
+            <div class="skill-item center-block">
+              <div class="chart-container">
+                <div class="chart" data-percent="68" data-bar-color="#a7d212">
+                  <span class="percent" data-after="%">68</span>
+                </div>
+              </div>
+
+              <div class="flex gap-2 items-center justify-center">
+                <a href="myweight.html">
+                  <button class="edit_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9_1810)">
+                        <path
+                          d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9_1810">
+                          <rect
+                            width="13.417"
+                            height="13.417"
+                            fill="white"
+                            transform="translate(0.366211 0.244629)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg></button
+                ></a>
+                <p class="font-semibold">Weight</p>
+              </div>
+            </div>
+
+            <div class="skill-item center-block">
+              <div class="chart-container">
+                <div class="chart" data-percent="4" data-bar-color="#ff4241">
+                  <span class="percent" data-after="%">4</span>
+                </div>
+              </div>
+
+              <div class="flex gap-2 items-center justify-center">
+                <button class="edit_btn" onclick="toggleModalWater()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_9_1810)">
+                      <path
+                        d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9_1810">
+                        <rect
+                          width="13.417"
+                          height="13.417"
+                          fill="white"
+                          transform="translate(0.366211 0.244629)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <p class="font-semibold">Water</p>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalWater"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalWater()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2 class="font-medium text-3xl mb-6 text-black">
+                          Water Intake
+                        </h2>
+
+                        <div
+                          class="mb-4 flex gap-4 justify-center items-center"
+                        >
+                          <p class="font-semibold mb-1">Set Target</p>
+                          <input
+                            type="number"
+                            value="7"
+                            class="border border-gray-300 p-2 w-24 rounded-md text-center font-bold text-2xl text-black"
+                          />
+                        </div>
+                        <div class="flex justify-center gap-4 my-10">
+                          <div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Glass
+                                </p>
+                                <p class="text-xs text-gray-500 leading-4">
+                                  6AM
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button
+                          onclick="toggleModalWater()"
+                          class="modal_button mb-6 uppercase"
+                          style="border: 2px solid #393bcb"
+                        >
+                          continue
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item center-block">
+              <div class="chart-container">
+                <div class="chart" data-percent="65" data-bar-color="#edc214">
+                  <span class="percent" data-after="%">65</span>
+                </div>
+              </div>
+
+              <div class="flex gap-2 items-center justify-center">
+                <button class="edit_btn" onclick="toggleModalMedication()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_9_1810)">
+                      <path
+                        d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9_1810">
+                        <rect
+                          width="13.417"
+                          height="13.417"
+                          fill="white"
+                          transform="translate(0.366211 0.244629)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <p class="font-semibold">Medication</p>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalMedication"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalMedication()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-2xl mb-6 text-black"
+                          style="margin-bottom: 28px"
+                        >
+                          Medication Consumption
+                        </h2>
+                        <div>
+                          <div class="flex justify-center gap-4 mb-8">
+                            <p>Currently on Medication</p>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  Yes
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4">
+                              <input
+                                name="one"
+                                type="checkbox"
+                                class="border-gray-300 rounded h-5 w-5"
+                              />
+
+                              <div class="flex items-center gap-2">
+                                <p
+                                  class="text-gray-700 font-medium leading-none"
+                                >
+                                  No
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex justify-center gap-8">
+                            <div>
+                              <div class="flex items-center space-x-3 pb-6">
+                                <input
+                                  name="one"
+                                  type="checkbox"
+                                  class="border-gray-300 rounded h-5 w-5"
+                                />
+
+                                <div class="flex items-center gap-2">
+                                  <p
+                                    class="text-gray-700 font-medium leading-none"
+                                  >
+                                    Morning
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="flex items-center space-x-3 pb-6">
+                                <input
+                                  name="one"
+                                  type="checkbox"
+                                  class="border-gray-300 rounded h-5 w-5"
+                                />
+
+                                <div class="flex items-center gap-2">
+                                  <p
+                                    class="text-gray-700 font-medium leading-none"
+                                  >
+                                    Afternoon
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="flex items-center space-x-3 pb-6">
+                                <input
+                                  name="one"
+                                  type="checkbox"
+                                  class="border-gray-300 rounded h-5 w-5"
+                                />
+
+                                <div class="flex items-center gap-2">
+                                  <p
+                                    class="text-gray-700 font-medium leading-none"
+                                  >
+                                    Evening
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="flex items-center space-x-3 pb-6">
+                                <input
+                                  name="one"
+                                  type="checkbox"
+                                  class="border-gray-300 rounded h-5 w-5"
+                                />
+
+                                <div class="flex items-center gap-2">
+                                  <p
+                                    class="text-gray-700 font-medium leading-none"
+                                  >
+                                    Night
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="flex items-center justify-center mb-10 mt-10"
+                          >
+                            <div class="mr-8">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="33"
+                                height="34"
+                                viewBox="0 0 33 34"
+                                fill="none"
+                              >
+                                <path
+                                  d="M27.7356 3.34231H24.4726V1.67116C24.4726 1.22794 24.3007 0.802873 23.9947 0.48947C23.6888 0.176068 23.2738 0 22.8411 0C22.4084 0 21.9934 0.176068 21.6874 0.48947C21.3815 0.802873 21.2096 1.22794 21.2096 1.67116V3.34231H11.4205V1.67116C11.4205 1.22794 11.2486 0.802873 10.9427 0.48947C10.6367 0.176068 10.2217 0 9.78903 0C9.35633 0 8.94135 0.176068 8.63539 0.48947C8.32942 0.802873 8.15753 1.22794 8.15753 1.67116V3.34231H4.89452C3.59641 3.34231 2.35147 3.87052 1.43357 4.81073C0.515671 5.75093 0 7.02613 0 8.35578V28.4097C0 29.7393 0.515671 31.0145 1.43357 31.9547C2.35147 32.8949 3.59641 33.4231 4.89452 33.4231H27.7356C29.0337 33.4231 30.2786 32.8949 31.1965 31.9547C32.1144 31.0145 32.6301 29.7393 32.6301 28.4097V8.35578C32.6301 7.02613 32.1144 5.75093 31.1965 4.81073C30.2786 3.87052 29.0337 3.34231 27.7356 3.34231ZM29.3671 28.4097C29.3671 28.8529 29.1952 29.278 28.8892 29.5914C28.5833 29.9048 28.1683 30.0808 27.7356 30.0808H4.89452C4.46181 30.0808 4.04683 29.9048 3.74087 29.5914C3.4349 29.278 3.26301 28.8529 3.26301 28.4097V16.7116H29.3671V28.4097ZM29.3671 13.3693H3.26301V8.35578C3.26301 7.91257 3.4349 7.4875 3.74087 7.1741C4.04683 6.8607 4.46181 6.68463 4.89452 6.68463H8.15753V8.35578C8.15753 8.799 8.32942 9.22407 8.63539 9.53747C8.94135 9.85087 9.35633 10.0269 9.78903 10.0269C10.2217 10.0269 10.6367 9.85087 10.9427 9.53747C11.2486 9.22407 11.4205 8.799 11.4205 8.35578V6.68463H21.2096V8.35578C21.2096 8.799 21.3815 9.22407 21.6874 9.53747C21.9934 9.85087 22.4084 10.0269 22.8411 10.0269C23.2738 10.0269 23.6888 9.85087 23.9947 9.53747C24.3007 9.22407 24.4726 8.799 24.4726 8.35578V6.68463H27.7356C28.1683 6.68463 28.5833 6.8607 28.8892 7.1741C29.1952 7.4875 29.3671 7.91257 29.3671 8.35578V13.3693Z"
+                                  fill="black"
+                                />
+                              </svg>
+                            </div>
+                            <div>
+                              <p class="font-semibold text-lg">Auto Date</p>
+                              <p>10-Mar-2023</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="track.html">
+                          <button
+                            class="modal_button mb-6 uppercase"
+                            style="border: 2px solid #393bcb"
+                          >
+                            continue
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="flex flex-wrap md:flex-nowrap gap-12 mt-40 mb-16">
+          <div class="w-full md:w-1/2">
+            <div class="flex justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="33"
+                  viewBox="0 0 38 33"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_9_1804)">
+                    <path
+                      d="M35.152 13.866C35.7532 12.3919 35.9965 10.7572 35.8319 9.12256C35.5099 6.13781 33.8711 3.44497 31.3449 1.8103C27.5807 -0.641721 22.4496 0.00777121 19.1649 3.3574L17.9626 4.58341L16.517 3.15307C14.4345 1.02944 11.5505 0.00777137 8.62361 0.29238C5.69668 0.620775 3.056 2.29924 1.45299 4.87532C-0.951533 8.71389 -0.314621 13.9463 2.97012 17.2959L17.2756 31.884C17.433 32.0445 17.6763 32.1686 17.9197 32.1686C18.163 32.1686 18.3991 32.0883 18.5637 31.884L21.4907 28.8992C23.2511 30.4099 25.4982 31.3075 27.9456 31.3075C33.5132 31.3075 38.0074 26.688 38.0074 21.0469C38.036 18.2738 36.9197 15.7051 35.152 13.866ZM34.6726 21.9956H36.1539C35.9965 23.6303 35.3524 25.1045 34.3935 26.3305L33.3487 25.265C32.9908 24.9001 32.4255 24.9001 32.0677 25.265C31.7099 25.6299 31.7099 26.2064 32.0677 26.5713L33.1125 27.6367C31.9102 28.6146 30.4647 29.2714 28.8616 29.432V27.9214C28.8616 27.3886 28.4609 26.9799 27.9385 26.9799C27.4161 26.9799 27.0153 27.3886 27.0153 27.9214V29.432C25.4123 29.2714 23.9667 28.6146 22.7645 27.6367L23.8093 26.5713C24.1671 26.2064 24.1671 25.6299 23.8093 25.265C23.4515 24.9001 22.8861 24.9001 22.5283 25.265L21.4835 26.3305C20.5246 25.1045 19.8805 23.6303 19.723 21.9956H21.2044C21.7268 21.9956 22.1276 21.587 22.1276 21.0542C22.1276 20.5215 21.7268 20.1128 21.2044 20.1128H19.723C19.8805 18.4782 20.5246 17.004 21.4835 15.778L22.5283 16.8435C22.6858 17.004 22.9291 17.1281 23.1724 17.1281C23.4157 17.1281 23.6519 17.0478 23.8165 16.8435C24.1743 16.4786 24.1743 15.9021 23.8165 15.5372L22.7716 14.479C23.9739 13.5012 25.4195 12.8444 27.0225 12.6838V14.1871C27.0225 14.7199 27.4232 15.1285 27.9456 15.1285C28.4681 15.1285 28.8688 14.7199 28.8688 14.1871V12.6765C32.7189 13.129 35.7603 16.2305 36.1611 20.1128H34.6797C34.1573 20.1128 33.7566 20.5215 33.7566 21.0542C33.7923 21.587 34.1931 21.9956 34.6726 21.9956ZM17.9197 29.9647L4.2511 16.0262C1.52455 13.2457 1.00214 8.9985 2.97012 5.88969C4.29404 3.76607 6.41947 2.416 8.82399 2.16788C9.10308 2.1241 9.38218 2.1241 9.66843 2.1241C11.7509 2.1241 13.7547 2.94143 15.236 4.49584L17.2827 6.58297C17.6406 6.94785 18.2417 6.94785 18.5637 6.58297L20.41 4.70017C23.0937 1.96355 27.3016 1.38703 30.3502 3.39389C32.4326 4.74396 33.7566 6.91137 33.9999 9.36338C34.1215 10.5091 33.9999 11.6111 33.6778 12.6765C32.0319 11.5308 30.0711 10.8813 27.9886 10.8813C22.421 10.8813 17.9268 15.5007 17.9268 21.1418C17.9268 23.6376 18.807 25.9218 20.2526 27.6805L17.9197 29.9647Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M31.0227 16.6394L28.5395 19.1717C28.3391 19.1279 28.1387 19.0914 27.9384 19.0914C26.8578 19.0914 25.9775 19.989 25.9775 21.091C25.9775 22.1929 26.8578 23.0905 27.9384 23.0905C29.019 23.0905 29.8992 22.1929 29.8992 21.091C29.8992 20.8866 29.8563 20.6823 29.8205 20.478L32.3037 17.9457C32.6615 17.5808 32.6615 17.0043 32.3037 16.6394C31.9459 16.2745 31.3877 16.2745 31.0227 16.6394Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_1804">
+                      <rect
+                        width="38"
+                        height="31.92"
+                        fill="white"
+                        transform="translate(0 0.249023)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="font-medium">Blood Pressure</p>
+              </div>
+              <div class="flex gap-8">
+                <div class="flex items-center gap-6">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  <p class="font-medium">March 2023</p>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <button class="edit_btn" onclick="toggleModal()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_9_1810)">
+                      <path
+                        d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9_1810">
+                        <rect
+                          width="13.417"
+                          height="13.417"
+                          fill="white"
+                          transform="translate(0.366211 0.244629)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="chartContainer" style="height: 370px; width: 100%"></div>
+
+            <div
+              class="fixed z-20 overflow-y-auto top-0 w-full left-0 hidden"
+              id="modalPressure"
+            >
+              <div
+                class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+              >
+                <div
+                  class="fixed flex items-center justify-center inset-0 transition-opacity"
+                >
+                  <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                  <span class="hidden inline-block align-middle h-screen"
+                    >&#8203;</span
+                  >
+                  <div
+                    class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-headline"
+                  >
+                    <div class="modal_cross_button" onclick="toggleModal()">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                          fill="#B3B3B3"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                    >
+                      <h2 class="font-medium text-2xl mb-6">
+                        What is your Blood
+                        <br />Pressure?
+                      </h2>
+                      <div>
+                        <div
+                          class="flex gap-2 justify-center items-center mb-4"
+                        >
+                          <p class="font-semibold mb-1">SYS</p>
+                          <input
+                            type="number"
+                            value="144"
+                            class="border border-gray-300 p-3 w-28 rounded-md text-center font-bold text-4xl"
+                          />
+                          <p class="font-semibold mb-1">mmHg</p>
+                        </div>
+                        <div class="flex gap-2 justify-center items-center">
+                          <p class="font-semibold mb-1">DIA</p>
+                          <input
+                            type="number"
+                            value="80"
+                            class="border border-gray-300 p-3 w-28 rounded-md text-center font-bold text-4xl"
+                          />
+                          <p class="font-semibold mb-1">mmHg</p>
+                        </div>
+                        <div
+                          class="flex items-center justify-center mb-10 mt-10"
+                        >
+                          <div class="mr-8">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="33"
+                              height="34"
+                              viewBox="0 0 33 34"
+                              fill="none"
+                            >
+                              <path
+                                d="M27.7356 3.34231H24.4726V1.67116C24.4726 1.22794 24.3007 0.802873 23.9947 0.48947C23.6888 0.176068 23.2738 0 22.8411 0C22.4084 0 21.9934 0.176068 21.6874 0.48947C21.3815 0.802873 21.2096 1.22794 21.2096 1.67116V3.34231H11.4205V1.67116C11.4205 1.22794 11.2486 0.802873 10.9427 0.48947C10.6367 0.176068 10.2217 0 9.78903 0C9.35633 0 8.94135 0.176068 8.63539 0.48947C8.32942 0.802873 8.15753 1.22794 8.15753 1.67116V3.34231H4.89452C3.59641 3.34231 2.35147 3.87052 1.43357 4.81073C0.515671 5.75093 0 7.02613 0 8.35578V28.4097C0 29.7393 0.515671 31.0145 1.43357 31.9547C2.35147 32.8949 3.59641 33.4231 4.89452 33.4231H27.7356C29.0337 33.4231 30.2786 32.8949 31.1965 31.9547C32.1144 31.0145 32.6301 29.7393 32.6301 28.4097V8.35578C32.6301 7.02613 32.1144 5.75093 31.1965 4.81073C30.2786 3.87052 29.0337 3.34231 27.7356 3.34231ZM29.3671 28.4097C29.3671 28.8529 29.1952 29.278 28.8892 29.5914C28.5833 29.9048 28.1683 30.0808 27.7356 30.0808H4.89452C4.46181 30.0808 4.04683 29.9048 3.74087 29.5914C3.4349 29.278 3.26301 28.8529 3.26301 28.4097V16.7116H29.3671V28.4097ZM29.3671 13.3693H3.26301V8.35578C3.26301 7.91257 3.4349 7.4875 3.74087 7.1741C4.04683 6.8607 4.46181 6.68463 4.89452 6.68463H8.15753V8.35578C8.15753 8.799 8.32942 9.22407 8.63539 9.53747C8.94135 9.85087 9.35633 10.0269 9.78903 10.0269C10.2217 10.0269 10.6367 9.85087 10.9427 9.53747C11.2486 9.22407 11.4205 8.799 11.4205 8.35578V6.68463H21.2096V8.35578C21.2096 8.799 21.3815 9.22407 21.6874 9.53747C21.9934 9.85087 22.4084 10.0269 22.8411 10.0269C23.2738 10.0269 23.6888 9.85087 23.9947 9.53747C24.3007 9.22407 24.4726 8.799 24.4726 8.35578V6.68463H27.7356C28.1683 6.68463 28.5833 6.8607 28.8892 7.1741C29.1952 7.4875 29.3671 7.91257 29.3671 8.35578V13.3693Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="font-semibold text-lg">Auto Date</p>
+                            <p>10-Mar-2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="blood-pressure.html">
+                        <button
+                          class="modal_button mb-6"
+                          style="border: 2px solid #393bcb"
+                        >
+                          SET
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div class="flex justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="32"
+                  viewBox="0 0 23 32"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_9_1858)">
+                    <path
+                      d="M15.2023 24.1308H5.2069C4.77232 24.1308 4.41675 24.4958 4.41675 24.9418V27.5604C4.41675 28.0065 4.77232 28.3715 5.2069 28.3715H15.2079C15.6425 28.3715 15.9981 28.0065 15.9981 27.5604V24.9418C15.9924 24.4958 15.6369 24.1308 15.2023 24.1308ZM7.3403 27.3982H5.36493V25.104H7.34595V27.3982H7.3403ZM12.1151 27.3982H8.28848V25.104H12.1151V27.3982ZM15.0443 27.3982H13.0632V25.104H15.0443V27.3982ZM9.8067 8.2571C9.47371 8.79009 6.52193 13.5406 6.52193 15.632C6.52193 17.9088 8.1756 19.7568 10.2018 19.7568C12.2336 19.7568 13.8816 17.9088 13.8816 15.632C13.8816 13.5406 10.9355 8.79009 10.5968 8.2571C10.4275 7.97902 9.98166 7.97902 9.8067 8.2571ZM10.2018 18.7835C9.49628 18.7835 8.85852 18.4707 8.37314 17.9667H12.036C11.5507 18.4707 10.9073 18.7835 10.2018 18.7835ZM12.6682 16.9934H7.74102C7.63379 16.7385 7.55477 16.4662 7.51527 16.1766H12.8939C12.8488 16.4604 12.7754 16.7327 12.6682 16.9934ZM12.8883 15.1975H7.52091C7.56606 14.9542 7.63943 14.6819 7.74102 14.3806H12.6682C12.7698 14.6819 12.8431 14.9542 12.8883 15.1975ZM8.12481 13.4074C8.71742 12.0343 9.58658 10.4701 10.2074 9.43314C10.8226 10.4701 11.6974 12.0343 12.29 13.4074H8.12481ZM18.2444 0.830078C16.8108 0.830078 15.5353 1.54266 14.7226 2.6318H4.61993C2.44138 2.6318 0.669189 4.4509 0.669189 6.68711V27.7748C0.669189 30.011 2.44138 31.8301 4.61993 31.8301H15.7893C17.9678 31.8301 19.74 30.011 19.74 27.7748V9.6417C21.4445 9.01023 22.6748 7.33597 22.6748 5.37203C22.6692 2.86932 20.6882 0.830078 18.2444 0.830078ZM18.7918 27.7748C18.7918 29.4722 17.4429 30.8568 15.7893 30.8568H4.61993C2.96627 30.8568 1.61737 29.4722 1.61737 27.7748V6.68711C1.61737 4.98967 2.96627 3.60507 4.61993 3.60507H14.1694C13.9437 4.14964 13.8195 4.74636 13.8195 5.37203C13.8195 5.58059 13.8365 5.78915 13.8647 5.99192H4.09505C3.66047 5.99192 3.3049 6.3569 3.3049 6.80298V20.985C3.3049 21.4311 3.66047 21.7961 4.09505 21.7961H16.3141C16.7487 21.7961 17.1043 21.4311 17.1043 20.985V9.75757C17.4711 9.85606 17.8493 9.91399 18.2444 9.91399C18.4306 9.91399 18.6112 9.89661 18.7862 9.87344L18.7918 27.7748ZM16.1561 9.37521V20.8228H4.25308V6.96519H14.1074C14.4855 7.9964 15.2192 8.85381 16.1561 9.37521ZM18.2444 8.94071C16.3254 8.94071 14.7677 7.34176 14.7677 5.37203C14.7677 3.40231 16.3254 1.80335 18.2444 1.80335C20.1633 1.80335 21.721 3.40231 21.721 5.37203C21.721 7.34176 20.1633 8.94071 18.2444 8.94071ZM20.722 3.89474L17.9565 7.45762C17.8662 7.57349 17.7308 7.64301 17.584 7.64301H17.5784C17.4316 7.64301 17.2962 7.5677 17.2059 7.45183L15.7554 5.48211C15.5974 5.26775 15.6369 4.96071 15.8457 4.7985C16.0545 4.63628 16.3536 4.67684 16.5117 4.89119L17.601 6.3569L19.9827 3.28644C20.1464 3.07788 20.4455 3.04312 20.6487 3.21113C20.8518 3.37913 20.8857 3.68618 20.722 3.89474Z"
+                      fill="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_1858">
+                      <rect
+                        width="22"
+                        height="31"
+                        fill="white"
+                        transform="translate(0.669189 0.830078)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="font-medium">Blood Sugar</p>
+              </div>
+              <div class="flex gap-8">
+                <div class="flex items-center gap-6">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  <p class="font-medium">March 2023</p>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <button class="edit_btn" onclick="toggleModalSuger()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_9_1810)">
+                      <path
+                        d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_9_1810">
+                        <rect
+                          width="13.417"
+                          height="13.417"
+                          fill="white"
+                          transform="translate(0.366211 0.244629)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="chartdivTwo"></div>
+
+            <div
+              class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+              id="modalSuger"
+            >
+              <div
+                class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+              >
+                <div
+                  class="fixed flex items-center justify-center inset-0 transition-opacity"
+                >
+                  <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                  <span class="hidden inline-block align-middle h-screen"
+                    >&#8203;</span
+                  >
+                  <div
+                    class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-headline"
+                  >
+                    <div
+                      class="modal_cross_button"
+                      onclick="toggleModalSuger()"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                          fill="#B3B3B3"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                    >
+                      <h2 class="font-medium text-3xl mb-6">Blood Sugar</h2>
+                      <div>
+                        <div class="flex flex-col items-center mb-4">
+                          <p class="font-semibold mb-1">Before Meal</p>
+                          <input
+                            type="number"
+                            value="180"
+                            class="border border-gray-300 p-3 w-28 rounded-md text-center font-bold text-4xl text-blue-900"
+                          />
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <p class="font-semibold mb-1">After Meal</p>
+                          <input
+                            type="number"
+                            value="240"
+                            class="border border-gray-300 p-3 w-28 rounded-md text-center font-bold text-4xl text-red-500"
+                          />
+                        </div>
+                        <div
+                          class="flex items-center justify-center mb-10 mt-10"
+                        >
+                          <div class="mr-8">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="33"
+                              height="34"
+                              viewBox="0 0 33 34"
+                              fill="none"
+                            >
+                              <path
+                                d="M27.7356 3.34231H24.4726V1.67116C24.4726 1.22794 24.3007 0.802873 23.9947 0.48947C23.6888 0.176068 23.2738 0 22.8411 0C22.4084 0 21.9934 0.176068 21.6874 0.48947C21.3815 0.802873 21.2096 1.22794 21.2096 1.67116V3.34231H11.4205V1.67116C11.4205 1.22794 11.2486 0.802873 10.9427 0.48947C10.6367 0.176068 10.2217 0 9.78903 0C9.35633 0 8.94135 0.176068 8.63539 0.48947C8.32942 0.802873 8.15753 1.22794 8.15753 1.67116V3.34231H4.89452C3.59641 3.34231 2.35147 3.87052 1.43357 4.81073C0.515671 5.75093 0 7.02613 0 8.35578V28.4097C0 29.7393 0.515671 31.0145 1.43357 31.9547C2.35147 32.8949 3.59641 33.4231 4.89452 33.4231H27.7356C29.0337 33.4231 30.2786 32.8949 31.1965 31.9547C32.1144 31.0145 32.6301 29.7393 32.6301 28.4097V8.35578C32.6301 7.02613 32.1144 5.75093 31.1965 4.81073C30.2786 3.87052 29.0337 3.34231 27.7356 3.34231ZM29.3671 28.4097C29.3671 28.8529 29.1952 29.278 28.8892 29.5914C28.5833 29.9048 28.1683 30.0808 27.7356 30.0808H4.89452C4.46181 30.0808 4.04683 29.9048 3.74087 29.5914C3.4349 29.278 3.26301 28.8529 3.26301 28.4097V16.7116H29.3671V28.4097ZM29.3671 13.3693H3.26301V8.35578C3.26301 7.91257 3.4349 7.4875 3.74087 7.1741C4.04683 6.8607 4.46181 6.68463 4.89452 6.68463H8.15753V8.35578C8.15753 8.799 8.32942 9.22407 8.63539 9.53747C8.94135 9.85087 9.35633 10.0269 9.78903 10.0269C10.2217 10.0269 10.6367 9.85087 10.9427 9.53747C11.2486 9.22407 11.4205 8.799 11.4205 8.35578V6.68463H21.2096V8.35578C21.2096 8.799 21.3815 9.22407 21.6874 9.53747C21.9934 9.85087 22.4084 10.0269 22.8411 10.0269C23.2738 10.0269 23.6888 9.85087 23.9947 9.53747C24.3007 9.22407 24.4726 8.799 24.4726 8.35578V6.68463H27.7356C28.1683 6.68463 28.5833 6.8607 28.8892 7.1741C29.1952 7.4875 29.3671 7.91257 29.3671 8.35578V13.3693Z"
+                                fill="black"
+                              />
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="font-semibold text-lg">Auto Date</p>
+                            <p>10-Mar-2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="blood-suger.html">
+                        <button
+                          class="modal_button mb-6"
+                          style="border: 2px solid #393bcb"
+                        >
+                          SET
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div class="w-full md:w-1/2 z-10">
+            <div class="flex justify-between mb-3">
+              <div class="flex items-center gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                >
+                  <path
+                    d="M6.00476 14.5863C26.2714 14.5863 26.1251 14.5924 26.2105 14.5742C26.497 14.5132 26.7103 14.2633 26.7103 13.9585C26.7042 10.2587 24.7781 6.68692 21.377 4.71815C16.2691 1.76806 9.75333 3.51739 6.80933 8.6252C5.87067 10.2465 5.37695 12.0934 5.37695 13.9585C5.38305 14.306 5.66343 14.5863 6.00476 14.5863ZM16.3606 12.0751C16.708 12.0751 16.9884 12.3555 16.9884 12.7029V13.3307H15.7328V12.7029C15.7328 12.3555 16.0192 12.0751 16.3606 12.0751ZM10.8078 6.13834L11.4295 7.21111C11.6063 7.50977 11.9903 7.61339 12.289 7.44273C12.5876 7.27206 12.6912 6.88806 12.5206 6.5833L11.905 5.51054C12.9899 4.98025 14.1907 4.65111 15.428 4.56577V5.80311C15.428 6.15054 15.7084 6.43092 16.0558 6.43092C16.4032 6.43092 16.6836 6.15054 16.6836 5.80311V4.56577C17.8966 4.64501 19.0912 4.96196 20.2067 5.51663L19.591 6.5833C19.4204 6.88196 19.5179 7.26596 19.8227 7.44273C20.1213 7.61339 20.5053 7.51587 20.6821 7.21111L21.2977 6.14444C22.3278 6.8332 23.1994 7.71701 23.876 8.72882L22.8093 9.34444C22.5107 9.51511 22.407 9.89911 22.5777 10.2039C22.7545 10.5025 23.1385 10.6062 23.4371 10.4355L24.5038 9.81987C25.0402 10.9109 25.3693 12.1056 25.4547 13.3429H18.244V12.7151C18.244 11.8983 17.7198 11.1974 16.9884 10.9414V9.57606C16.9884 9.22863 16.708 8.94825 16.3606 8.94825C16.0131 8.94825 15.7328 9.22863 15.7328 9.57606V10.9414C15.0013 11.2035 14.4771 11.8983 14.4771 12.7151V13.3429H6.65695C6.73619 12.1178 7.05924 10.9231 7.60171 9.81987L8.66838 10.4355C8.96705 10.6062 9.35105 10.5086 9.52781 10.2039C9.69848 9.9052 9.60095 9.5212 9.29619 9.34444L8.22952 8.72882C8.91829 7.68653 9.796 6.81492 10.8078 6.13834Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M30.3245 3.12133C29.014 1.6341 27.1245 0.780762 25.1436 0.780762H6.94929C4.96833 0.780762 3.07881 1.6341 1.76833 3.12133C0.463953 4.60857 -0.145571 6.58343 0.104334 8.55219L2.68871 28.9408C2.9691 31.129 4.84033 32.7808 7.04681 32.7808H25.0521C27.2586 32.7808 29.1299 31.129 29.4102 28.9408L31.9946 8.55219C32.2445 6.58343 31.635 4.60248 30.3245 3.12133ZM30.7451 8.39371L28.1607 28.7823C27.9596 30.3488 26.6247 31.5251 25.046 31.5251H7.04681C5.46814 31.5251 4.13329 30.3488 3.93214 28.7823L1.34776 8.39371C1.14662 6.78457 1.64033 5.16324 2.7131 3.95029C3.78586 2.73124 5.32795 2.03638 6.94929 2.03638H25.1436C26.7649 2.03638 28.307 2.73124 29.3798 3.95029C30.4525 5.16324 30.9523 6.78457 30.7451 8.39371Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M12.929 19.2005C12.0696 17.0732 9.68025 16.1163 7.62006 16.9452C5.53549 17.7864 4.52368 20.1696 5.36483 22.2542L7.24826 26.9109C8.09549 29.0016 10.4787 30.0073 12.5572 29.1662C14.6418 28.325 15.6536 25.9418 14.8124 23.8572L12.929 19.2005Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M24.4796 16.9453C22.4194 16.1103 20.03 17.0733 19.1706 19.2006L17.2872 23.8573C16.446 25.9419 17.4579 28.3251 19.5424 29.1663C21.6209 30.0074 24.0041 29.0078 24.8514 26.911L26.7348 22.2543C27.576 20.1697 26.5641 17.7926 24.4796 16.9453Z"
+                    fill="black"
+                  />
+                </svg>
+                <p class="font-medium">Weight</p>
+              </div>
+              <div class="flex gap-8">
+                <a href="myweight.html"
+                  ><button class="edit_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_9_1810)">
+                        <path
+                          d="M3.16154 13.4939C2.85407 13.4939 2.59076 13.3843 2.37162 13.1652C2.15284 12.9464 2.04346 12.6833 2.04346 12.3758V4.5492C2.04346 4.24172 2.15284 3.97842 2.37162 3.75927C2.59076 3.5405 2.85407 3.43111 3.16154 3.43111H8.151L7.03291 4.5492H3.16154V12.3758H10.9881V8.49045L12.1062 7.37236V12.3758C12.1062 12.6833 11.9968 12.9464 11.7781 13.1652C11.5589 13.3843 11.2956 13.4939 10.9881 13.4939H3.16154ZM9.40884 3.75256L10.2055 4.53522L6.5158 8.2249V9.02154H7.29846L11.0021 5.31788L11.7988 6.10054L8.09509 9.8042C7.9926 9.90669 7.8739 9.98831 7.73898 10.0491C7.6037 10.1094 7.46151 10.1396 7.31243 10.1396H5.95676C5.79836 10.1396 5.66568 10.0861 5.55872 9.97918C5.45138 9.87184 5.39771 9.73898 5.39771 9.58058V8.2249C5.39771 8.07582 5.42567 7.93364 5.48157 7.79835C5.53747 7.66344 5.61667 7.54473 5.71916 7.44224L9.40884 3.75256ZM11.7988 6.10054L9.40884 3.75256L10.8065 2.35496C11.0301 2.13134 11.298 2.01953 11.6104 2.01953C11.9223 2.01953 12.1854 2.13134 12.3997 2.35496L13.1824 3.15159C13.3967 3.36589 13.5038 3.62678 13.5038 3.93425C13.5038 4.24173 13.3967 4.50261 13.1824 4.71691L11.7988 6.10054Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_9_1810">
+                          <rect
+                            width="13.417"
+                            height="13.417"
+                            fill="white"
+                            transform="translate(0.366211 0.244629)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div id="chartdivThree"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== Main Section End ================= -->
+
+    <!-- =============== Footer Section Start ============= -->
+    <footer>
+      <div class="footer_inner flex-col">
+        <div class="grid grid-cols-1 gap-8 2xsm:grid-cols-1 md:grid-cols-2">
+          <div>
+            <div class="mb-5 footer_logo">
+              <img src="./images/footer-logo.png" alt="footer-logo" />
+            </div>
+            <div class="flex mb-5">
+              <div class="text-white lg:pr-10 mr-10">
+                <h2 class="mb-5">About Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>Jeevone Story</li>
+                  </a>
+                  <li>
+                    <a href="refund-policy.html">Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="trems-and-condition.html">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-white lg:pl-10">
+                <h2 class="mb-5">Contact Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>
+                      Training
+                      <span style="font-size: 10px">(Coming Soon)</span>
+                    </li>
+                  </a>
+                  <li onclick="toggleModalFooterFour()">Schedule a Demo</li>
+                  <li onclick="toggleModalFooterFive()">Reach Us</li>
+                </ul>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modal"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooter()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Refund Policy
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button class="mr-10" onclick="toggleModalFooter()">
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalTwo"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooterTwo()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Privacy Policy
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button
+                            class="mr-10"
+                            onclick="toggleModalFooterTwo()"
+                          >
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalThree"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooterThree()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Terms & conditions
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button
+                            class="mr-10"
+                            onclick="toggleModalFooterThree()"
+                          >
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFour"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFour()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFive"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFive()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white mb-5">Connect</h2>
+              <div class="flex">
+                <div class="footer_icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_from">
+            <h2 class="text-white">Reach Us</h2>
+            <form action="">
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >I am a</label
+                  >
+                  <select
+                    class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                  >
+                    <option value="">Partner</option>
+                    <option value="option 1">Option 1</option>
+                  </select>
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    class="border border-red-300 shadow p-3 w-full rounded"
+                  />
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >Phone</label
+                  >
+                  <input
+                    type="number"
+                    placeholder="Enter Phone Number"
+                    class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter Email I’D"
+                    class="border border-red-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+              </div>
+              <div>
+                <button
+                  class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                >
+                  SUBMIT
+                </button>
+                <p class="text-center text-white text-sm mt-1">
+                  Add pop up for OTP (for developer)
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white pb-6">
+        <p>Copyright © 2023 Jeevone</p>
+      </div>
+    </footer>
+    <!-- =============== Footer Section End =============== -->
+  </body>
+</html>

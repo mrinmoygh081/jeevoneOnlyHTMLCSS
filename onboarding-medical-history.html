@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<section class="container">
+		<img src="./images/company.png" alt="logo" class="onboarding_logo" />
+		<nav class="onboarding_nav">
+			<ul>
+				<li class="active">
+					<a href="onboarding-personal-information.html">1. Personal Information
+					</a>
+				</li>
+				<li class="active">
+					<a href="onboarding-allergies.html">2. Allergies</a>
+				</li>
+				<li class="active">
+					<a href="onboarding-lifestyle.html">3. Lifestyle</a>
+				</li>
+				<li class="active">
+					<a href="onboarding-medical-history.html">4. Medical history</a>
+				</li>
+				<li>
+					<a href="onboarding-family-history.html">5. family Medical History</a>
+				</li>
+				<li>
+					<a href="onboarding-insurance.html">6. Insurance</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<section>
+		<form action="">
+			<div class="container">
+				<div class="onboarding_row mt-14">
+					<div class="onboarding_col">
+						<div class="icon_lebel icon_lebel1">
+							<label>Have you ever been diagnosed with?</label>
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+									fill="none">
+									<circle cx="16.5" cy="16.5" r="16.5" fill="#3A3CC6" />
+									<path
+										d="M24.9231 7.53846H22.6154V6.76923C22.6154 6.56522 22.5343 6.36956 22.3901 6.2253C22.2458 6.08104 22.0502 6 21.8462 6C21.6421 6 21.4465 6.08104 21.3022 6.2253C21.158 6.36956 21.0769 6.56522 21.0769 6.76923V7.53846H13.3846V6.76923C13.3846 6.56522 13.3036 6.36956 13.1593 6.2253C13.0151 6.08104 12.8194 6 12.6154 6C12.4114 6 12.2157 6.08104 12.0715 6.2253C11.9272 6.36956 11.8462 6.56522 11.8462 6.76923V7.53846H9.53846C9.13044 7.53846 8.73912 7.70055 8.4506 7.98907C8.16209 8.27758 8 8.6689 8 9.07692V24.4615C8 24.8696 8.16209 25.2609 8.4506 25.5494C8.73912 25.8379 9.13044 26 9.53846 26H24.9231C25.3311 26 25.7224 25.8379 26.0109 25.5494C26.2995 25.2609 26.4615 24.8696 26.4615 24.4615V9.07692C26.4615 8.6689 26.2995 8.27758 26.0109 7.98907C25.7224 7.70055 25.3311 7.53846 24.9231 7.53846ZM11.8462 9.07692V9.84615C11.8462 10.0502 11.9272 10.2458 12.0715 10.3901C12.2157 10.5343 12.4114 10.6154 12.6154 10.6154C12.8194 10.6154 13.0151 10.5343 13.1593 10.3901C13.3036 10.2458 13.3846 10.0502 13.3846 9.84615V9.07692H21.0769V9.84615C21.0769 10.0502 21.158 10.2458 21.3022 10.3901C21.4465 10.5343 21.6421 10.6154 21.8462 10.6154C22.0502 10.6154 22.2458 10.5343 22.3901 10.3901C22.5343 10.2458 22.6154 10.0502 22.6154 9.84615V9.07692H24.9231V12.1538H9.53846V9.07692H11.8462ZM24.9231 24.4615H9.53846V13.6923H24.9231V24.4615ZM15.6923 16V22.1538C15.6923 22.3579 15.6113 22.5535 15.467 22.6978C15.3227 22.842 15.1271 22.9231 14.9231 22.9231C14.7191 22.9231 14.5234 22.842 14.3791 22.6978C14.2349 22.5535 14.1538 22.3579 14.1538 22.1538V17.2442L13.7288 17.4577C13.5463 17.549 13.3349 17.564 13.1412 17.4995C12.9475 17.4349 12.7874 17.2961 12.6962 17.1135C12.6049 16.9309 12.5898 16.7195 12.6544 16.5258C12.7189 16.3322 12.8578 16.1721 13.0404 16.0808L14.5788 15.3115C14.6962 15.2528 14.8266 15.2251 14.9576 15.231C15.0887 15.2369 15.216 15.2762 15.3276 15.3452C15.4392 15.4142 15.5313 15.5106 15.5951 15.6252C15.6589 15.7398 15.6924 15.8688 15.6923 16ZM21.3808 18.9279L19.5385 21.3846H21.0769C21.2809 21.3846 21.4766 21.4657 21.6209 21.6099C21.7651 21.7542 21.8462 21.9498 21.8462 22.1538C21.8462 22.3579 21.7651 22.5535 21.6209 22.6978C21.4766 22.842 21.2809 22.9231 21.0769 22.9231H18C17.8571 22.9231 17.7171 22.8833 17.5956 22.8082C17.4741 22.7331 17.3759 22.6256 17.312 22.4979C17.2481 22.3701 17.221 22.227 17.2339 22.0848C17.2467 21.9425 17.2989 21.8066 17.3846 21.6923L20.1519 18.0029C20.2149 17.9191 20.26 17.8233 20.2846 17.7214C20.3092 17.6196 20.3127 17.5137 20.295 17.4104C20.2772 17.3072 20.2385 17.2086 20.1813 17.1208C20.124 17.033 20.0495 16.9578 19.9621 16.8999C19.8748 16.842 19.7765 16.8025 19.6734 16.7839C19.5703 16.7653 19.4644 16.7679 19.3623 16.7917C19.2603 16.8155 19.1641 16.8599 19.0798 16.9222C18.9955 16.9844 18.9248 17.0633 18.8721 17.1538C18.8231 17.2441 18.7565 17.3237 18.6762 17.3878C18.596 17.4519 18.5037 17.4993 18.4048 17.5271C18.306 17.555 18.2025 17.5628 18.1006 17.55C17.9987 17.5373 17.9003 17.5042 17.8114 17.4529C17.7224 17.4015 17.6447 17.3328 17.5827 17.2509C17.5207 17.169 17.4758 17.0755 17.4505 16.9759C17.4252 16.8763 17.4202 16.7727 17.4356 16.6712C17.4511 16.5696 17.4867 16.4722 17.5404 16.3846C17.7945 15.9449 18.1865 15.6013 18.6558 15.407C19.125 15.2128 19.6452 15.1787 20.1358 15.3102C20.6263 15.4416 21.0598 15.7312 21.3691 16.1341C21.6783 16.537 21.846 17.0306 21.8462 17.5385C21.8478 18.0401 21.6842 18.5284 21.3808 18.9279Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div id="calendar1" class="calender_hide"></div>
+						</div>
+
+						<select>
+							<option>Select</option>
+						</select>
+					</div>
+					<div class="onboarding_col">
+						<div class="icon_lebel icon_lebel2">
+							<label>Were you hospitalized in the last 3 years?
+							</label>
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+									fill="none">
+									<circle cx="16.5" cy="16.5" r="16.5" fill="#3A3CC6" />
+									<path
+										d="M24.9231 7.53846H22.6154V6.76923C22.6154 6.56522 22.5343 6.36956 22.3901 6.2253C22.2458 6.08104 22.0502 6 21.8462 6C21.6421 6 21.4465 6.08104 21.3022 6.2253C21.158 6.36956 21.0769 6.56522 21.0769 6.76923V7.53846H13.3846V6.76923C13.3846 6.56522 13.3036 6.36956 13.1593 6.2253C13.0151 6.08104 12.8194 6 12.6154 6C12.4114 6 12.2157 6.08104 12.0715 6.2253C11.9272 6.36956 11.8462 6.56522 11.8462 6.76923V7.53846H9.53846C9.13044 7.53846 8.73912 7.70055 8.4506 7.98907C8.16209 8.27758 8 8.6689 8 9.07692V24.4615C8 24.8696 8.16209 25.2609 8.4506 25.5494C8.73912 25.8379 9.13044 26 9.53846 26H24.9231C25.3311 26 25.7224 25.8379 26.0109 25.5494C26.2995 25.2609 26.4615 24.8696 26.4615 24.4615V9.07692C26.4615 8.6689 26.2995 8.27758 26.0109 7.98907C25.7224 7.70055 25.3311 7.53846 24.9231 7.53846ZM11.8462 9.07692V9.84615C11.8462 10.0502 11.9272 10.2458 12.0715 10.3901C12.2157 10.5343 12.4114 10.6154 12.6154 10.6154C12.8194 10.6154 13.0151 10.5343 13.1593 10.3901C13.3036 10.2458 13.3846 10.0502 13.3846 9.84615V9.07692H21.0769V9.84615C21.0769 10.0502 21.158 10.2458 21.3022 10.3901C21.4465 10.5343 21.6421 10.6154 21.8462 10.6154C22.0502 10.6154 22.2458 10.5343 22.3901 10.3901C22.5343 10.2458 22.6154 10.0502 22.6154 9.84615V9.07692H24.9231V12.1538H9.53846V9.07692H11.8462ZM24.9231 24.4615H9.53846V13.6923H24.9231V24.4615ZM15.6923 16V22.1538C15.6923 22.3579 15.6113 22.5535 15.467 22.6978C15.3227 22.842 15.1271 22.9231 14.9231 22.9231C14.7191 22.9231 14.5234 22.842 14.3791 22.6978C14.2349 22.5535 14.1538 22.3579 14.1538 22.1538V17.2442L13.7288 17.4577C13.5463 17.549 13.3349 17.564 13.1412 17.4995C12.9475 17.4349 12.7874 17.2961 12.6962 17.1135C12.6049 16.9309 12.5898 16.7195 12.6544 16.5258C12.7189 16.3322 12.8578 16.1721 13.0404 16.0808L14.5788 15.3115C14.6962 15.2528 14.8266 15.2251 14.9576 15.231C15.0887 15.2369 15.216 15.2762 15.3276 15.3452C15.4392 15.4142 15.5313 15.5106 15.5951 15.6252C15.6589 15.7398 15.6924 15.8688 15.6923 16ZM21.3808 18.9279L19.5385 21.3846H21.0769C21.2809 21.3846 21.4766 21.4657 21.6209 21.6099C21.7651 21.7542 21.8462 21.9498 21.8462 22.1538C21.8462 22.3579 21.7651 22.5535 21.6209 22.6978C21.4766 22.842 21.2809 22.9231 21.0769 22.9231H18C17.8571 22.9231 17.7171 22.8833 17.5956 22.8082C17.4741 22.7331 17.3759 22.6256 17.312 22.4979C17.2481 22.3701 17.221 22.227 17.2339 22.0848C17.2467 21.9425 17.2989 21.8066 17.3846 21.6923L20.1519 18.0029C20.2149 17.9191 20.26 17.8233 20.2846 17.7214C20.3092 17.6196 20.3127 17.5137 20.295 17.4104C20.2772 17.3072 20.2385 17.2086 20.1813 17.1208C20.124 17.033 20.0495 16.9578 19.9621 16.8999C19.8748 16.842 19.7765 16.8025 19.6734 16.7839C19.5703 16.7653 19.4644 16.7679 19.3623 16.7917C19.2603 16.8155 19.1641 16.8599 19.0798 16.9222C18.9955 16.9844 18.9248 17.0633 18.8721 17.1538C18.8231 17.2441 18.7565 17.3237 18.6762 17.3878C18.596 17.4519 18.5037 17.4993 18.4048 17.5271C18.306 17.555 18.2025 17.5628 18.1006 17.55C17.9987 17.5373 17.9003 17.5042 17.8114 17.4529C17.7224 17.4015 17.6447 17.3328 17.5827 17.2509C17.5207 17.169 17.4758 17.0755 17.4505 16.9759C17.4252 16.8763 17.4202 16.7727 17.4356 16.6712C17.4511 16.5696 17.4867 16.4722 17.5404 16.3846C17.7945 15.9449 18.1865 15.6013 18.6558 15.407C19.125 15.2128 19.6452 15.1787 20.1358 15.3102C20.6263 15.4416 21.0598 15.7312 21.3691 16.1341C21.6783 16.537 21.846 17.0306 21.8462 17.5385C21.8478 18.0401 21.6842 18.5284 21.3808 18.9279Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div id="calendar2" class="calender_hide"></div>
+						</div>
+						<select>
+							<option>Select</option>
+						</select>
+					</div>
+				</div>
+				<div class="onboarding_row mt-16">
+					<div class="onboarding_col">
+						<div class="icon_lebel icon_lebel3">
+							<label>Have you undergone any surgery? </label>
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+									fill="none">
+									<circle cx="16.5" cy="16.5" r="16.5" fill="#3A3CC6" />
+									<path
+										d="M24.9231 7.53846H22.6154V6.76923C22.6154 6.56522 22.5343 6.36956 22.3901 6.2253C22.2458 6.08104 22.0502 6 21.8462 6C21.6421 6 21.4465 6.08104 21.3022 6.2253C21.158 6.36956 21.0769 6.56522 21.0769 6.76923V7.53846H13.3846V6.76923C13.3846 6.56522 13.3036 6.36956 13.1593 6.2253C13.0151 6.08104 12.8194 6 12.6154 6C12.4114 6 12.2157 6.08104 12.0715 6.2253C11.9272 6.36956 11.8462 6.56522 11.8462 6.76923V7.53846H9.53846C9.13044 7.53846 8.73912 7.70055 8.4506 7.98907C8.16209 8.27758 8 8.6689 8 9.07692V24.4615C8 24.8696 8.16209 25.2609 8.4506 25.5494C8.73912 25.8379 9.13044 26 9.53846 26H24.9231C25.3311 26 25.7224 25.8379 26.0109 25.5494C26.2995 25.2609 26.4615 24.8696 26.4615 24.4615V9.07692C26.4615 8.6689 26.2995 8.27758 26.0109 7.98907C25.7224 7.70055 25.3311 7.53846 24.9231 7.53846ZM11.8462 9.07692V9.84615C11.8462 10.0502 11.9272 10.2458 12.0715 10.3901C12.2157 10.5343 12.4114 10.6154 12.6154 10.6154C12.8194 10.6154 13.0151 10.5343 13.1593 10.3901C13.3036 10.2458 13.3846 10.0502 13.3846 9.84615V9.07692H21.0769V9.84615C21.0769 10.0502 21.158 10.2458 21.3022 10.3901C21.4465 10.5343 21.6421 10.6154 21.8462 10.6154C22.0502 10.6154 22.2458 10.5343 22.3901 10.3901C22.5343 10.2458 22.6154 10.0502 22.6154 9.84615V9.07692H24.9231V12.1538H9.53846V9.07692H11.8462ZM24.9231 24.4615H9.53846V13.6923H24.9231V24.4615ZM15.6923 16V22.1538C15.6923 22.3579 15.6113 22.5535 15.467 22.6978C15.3227 22.842 15.1271 22.9231 14.9231 22.9231C14.7191 22.9231 14.5234 22.842 14.3791 22.6978C14.2349 22.5535 14.1538 22.3579 14.1538 22.1538V17.2442L13.7288 17.4577C13.5463 17.549 13.3349 17.564 13.1412 17.4995C12.9475 17.4349 12.7874 17.2961 12.6962 17.1135C12.6049 16.9309 12.5898 16.7195 12.6544 16.5258C12.7189 16.3322 12.8578 16.1721 13.0404 16.0808L14.5788 15.3115C14.6962 15.2528 14.8266 15.2251 14.9576 15.231C15.0887 15.2369 15.216 15.2762 15.3276 15.3452C15.4392 15.4142 15.5313 15.5106 15.5951 15.6252C15.6589 15.7398 15.6924 15.8688 15.6923 16ZM21.3808 18.9279L19.5385 21.3846H21.0769C21.2809 21.3846 21.4766 21.4657 21.6209 21.6099C21.7651 21.7542 21.8462 21.9498 21.8462 22.1538C21.8462 22.3579 21.7651 22.5535 21.6209 22.6978C21.4766 22.842 21.2809 22.9231 21.0769 22.9231H18C17.8571 22.9231 17.7171 22.8833 17.5956 22.8082C17.4741 22.7331 17.3759 22.6256 17.312 22.4979C17.2481 22.3701 17.221 22.227 17.2339 22.0848C17.2467 21.9425 17.2989 21.8066 17.3846 21.6923L20.1519 18.0029C20.2149 17.9191 20.26 17.8233 20.2846 17.7214C20.3092 17.6196 20.3127 17.5137 20.295 17.4104C20.2772 17.3072 20.2385 17.2086 20.1813 17.1208C20.124 17.033 20.0495 16.9578 19.9621 16.8999C19.8748 16.842 19.7765 16.8025 19.6734 16.7839C19.5703 16.7653 19.4644 16.7679 19.3623 16.7917C19.2603 16.8155 19.1641 16.8599 19.0798 16.9222C18.9955 16.9844 18.9248 17.0633 18.8721 17.1538C18.8231 17.2441 18.7565 17.3237 18.6762 17.3878C18.596 17.4519 18.5037 17.4993 18.4048 17.5271C18.306 17.555 18.2025 17.5628 18.1006 17.55C17.9987 17.5373 17.9003 17.5042 17.8114 17.4529C17.7224 17.4015 17.6447 17.3328 17.5827 17.2509C17.5207 17.169 17.4758 17.0755 17.4505 16.9759C17.4252 16.8763 17.4202 16.7727 17.4356 16.6712C17.4511 16.5696 17.4867 16.4722 17.5404 16.3846C17.7945 15.9449 18.1865 15.6013 18.6558 15.407C19.125 15.2128 19.6452 15.1787 20.1358 15.3102C20.6263 15.4416 21.0598 15.7312 21.3691 16.1341C21.6783 16.537 21.846 17.0306 21.8462 17.5385C21.8478 18.0401 21.6842 18.5284 21.3808 18.9279Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div id="calendar3" class="calender_hide"></div>
+						</div>
+
+						<select>
+							<option>Select</option>
+						</select>
+					</div>
+					<div class="onboarding_col">
+						<div class="icon_lebel icon_lebel4">
+							<label>Are you currently taking any medications?
+							</label>
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"
+									fill="none">
+									<circle cx="16.5" cy="16.5" r="16.5" fill="#3A3CC6" />
+									<path
+										d="M24.9231 7.53846H22.6154V6.76923C22.6154 6.56522 22.5343 6.36956 22.3901 6.2253C22.2458 6.08104 22.0502 6 21.8462 6C21.6421 6 21.4465 6.08104 21.3022 6.2253C21.158 6.36956 21.0769 6.56522 21.0769 6.76923V7.53846H13.3846V6.76923C13.3846 6.56522 13.3036 6.36956 13.1593 6.2253C13.0151 6.08104 12.8194 6 12.6154 6C12.4114 6 12.2157 6.08104 12.0715 6.2253C11.9272 6.36956 11.8462 6.56522 11.8462 6.76923V7.53846H9.53846C9.13044 7.53846 8.73912 7.70055 8.4506 7.98907C8.16209 8.27758 8 8.6689 8 9.07692V24.4615C8 24.8696 8.16209 25.2609 8.4506 25.5494C8.73912 25.8379 9.13044 26 9.53846 26H24.9231C25.3311 26 25.7224 25.8379 26.0109 25.5494C26.2995 25.2609 26.4615 24.8696 26.4615 24.4615V9.07692C26.4615 8.6689 26.2995 8.27758 26.0109 7.98907C25.7224 7.70055 25.3311 7.53846 24.9231 7.53846ZM11.8462 9.07692V9.84615C11.8462 10.0502 11.9272 10.2458 12.0715 10.3901C12.2157 10.5343 12.4114 10.6154 12.6154 10.6154C12.8194 10.6154 13.0151 10.5343 13.1593 10.3901C13.3036 10.2458 13.3846 10.0502 13.3846 9.84615V9.07692H21.0769V9.84615C21.0769 10.0502 21.158 10.2458 21.3022 10.3901C21.4465 10.5343 21.6421 10.6154 21.8462 10.6154C22.0502 10.6154 22.2458 10.5343 22.3901 10.3901C22.5343 10.2458 22.6154 10.0502 22.6154 9.84615V9.07692H24.9231V12.1538H9.53846V9.07692H11.8462ZM24.9231 24.4615H9.53846V13.6923H24.9231V24.4615ZM15.6923 16V22.1538C15.6923 22.3579 15.6113 22.5535 15.467 22.6978C15.3227 22.842 15.1271 22.9231 14.9231 22.9231C14.7191 22.9231 14.5234 22.842 14.3791 22.6978C14.2349 22.5535 14.1538 22.3579 14.1538 22.1538V17.2442L13.7288 17.4577C13.5463 17.549 13.3349 17.564 13.1412 17.4995C12.9475 17.4349 12.7874 17.2961 12.6962 17.1135C12.6049 16.9309 12.5898 16.7195 12.6544 16.5258C12.7189 16.3322 12.8578 16.1721 13.0404 16.0808L14.5788 15.3115C14.6962 15.2528 14.8266 15.2251 14.9576 15.231C15.0887 15.2369 15.216 15.2762 15.3276 15.3452C15.4392 15.4142 15.5313 15.5106 15.5951 15.6252C15.6589 15.7398 15.6924 15.8688 15.6923 16ZM21.3808 18.9279L19.5385 21.3846H21.0769C21.2809 21.3846 21.4766 21.4657 21.6209 21.6099C21.7651 21.7542 21.8462 21.9498 21.8462 22.1538C21.8462 22.3579 21.7651 22.5535 21.6209 22.6978C21.4766 22.842 21.2809 22.9231 21.0769 22.9231H18C17.8571 22.9231 17.7171 22.8833 17.5956 22.8082C17.4741 22.7331 17.3759 22.6256 17.312 22.4979C17.2481 22.3701 17.221 22.227 17.2339 22.0848C17.2467 21.9425 17.2989 21.8066 17.3846 21.6923L20.1519 18.0029C20.2149 17.9191 20.26 17.8233 20.2846 17.7214C20.3092 17.6196 20.3127 17.5137 20.295 17.4104C20.2772 17.3072 20.2385 17.2086 20.1813 17.1208C20.124 17.033 20.0495 16.9578 19.9621 16.8999C19.8748 16.842 19.7765 16.8025 19.6734 16.7839C19.5703 16.7653 19.4644 16.7679 19.3623 16.7917C19.2603 16.8155 19.1641 16.8599 19.0798 16.9222C18.9955 16.9844 18.9248 17.0633 18.8721 17.1538C18.8231 17.2441 18.7565 17.3237 18.6762 17.3878C18.596 17.4519 18.5037 17.4993 18.4048 17.5271C18.306 17.555 18.2025 17.5628 18.1006 17.55C17.9987 17.5373 17.9003 17.5042 17.8114 17.4529C17.7224 17.4015 17.6447 17.3328 17.5827 17.2509C17.5207 17.169 17.4758 17.0755 17.4505 16.9759C17.4252 16.8763 17.4202 16.7727 17.4356 16.6712C17.4511 16.5696 17.4867 16.4722 17.5404 16.3846C17.7945 15.9449 18.1865 15.6013 18.6558 15.407C19.125 15.2128 19.6452 15.1787 20.1358 15.3102C20.6263 15.4416 21.0598 15.7312 21.3691 16.1341C21.6783 16.537 21.846 17.0306 21.8462 17.5385C21.8478 18.0401 21.6842 18.5284 21.3808 18.9279Z"
+										fill="white" />
+								</svg>
+							</div>
+							<div id="calendar4" class="calender_hide"></div>
+						</div>
+						<select>
+							<option>Select</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<a href="onboarding-family-history.html">
+				<div class="select-box-button-onboarding mt-16 mb-16">
+					NEXT
+				</div>
+			</a>
+		</form>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script>
+		var myDates = [];
+		for (var j = 0; j <= 11; j++) {
+			myDates[j] = [];
+		}
+
+		$(function () {
+			$('#calendar1').datepicker();
+			initCalendar();
+		});
+
+		function initCalendar() {
+			$('div.ui-widget-header').append(
+				'\
+		        <a class="ui-datepicker-clear-month" title="Clear month">\
+		            X\
+		        </a>\
+		    '
+			);
+
+			var thisMonth = $(
+				$($('#calendar tbody tr')[2]).find('td')[0]
+			).attr('data-month');
+			var dateDragStart = undefined; // We'll use this variable to identify if the user is mouse button is pressed (if the user is dragging over the calendar)
+			var thisDates = [];
+			var calendarTds = $(
+				'.ui-datepicker-calendar td:not(.ui-datepicker-unselectable)'
+			);
+			$('#calendar td').attr('data-event', '');
+			$('#calendar td').attr('data-handler', '');
+			$('#calendar td a').removeClass('ui-state-active');
+			$('#calendar td a.ui-state-highlight')
+				.removeClass('ui-state-active')
+				.removeClass('ui-state-highlight')
+				.removeClass('ui-state-hover');
+			$('#calendar td').off();
+			for (var i = 0; i < myDates[thisMonth].length; i++) {
+				// Repaint
+				var a = calendarTds
+					.find('a')
+					.filter(
+						'a:textEquals(' +
+						myDates[thisMonth][i].getDate() +
+						')'
+					)
+					.addClass('ui-state-active');
+				thisDates.push(
+					new Date(
+						a.parent().attr('data-year'),
+						thisMonth,
+						a.html()
+					)
+				);
+			}
+
+			$('#calendar td').mousedown(function () {
+				// Click or start of dragging
+				dateDragStart = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				$(this).find('a').addClass('ui-state-active');
+				return false;
+			});
+
+			$('#calendar td').mouseup(function () {
+				thisDates = [];
+				$('#calendar td a.ui-state-active').each(function () {
+					//Save selected dates
+					thisDates.push(
+						new Date(
+							$(this).parent().attr('data-year'),
+							$(this).parent().attr('data-month'),
+							$(this).html()
+						)
+					);
+				});
+				dateDragStart = undefined;
+				return false;
+			});
+			$(document).mouseup(function () {
+				dateDragStart = undefined;
+			});
+
+			$('#calendar td').mouseenter(function () {
+				// Drag over day on calendar
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					// We are dragging forwards
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					// We are dragging backwards
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				}
+			});
+
+			$('#calendar td').mouseleave(function () {
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				}
+			});
+
+			$('.ui-datepicker-clear-month').click(function () {
+				thisDates = [];
+				calendarTds.find('a').removeClass('ui-state-active');
+			});
+
+			$('a.ui-datepicker-next, a.ui-datepicker-prev').click(
+				function () {
+					myDates[thisMonth] = thisDates;
+					initCalendar();
+				}
+			);
+		}
+
+		$.expr[':'].textEquals = function (el, idx, selector) {
+			var regExp = new RegExp('^' + selector[3] + '$');
+			return regExp.test($(el).text());
+		};
+	</script>
+	<script>
+		var myDates = [];
+		for (var j = 0; j <= 11; j++) {
+			myDates[j] = [];
+		}
+
+		$(function () {
+			$('#calendar2').datepicker();
+			initCalendar();
+		});
+
+		function initCalendar() {
+			$('div.ui-widget-header').append(
+				'\
+				        <a class="ui-datepicker-clear-month" title="Clear month">\
+				            X\
+				        </a>\
+				    '
+			);
+
+			var thisMonth = $(
+				$($('#calendar tbody tr')[2]).find('td')[0]
+			).attr('data-month');
+			var dateDragStart = undefined; // We'll use this variable to identify if the user is mouse button is pressed (if the user is dragging over the calendar)
+			var thisDates = [];
+			var calendarTds = $(
+				'.ui-datepicker-calendar td:not(.ui-datepicker-unselectable)'
+			);
+			$('#calendar td').attr('data-event', '');
+			$('#calendar td').attr('data-handler', '');
+			$('#calendar td a').removeClass('ui-state-active');
+			$('#calendar td a.ui-state-highlight')
+				.removeClass('ui-state-active')
+				.removeClass('ui-state-highlight')
+				.removeClass('ui-state-hover');
+			$('#calendar td').off();
+			for (var i = 0; i < myDates[thisMonth].length; i++) {
+				// Repaint
+				var a = calendarTds
+					.find('a')
+					.filter(
+						'a:textEquals(' +
+						myDates[thisMonth][i].getDate() +
+						')'
+					)
+					.addClass('ui-state-active');
+				thisDates.push(
+					new Date(
+						a.parent().attr('data-year'),
+						thisMonth,
+						a.html()
+					)
+				);
+			}
+
+			$('#calendar td').mousedown(function () {
+				// Click or start of dragging
+				dateDragStart = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				$(this).find('a').addClass('ui-state-active');
+				return false;
+			});
+
+			$('#calendar td').mouseup(function () {
+				thisDates = [];
+				$('#calendar td a.ui-state-active').each(function () {
+					//Save selected dates
+					thisDates.push(
+						new Date(
+							$(this).parent().attr('data-year'),
+							$(this).parent().attr('data-month'),
+							$(this).html()
+						)
+					);
+				});
+				dateDragStart = undefined;
+				return false;
+			});
+			$(document).mouseup(function () {
+				dateDragStart = undefined;
+			});
+
+			$('#calendar td').mouseenter(function () {
+				// Drag over day on calendar
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					// We are dragging forwards
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					// We are dragging backwards
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				}
+			});
+
+			$('#calendar td').mouseleave(function () {
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				}
+			});
+
+			$('.ui-datepicker-clear-month').click(function () {
+				thisDates = [];
+				calendarTds.find('a').removeClass('ui-state-active');
+			});
+
+			$('a.ui-datepicker-next, a.ui-datepicker-prev').click(
+				function () {
+					myDates[thisMonth] = thisDates;
+					initCalendar();
+				}
+			);
+		}
+
+		$.expr[':'].textEquals = function (el, idx, selector) {
+			var regExp = new RegExp('^' + selector[3] + '$');
+			return regExp.test($(el).text());
+		};
+	</script>
+	<script>
+		var myDates = [];
+		for (var j = 0; j <= 11; j++) {
+			myDates[j] = [];
+		}
+
+		$(function () {
+			$('#calendar3').datepicker();
+			initCalendar();
+		});
+
+		function initCalendar() {
+			$('div.ui-widget-header').append(
+				'\
+					        <a class="ui-datepicker-clear-month" title="Clear month">\
+					            X\
+					        </a>\
+					    '
+			);
+
+			var thisMonth = $(
+				$($('#calendar tbody tr')[2]).find('td')[0]
+			).attr('data-month');
+			var dateDragStart = undefined; // We'll use this variable to identify if the user is mouse button is pressed (if the user is dragging over the calendar)
+			var thisDates = [];
+			var calendarTds = $(
+				'.ui-datepicker-calendar td:not(.ui-datepicker-unselectable)'
+			);
+			$('#calendar td').attr('data-event', '');
+			$('#calendar td').attr('data-handler', '');
+			$('#calendar td a').removeClass('ui-state-active');
+			$('#calendar td a.ui-state-highlight')
+				.removeClass('ui-state-active')
+				.removeClass('ui-state-highlight')
+				.removeClass('ui-state-hover');
+			$('#calendar td').off();
+			for (var i = 0; i < myDates[thisMonth].length; i++) {
+				// Repaint
+				var a = calendarTds
+					.find('a')
+					.filter(
+						'a:textEquals(' +
+						myDates[thisMonth][i].getDate() +
+						')'
+					)
+					.addClass('ui-state-active');
+				thisDates.push(
+					new Date(
+						a.parent().attr('data-year'),
+						thisMonth,
+						a.html()
+					)
+				);
+			}
+
+			$('#calendar td').mousedown(function () {
+				// Click or start of dragging
+				dateDragStart = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				$(this).find('a').addClass('ui-state-active');
+				return false;
+			});
+
+			$('#calendar td').mouseup(function () {
+				thisDates = [];
+				$('#calendar td a.ui-state-active').each(function () {
+					//Save selected dates
+					thisDates.push(
+						new Date(
+							$(this).parent().attr('data-year'),
+							$(this).parent().attr('data-month'),
+							$(this).html()
+						)
+					);
+				});
+				dateDragStart = undefined;
+				return false;
+			});
+			$(document).mouseup(function () {
+				dateDragStart = undefined;
+			});
+
+			$('#calendar td').mouseenter(function () {
+				// Drag over day on calendar
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					// We are dragging forwards
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					// We are dragging backwards
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				}
+			});
+
+			$('#calendar td').mouseleave(function () {
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				}
+			});
+
+			$('.ui-datepicker-clear-month').click(function () {
+				thisDates = [];
+				calendarTds.find('a').removeClass('ui-state-active');
+			});
+
+			$('a.ui-datepicker-next, a.ui-datepicker-prev').click(
+				function () {
+					myDates[thisMonth] = thisDates;
+					initCalendar();
+				}
+			);
+		}
+
+		$.expr[':'].textEquals = function (el, idx, selector) {
+			var regExp = new RegExp('^' + selector[3] + '$');
+			return regExp.test($(el).text());
+		};
+	</script>
+	<script>
+		var myDates = [];
+		for (var j = 0; j <= 11; j++) {
+			myDates[j] = [];
+		}
+
+		$(function () {
+			$('#calendar4').datepicker();
+			initCalendar();
+		});
+
+		function initCalendar() {
+			$('div.ui-widget-header').append(
+				'\
+						        <a class="ui-datepicker-clear-month" title="Clear month">\
+						            X\
+						        </a>\
+						    '
+			);
+
+			var thisMonth = $(
+				$($('#calendar tbody tr')[2]).find('td')[0]
+			).attr('data-month');
+			var dateDragStart = undefined; // We'll use this variable to identify if the user is mouse button is pressed (if the user is dragging over the calendar)
+			var thisDates = [];
+			var calendarTds = $(
+				'.ui-datepicker-calendar td:not(.ui-datepicker-unselectable)'
+			);
+			$('#calendar td').attr('data-event', '');
+			$('#calendar td').attr('data-handler', '');
+			$('#calendar td a').removeClass('ui-state-active');
+			$('#calendar td a.ui-state-highlight')
+				.removeClass('ui-state-active')
+				.removeClass('ui-state-highlight')
+				.removeClass('ui-state-hover');
+			$('#calendar td').off();
+			for (var i = 0; i < myDates[thisMonth].length; i++) {
+				// Repaint
+				var a = calendarTds
+					.find('a')
+					.filter(
+						'a:textEquals(' +
+						myDates[thisMonth][i].getDate() +
+						')'
+					)
+					.addClass('ui-state-active');
+				thisDates.push(
+					new Date(
+						a.parent().attr('data-year'),
+						thisMonth,
+						a.html()
+					)
+				);
+			}
+
+			$('#calendar td').mousedown(function () {
+				// Click or start of dragging
+				dateDragStart = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				$(this).find('a').addClass('ui-state-active');
+				return false;
+			});
+
+			$('#calendar td').mouseup(function () {
+				thisDates = [];
+				$('#calendar td a.ui-state-active').each(function () {
+					//Save selected dates
+					thisDates.push(
+						new Date(
+							$(this).parent().attr('data-year'),
+							$(this).parent().attr('data-month'),
+							$(this).html()
+						)
+					);
+				});
+				dateDragStart = undefined;
+				return false;
+			});
+			$(document).mouseup(function () {
+				dateDragStart = undefined;
+			});
+
+			$('#calendar td').mouseenter(function () {
+				// Drag over day on calendar
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					// We are dragging forwards
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					// We are dragging backwards
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						calendarTds
+							.find('a')
+							.filter('a:textEquals(' + d.getDate() + ')')
+							.addClass('ui-state-active');
+					}
+					$(this).find('a').addClass('ui-state-active');
+				}
+			});
+
+			$('#calendar td').mouseleave(function () {
+				var thisDate = new Date(
+					$(this).attr('data-year'),
+					$(this).attr('data-month'),
+					$(this).find('a').html()
+				);
+				if (
+					dateDragStart !== undefined &&
+					thisDate > dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d <= thisDate;
+						d.setDate(d.getDate() + 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				} else if (
+					dateDragStart !== undefined &&
+					thisDate < dateDragStart
+				) {
+					for (
+						var d = new Date(dateDragStart);
+						d >= thisDate;
+						d.setDate(d.getDate() - 1)
+					) {
+						if (
+							thisDates.find(
+								(item) => item.getTime() == d.getTime()
+							) === undefined
+						) {
+							calendarTds
+								.find('a')
+								.filter('a:textEquals(' + d.getDate() + ')')
+								.removeClass('ui-state-active');
+						}
+					}
+				}
+			});
+
+			$('.ui-datepicker-clear-month').click(function () {
+				thisDates = [];
+				calendarTds.find('a').removeClass('ui-state-active');
+			});
+
+			$('a.ui-datepicker-next, a.ui-datepicker-prev').click(
+				function () {
+					myDates[thisMonth] = thisDates;
+					initCalendar();
+				}
+			);
+		}
+
+		$.expr[':'].textEquals = function (el, idx, selector) {
+			var regExp = new RegExp('^' + selector[3] + '$');
+			return regExp.test($(el).text());
+		};
+	</script>
+</body>
+
+</html>

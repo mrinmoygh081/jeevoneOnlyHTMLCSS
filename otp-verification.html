@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- =============== Main Section Start ================= -->
+    <section class="relative">
+      <div class="login_bg2">
+        <div class="overlay"></div>
+        <img src="images/Jeeone-Logo-login.png" alt="logo" class="login_logo" />
+      </div>
+      <div class="button_group_login">
+        <a class="btn_login_submit"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+          >
+            <path
+              d="M6.60576 13.7877C6.42243 13.571 6.33077 13.3254 6.33077 13.0507C6.33077 12.776 6.42243 12.5467 6.60576 12.3627L8.45577 10.5127H1.28077C0.997432 10.5127 0.759765 10.4167 0.567765 10.2247C0.375765 10.0327 0.280099 9.79537 0.280765 9.5127C0.280765 9.22937 0.376765 8.9917 0.568765 8.7997C0.760765 8.6077 0.998098 8.51203 1.28077 8.5127H8.45577L6.60576 6.6627C6.40577 6.4627 6.30576 6.22503 6.30576 5.9497C6.30576 5.67437 6.40577 5.43703 6.60576 5.2377C6.7891 5.0377 7.01843 4.9377 7.29376 4.9377C7.5691 4.9377 7.7981 5.02937 7.98076 5.2127L11.5808 8.8127C11.6808 8.9127 11.7518 9.02103 11.7938 9.1377C11.8358 9.25437 11.8564 9.37937 11.8558 9.5127C11.8558 9.64603 11.8351 9.77103 11.7938 9.8877C11.7524 10.0044 11.6814 10.1127 11.5808 10.2127L7.98076 13.8127C7.78077 14.0127 7.54743 14.1044 7.28077 14.0877C7.0141 14.071 6.7891 13.971 6.60576 13.7877ZM10.2808 18.5127C9.99743 18.5127 9.7601 18.417 9.56877 18.2257C9.37743 18.0344 9.28143 17.7967 9.28077 17.5127C9.28077 17.2294 9.37677 16.9917 9.56877 16.7997C9.76077 16.6077 9.9981 16.512 10.2808 16.5127H16.2808V2.5127H10.2808C9.99743 2.5127 9.75977 2.4167 9.56777 2.2247C9.37576 2.0327 9.2801 1.79537 9.28077 1.5127C9.28077 1.22937 9.37677 0.991699 9.56877 0.799699C9.76077 0.607699 9.9981 0.512032 10.2808 0.512699H16.2808C16.8308 0.512699 17.3018 0.708699 17.6938 1.1007C18.0858 1.4927 18.2814 1.96337 18.2808 2.5127V16.5127C18.2808 17.0627 18.0848 17.5337 17.6928 17.9257C17.3008 18.3177 16.8301 18.5134 16.2808 18.5127H10.2808Z"
+              fill="currentcolor"
+            />
+          </svg>
+          <span>Mobile</span></a
+        >
+        <form action="" class="mt-5 otp_form">
+          <label>OTP</label><br />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(1)"
+            maxlength="1"
+          />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(2)"
+            maxlength="1"
+          />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(3)"
+            maxlength="1"
+          />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(4)"
+            maxlength="1"
+          />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(5)"
+            maxlength="1"
+          />
+          <input
+            class="otp"
+            type="text"
+            oninput="digitValidate(this)"
+            onkeyup="tabChange(6)"
+            maxlength="1"
+          />
+        </form>
+
+        <a class="btn_login" style="justify-content: center" href="index.html">
+          <span>SUBMIT</span></a
+        >
+      </div>
+    </section>
+    <!-- =============== Main Section End ================= -->
+  </body>
+</html>

@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- =============== Hero Section Start ================= -->
+    <section>
+      <div class="payment_bg_bnner">
+        <!--================ navbar section Start ==================-->
+        <nav
+          class="bg-white text-gray-200 nav_radius"
+          style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px"
+        >
+          <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center pl-8">
+              <img src="./images/Jeeone-Logo.png" alt="logo" height="50px" />
+            </a>
+
+            <!-- MOBILE NAV ICON -->
+            <div class="lg:hidden block absolute top-4 right-8 fixed">
+              <button
+                aria-label="navigation"
+                type="button"
+                onclick="resNav()"
+                class="lg:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white hamburger"
+              >
+                <i class="fa-solid fa-bars fa-2x" id="bars"></i>
+              </button>
+            </div>
+
+            <!-- NAVIGATION - LARGE SCREENS -->
+            <div class="hidden lg:flex">
+              <ul class="hidden lg:flex">
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="index.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="about.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >About Us</a
+                  >
+                </li>
+                <!-- <li class="text-lg pr-8 flex items-center">
+									<a
+										href="creators.html"
+										class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+										style="text-underline-offset: 8px"
+										>CREATORS</a
+									>
+								</li> -->
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="track.html"
+                    class="flex items-center gap-2 text-lg transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Track</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="shop.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Shop</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="reminders.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Reminders</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="profile.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Profile</a
+                  >
+                </li>
+
+                <li class="dropdown inline-block relative">
+                  <a
+                    class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+                  >
+                    <span class="mr-1">Pages</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    class="dropdown-menu absolute hidden text-gray-700 pt-1 w-52 z-10"
+                  >
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="about.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="appointment-confirm.html"
+                        >Appointment Confirm</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-doctor.html"
+                        >Book a Doctor</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-Lab-Test.html"
+                        >Book a Lab Test</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine-sort-list.html"
+                        >Book Medicine Sort List</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine.html"
+                        >Book-Medicine</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="insurance.html"
+                        >Insurance</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="payment.html"
+                        >Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-medicine-list.html"
+                        >Re-order Medicine List</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-payment.html"
+                        >Re-order Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order.html"
+                        >Re-order</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="reminders.html"
+                        >Reminders</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="shop.html"
+                        >Shop</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="track.html"
+                        >Track</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="vacctination.html"
+                        >Vacctination</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex nav_icon">
+              <div class="notification-icon" id="notificationIcon">
+                <i
+                  class="fa-solid fa-bell text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i>
+              </div>
+              <div class="notification-popup" id="notificationPopup">
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+              </div>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-cart-shopping text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-magnifying-glass text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div
+            id="mobileMenu"
+            class="hidden flex w-full mx-auto py-8 text-center"
+          >
+            <div class="flex flex-col justify-center items-center w-full">
+              <a
+                href="index.html"
+                class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >About Us</a
+              >
+              <a
+                href="track.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                TRACK
+              </a>
+              <a
+                href="shop.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                SHOP
+              </a>
+              <a
+                href="reminders.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                REMINDERS
+              </a>
+              <a
+                href="profile.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                PROFILE
+              </a>
+            </div>
+          </div>
+        </nav>
+        <!--================ navbar section End ==================-->
+        <!--================ banner section================= -->
+        <div class="p-10 breadcam_heading">
+          <h2 class="text-indigo-900 text-3xl md:text-4xl px-0 md:px-10">
+            <b class="uppercase">Payment</b>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- ===================banner section end================ -->
+    <!-- =============== Main Section Start ================= -->
+    <section class="relative">
+      <div class="absolute round1">
+        <img src="./images/round-2.png" alt="" />
+      </div>
+      <div class="container mt-12">
+        <div class="flex flex-wrap md:flex-nowrap justify-around gap-12 mb-8">
+          <div class="w-full md:w-2/5 bg-gray-100 rounded-2xl p-10">
+            <div class="border-b-2 border-gray-300 pb-3">
+              <p class="font-semibold text-xl md:text-2xl mb-3">
+                In-Person Consultation
+              </p>
+              <p class="text-indigo-600 text-sm">Doctor Name</p>
+              <p class="text-sm"><em>09:10pm, Tuesday, 11 Mar, 2023</em></p>
+            </div>
+            <div class="py-3">
+              <p class="font-semibold text-xl md:text-2xl mb-3">Location</p>
+              <div class="flex justify-between items-end">
+                <p class="font-medium">
+                  Akshya Nagar 1st Block 1st Cross,<br />Rammurthy nagar,
+                  Bangalore-560016
+                </p>
+                <a href="#" class="text-indigo-600 text-sm"
+                  ><u>Click for Map</u></a
+                >
+              </div>
+              <div class="select-box-button-test mt-6">
+                <button class="mr-10 uppercase" onclick="toggleModalModal()">
+                  Select address
+                </button>
+                <div
+                  class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                  id="modalModal"
+                >
+                  <div
+                    class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                  >
+                    <div
+                      class="fixed flex items-center justify-center inset-0 transition-opacity"
+                      onclick="toggleModalModal()"
+                    >
+                      <div
+                        class="absolute inset-0 bg-gray-900 opacity-75"
+                      ></div>
+                      <span class="hidden inline-block align-middle h-screen"
+                        >&#8203;</span
+                      >
+                      <div
+                        class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-headline"
+                      >
+                        <div class="modal_cross_button">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="35"
+                            height="35"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                              fill="#B3B3B3"
+                            />
+                          </svg>
+                        </div>
+                        <div class="px-4 py-4">
+                          <p
+                            class="text-xl lg:text-2xl font-medium text-indigo-900 mb-2"
+                          >
+                            Select Address
+                          </p>
+                          <hr />
+                          <a href="tests-and-scans-adress.html">
+                            <p class="text-red-500">+ Add Address</p>
+                          </a>
+                          <hr />
+                          <p class="text-lg text-indigo-900 mt-2">
+                            Saved Addressed
+                          </p>
+                          <a href="tests-and-scans-8.html">
+                            <div class="flex gap-4 mt-5 mb-3">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="26"
+                                viewBox="0 0 20 26"
+                                fill="none"
+                              >
+                                <path
+                                  d="M10 0C4.47143 0 0 4.069 0 9.1C0 15.925 10 26 10 26C10 26 20 15.925 20 9.1C20 4.069 15.5286 0 10 0ZM10 12.35C9.0528 12.35 8.14439 12.0076 7.47462 11.3981C6.80485 10.7886 6.42857 9.96195 6.42857 9.1C6.42857 8.23805 6.80485 7.4114 7.47462 6.8019C8.14439 6.19241 9.0528 5.85 10 5.85C10.9472 5.85 11.8556 6.19241 12.5254 6.8019C13.1952 7.4114 13.5714 8.23805 13.5714 9.1C13.5714 9.96195 13.1952 10.7886 12.5254 11.3981C11.8556 12.0076 10.9472 12.35 10 12.35Z"
+                                  fill="#3A3CC6"
+                                />
+                              </svg>
+                              <div>
+                                <h4 style="color: #09096d" class="text-xl">
+                                  Home
+                                </h4>
+                                <p class="text-xl font-medium">
+                                  27, 3rd Block, Anand Chambers, Near Southend
+                                  Crl, Jayanagar
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                          <hr />
+                          <a href="tests-and-scans-8.html">
+                            <div class="flex gap-4 mt-5 mb-3">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="26"
+                                viewBox="0 0 20 26"
+                                fill="none"
+                              >
+                                <path
+                                  d="M10 0C4.47143 0 0 4.069 0 9.1C0 15.925 10 26 10 26C10 26 20 15.925 20 9.1C20 4.069 15.5286 0 10 0ZM10 12.35C9.0528 12.35 8.14439 12.0076 7.47462 11.3981C6.80485 10.7886 6.42857 9.96195 6.42857 9.1C6.42857 8.23805 6.80485 7.4114 7.47462 6.8019C8.14439 6.19241 9.0528 5.85 10 5.85C10.9472 5.85 11.8556 6.19241 12.5254 6.8019C13.1952 7.4114 13.5714 8.23805 13.5714 9.1C13.5714 9.96195 13.1952 10.7886 12.5254 11.3981C11.8556 12.0076 10.9472 12.35 10 12.35Z"
+                                  fill="#3A3CC6"
+                                />
+                              </svg>
+                              <div>
+                                <h4 style="color: #09096d" class="text-xl">
+                                  Office
+                                </h4>
+                                <p class="text-xl font-medium">
+                                  27, 3rd Block, Anand Chambers, Near Southend
+                                  Crl, Jayanagar
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                          <hr />
+                          <a href="tests-and-scans-8.html">
+                            <div class="flex gap-4 mt-5">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="26"
+                                viewBox="0 0 20 26"
+                                fill="none"
+                              >
+                                <path
+                                  d="M10 0C4.47143 0 0 4.069 0 9.1C0 15.925 10 26 10 26C10 26 20 15.925 20 9.1C20 4.069 15.5286 0 10 0ZM10 12.35C9.0528 12.35 8.14439 12.0076 7.47462 11.3981C6.80485 10.7886 6.42857 9.96195 6.42857 9.1C6.42857 8.23805 6.80485 7.4114 7.47462 6.8019C8.14439 6.19241 9.0528 5.85 10 5.85C10.9472 5.85 11.8556 6.19241 12.5254 6.8019C13.1952 7.4114 13.5714 8.23805 13.5714 9.1C13.5714 9.96195 13.1952 10.7886 12.5254 11.3981C11.8556 12.0076 10.9472 12.35 10 12.35Z"
+                                  fill="#3A3CC6"
+                                />
+                              </svg>
+                              <div>
+                                <h4 style="color: #09096d" class="text-xl">
+                                  Parents Home
+                                </h4>
+                                <p class="text-xl font-medium">
+                                  27, 3rd Block, Anand Chambers, Near Southend
+                                  Crl, Jayanagar
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-b-2 border-gray-300 pb-3 mt-6">
+              <p class="font-semibold text-xl md:text-2xl mb-3">Discount</p>
+              <div class="flex justify-between">
+                <p class="flex items-center text-2xl mb-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.43262 15L15.4326 9"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.93262 10C10.2088 10 10.4326 9.77614 10.4326 9.5C10.4326 9.22386 10.2088 9 9.93262 9C9.65647 9 9.43262 9.22386 9.43262 9.5C9.43262 9.77614 9.65647 10 9.93262 10Z"
+                      fill="#08A44F"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.9326 15C15.2088 15 15.4326 14.7761 15.4326 14.5C15.4326 14.2239 15.2088 14 14.9326 14C14.6565 14 14.4326 14.2239 14.4326 14.5C14.4326 14.7761 14.6565 15 14.9326 15Z"
+                      fill="#08A44F"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.43259 7.19997C5.43259 6.6165 5.66438 6.05692 6.07696 5.64434C6.48954 5.23176 7.04911 4.99997 7.63259 4.99997H8.63259C9.21349 4.99964 9.77068 4.76957 10.1826 4.35997L10.8826 3.65997C11.087 3.45437 11.3301 3.29121 11.5978 3.17988C11.8656 3.06855 12.1526 3.01123 12.4426 3.01123C12.7325 3.01123 13.0196 3.06855 13.2873 3.17988C13.5551 3.29121 13.7981 3.45437 14.0026 3.65997L14.7026 4.35997C15.1145 4.76957 15.6717 4.99964 16.2526 4.99997H17.2526C17.8361 4.99997 18.3956 5.23176 18.8082 5.64434C19.2208 6.05692 19.4526 6.6165 19.4526 7.19997V8.19997C19.4529 8.78087 19.683 9.33806 20.0926 9.74997L20.7926 10.45C20.9982 10.6544 21.1613 10.8975 21.2727 11.1652C21.384 11.4329 21.4413 11.72 21.4413 12.01C21.4413 12.2999 21.384 12.587 21.2727 12.8547C21.1613 13.1225 20.9982 13.3655 20.7926 13.57L20.0926 14.27C19.683 14.6819 19.4529 15.2391 19.4526 15.82V16.82C19.4526 17.4034 19.2208 17.963 18.8082 18.3756C18.3956 18.7882 17.8361 19.02 17.2526 19.02H16.2526C15.6717 19.0203 15.1145 19.2504 14.7026 19.66L14.0026 20.36C13.7981 20.5656 13.5551 20.7287 13.2873 20.8401C13.0196 20.9514 12.7325 21.0087 12.4426 21.0087C12.1526 21.0087 11.8656 20.9514 11.5978 20.8401C11.3301 20.7287 11.087 20.5656 10.8826 20.36L10.1826 19.66C9.77068 19.2504 9.21349 19.0203 8.63259 19.02H7.63259C7.04911 19.02 6.48954 18.7882 6.07696 18.3756C5.66438 17.963 5.43259 17.4034 5.43259 16.82V15.82C5.43226 15.2391 5.20219 14.6819 4.79259 14.27L4.09259 13.57C3.88699 13.3655 3.72383 13.1225 3.6125 12.8547C3.50116 12.587 3.44385 12.2999 3.44385 12.01C3.44385 11.72 3.50116 11.4329 3.6125 11.1652C3.72383 10.8975 3.88699 10.6544 4.09259 10.45L4.79259 9.74997C5.20219 9.33806 5.43226 8.78087 5.43259 8.19997V7.19997Z"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="font-semibold text-lg md:text-xl">Discount</span>
+                </p>
+                <p class="font-semibold text-xl">₹0.00</p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <p class="font-normal text-xs">
+                  Followup Consultation Discount 100.00%
+                </p>
+                <a
+                  href="#"
+                  class="text-indigo-600 text-sm font-semibold uppercase"
+                  >Apply</a
+                >
+              </div>
+            </div>
+
+            <div class="border-b-2 border-gray-300 py-3">
+              <div class="flex justify-between">
+                <p class="flex items-center text-2xl mb-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.43262 15L15.4326 9"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.93262 10C10.2088 10 10.4326 9.77614 10.4326 9.5C10.4326 9.22386 10.2088 9 9.93262 9C9.65647 9 9.43262 9.22386 9.43262 9.5C9.43262 9.77614 9.65647 10 9.93262 10Z"
+                      fill="#08A44F"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.9326 15C15.2088 15 15.4326 14.7761 15.4326 14.5C15.4326 14.2239 15.2088 14 14.9326 14C14.6565 14 14.4326 14.2239 14.4326 14.5C14.4326 14.7761 14.6565 15 14.9326 15Z"
+                      fill="#08A44F"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.43259 7.19997C5.43259 6.6165 5.66438 6.05692 6.07696 5.64434C6.48954 5.23176 7.04911 4.99997 7.63259 4.99997H8.63259C9.21349 4.99964 9.77068 4.76957 10.1826 4.35997L10.8826 3.65997C11.087 3.45437 11.3301 3.29121 11.5978 3.17988C11.8656 3.06855 12.1526 3.01123 12.4426 3.01123C12.7325 3.01123 13.0196 3.06855 13.2873 3.17988C13.5551 3.29121 13.7981 3.45437 14.0026 3.65997L14.7026 4.35997C15.1145 4.76957 15.6717 4.99964 16.2526 4.99997H17.2526C17.8361 4.99997 18.3956 5.23176 18.8082 5.64434C19.2208 6.05692 19.4526 6.6165 19.4526 7.19997V8.19997C19.4529 8.78087 19.683 9.33806 20.0926 9.74997L20.7926 10.45C20.9982 10.6544 21.1613 10.8975 21.2727 11.1652C21.384 11.4329 21.4413 11.72 21.4413 12.01C21.4413 12.2999 21.384 12.587 21.2727 12.8547C21.1613 13.1225 20.9982 13.3655 20.7926 13.57L20.0926 14.27C19.683 14.6819 19.4529 15.2391 19.4526 15.82V16.82C19.4526 17.4034 19.2208 17.963 18.8082 18.3756C18.3956 18.7882 17.8361 19.02 17.2526 19.02H16.2526C15.6717 19.0203 15.1145 19.2504 14.7026 19.66L14.0026 20.36C13.7981 20.5656 13.5551 20.7287 13.2873 20.8401C13.0196 20.9514 12.7325 21.0087 12.4426 21.0087C12.1526 21.0087 11.8656 20.9514 11.5978 20.8401C11.3301 20.7287 11.087 20.5656 10.8826 20.36L10.1826 19.66C9.77068 19.2504 9.21349 19.0203 8.63259 19.02H7.63259C7.04911 19.02 6.48954 18.7882 6.07696 18.3756C5.66438 17.963 5.43259 17.4034 5.43259 16.82V15.82C5.43226 15.2391 5.20219 14.6819 4.79259 14.27L4.09259 13.57C3.88699 13.3655 3.72383 13.1225 3.6125 12.8547C3.50116 12.587 3.44385 12.2999 3.44385 12.01C3.44385 11.72 3.50116 11.4329 3.6125 11.1652C3.72383 10.8975 3.88699 10.6544 4.09259 10.45L4.79259 9.74997C5.20219 9.33806 5.43226 8.78087 5.43259 8.19997V7.19997Z"
+                      stroke="#08A44F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="font-semibold text-xl">Coupon Discount</span>
+                </p>
+                <p class="font-semibold text-xl">₹0.00</p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Coupon code"
+                    class="bg-transparent border-b border-indigo-800"
+                  />
+                </div>
+                <a
+                  href="#"
+                  class="text-indigo-600 text-sm font-semibold uppercase"
+                  >Apply</a
+                >
+              </div>
+            </div>
+
+            <div class="border-b-2 border-gray-300 py-3">
+              <p class="font-semibold text-xl md:text-2xl mb-3">
+                Payment Information
+              </p>
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <p class="font-semibold text-gray-500">Test Charge</p>
+                  <p class="font-semibold">₹300</p>
+                </div>
+                <div class="flex justify-between items-center mb-1">
+                  <p class="font-semibold text-gray-500">Convenience Charge</p>
+                  <p class="font-semibold">₹20</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <p class="font-semibold text-gray-500">GST@18%</p>
+                  <p class="font-semibold">₹12</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between items-center py-4">
+                <p class="font-semibold text-gray-500 text-2xl">Total</p>
+                <p class="font-semibold text-2xl">₹332</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap justify-center gap-12">
+          <div>
+            <input
+              type="checkbox"
+              id="termsCheckbox"
+              onchange="toggleButton()"
+            />
+            <label style="color: black" class="font-medium" for="termsCheckbox"
+              >I have read and agreed to
+              <a
+                href="trems-and-condition.html"
+                class="font-bold"
+                style="color: #393bcb"
+                target="_blank"
+              >
+                Terms & Conditions
+              </a>
+              and
+              <a
+                href="privacy-policy.html"
+                target="_blank"
+                class="font-bold"
+                style="color: #393bcb"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+        </div>
+        <div class="container w-52 buy-medicine-button mt-6">
+          <button onclick="toggleModal()" id="paymentButton" disabled>
+            Procced to payment
+          </button>
+
+          <div
+            class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+            id="toggleModalDesclimer"
+          >
+            <div
+              class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+            >
+              <div
+                class="fixed flex items-center justify-center inset-0 transition-opacity"
+                onclick="toggleModalModal()"
+              >
+                <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                <span class="hidden inline-block align-middle h-screen"
+                  >&#8203;</span
+                >
+                <div
+                  class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-labelledby="modal-headline"
+                >
+                  <div class="modal_cross_button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="35"
+                      height="35"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                        fill="#B3B3B3"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                  >
+                    <h2
+                      class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                    >
+                      Disclaimer
+                    </h2>
+                    <p class="mb-8">
+                      While JeeVone makes every efforts to honorall appointments
+                      and their timings, please be informed that there might be
+                      delay or postponement of the scheduled appointment time
+                      due to unforeseen events at the clinic or Hospital. Thank
+                      you in advance for your understanding and continued
+                      patronage.
+                    </p>
+
+                    <a href="tests-and-scans-8.html" class="modal_button mb-6">
+                      <button class="mr-10" onclick="toggleModalModal()">
+                        CONFIRM BOOKING
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== Main Section End ================= -->
+
+    <!-- =============== Footer Section Start ============= -->
+    <footer>
+      <div class="footer_inner flex-col">
+        <div class="grid grid-cols-1 gap-8 2xsm:grid-cols-1 md:grid-cols-2">
+          <div>
+            <div class="mb-5 footer_logo">
+              <img src="./images/footer-logo.png" alt="footer-logo" />
+            </div>
+            <div class="flex mb-5">
+              <div class="text-white lg:pr-10 mr-10">
+                <h2 class="mb-5">About Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>Jeevone Story</li>
+                  </a>
+                  <li>
+                    <a href="refund-policy.html">Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="trems-and-condition.html">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-white lg:pl-10">
+                <h2 class="mb-5">Contact Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>
+                      Training
+                      <span style="font-size: 10px">(Coming Soon)</span>
+                    </li>
+                  </a>
+                  <li onclick="toggleModalFooterFour()">Schedule a Demo</li>
+                  <li onclick="toggleModalFooterFive()">Reach Us</li>
+                </ul>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modal"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooter()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Refund Policy
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button class="mr-10" onclick="toggleModalFooter()">
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalTwo"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooterTwo()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Privacy Policy
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button
+                            class="mr-10"
+                            onclick="toggleModalFooterTwo()"
+                          >
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalThree"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                    onclick="toggleModalFooterThree()"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div class="modal_cross_button">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center"
+                      >
+                        <h2
+                          class="font-medium text-blue-900 text-2xl mb-6 uppercase"
+                        >
+                          Terms & conditions
+                        </h2>
+                        <p class="mb-8">
+                          While JeeVone makes every efforts to honorall
+                          appointments and their timings, please be informed
+                          that there might be delay or postponement of the
+                          scheduled appointment time due to unforeseen events at
+                          the clinic or Hospital. Thank you in advance for your
+                          understanding and continued patronage.
+                        </p>
+
+                        <a href="index.html" class="modal_button mb-6">
+                          <button
+                            class="mr-10"
+                            onclick="toggleModalFooterThree()"
+                          >
+                            I Agree
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFour"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFour()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFive"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFive()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white mb-5">Connect</h2>
+              <div class="flex">
+                <div class="footer_icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_from">
+            <h2 class="text-white">Reach Us</h2>
+            <form action="">
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >I am a</label
+                  >
+                  <select
+                    class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                  >
+                    <option value="">Partner</option>
+                    <option value="option 1">Option 1</option>
+                  </select>
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    class="border border-red-300 shadow p-3 w-full rounded"
+                  />
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >Phone</label
+                  >
+                  <input
+                    type="number"
+                    placeholder="Enter Phone Number"
+                    class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter Email I’D"
+                    class="border border-red-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+              </div>
+              <div>
+                <button
+                  class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                >
+                  SUBMIT
+                </button>
+                <p class="text-center text-white text-sm mt-1">
+                  Add pop up for OTP (for developer)
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white pb-6">
+        <p>Copyright © 2023 Jeevone</p>
+      </div>
+    </footer>
+    <!-- =============== Footer Section End =============== -->
+  </body>
+</html>

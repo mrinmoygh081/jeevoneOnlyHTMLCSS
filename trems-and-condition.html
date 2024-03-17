@@ -1,0 +1,5047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- =============== Hero Section Start ================= -->
+    <section>
+      <div class="about_bg_bnner">
+        <!--================ navbar section Start ==================-->
+        <nav
+          class="bg-white text-gray-200 nav_radius"
+          style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px"
+        >
+          <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center pl-8">
+              <img src="./images/Jeeone-Logo.png" alt="logo" height="50px" />
+            </a>
+
+            <!-- MOBILE NAV ICON -->
+            <div class="lg:hidden block absolute top-4 right-8 fixed">
+              <button
+                aria-label="navigation"
+                type="button"
+                onclick="resNav()"
+                class="lg:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white hamburger"
+              >
+                <i class="fa-solid fa-bars fa-2x" id="bars"></i>
+              </button>
+            </div>
+
+            <!-- NAVIGATION - LARGE SCREENS -->
+            <div class="hidden lg:flex">
+              <ul class="hidden lg:flex">
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="index.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Home</a
+                  >
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="about.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >About Us</a
+                  >
+                </li>
+                <!-- <li class="text-lg pr-8 flex items-center">
+									<a
+										href="creators.html"
+										class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+										style="text-underline-offset: 8px"
+										>CREATORS</a
+									>
+								</li> -->
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="track.html"
+                    class="flex items-center gap-2 text-lg transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Track</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="shop.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Shop</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="reminders.html"
+                    class="flex items-center gap-2 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                  >
+                    <span>Reminders</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="10"
+                      viewBox="0 0 18 10"
+                      fill="none"
+                    >
+                      <rect
+                        x="1.1499"
+                        y="0.541504"
+                        width="16.2089"
+                        height="8.33777"
+                        rx="4.16888"
+                        fill="white"
+                        stroke="#09096D"
+                      />
+                      <path
+                        d="M11.6458 6.42927L11.6458 5.05405L5.15387 5.05405L5.14355 4.363L11.6458 4.363L11.6458 2.99121L13.3649 4.71024L11.6458 6.42927Z"
+                        fill="#09096D"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="text-lg pr-8 flex items-center">
+                  <a
+                    href="profile.html"
+                    class="transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                    style="text-underline-offset: 8px"
+                    >Profile</a
+                  >
+                </li>
+
+                <li class="dropdown inline-block relative">
+                  <a
+                    class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+                  >
+                    <span class="mr-1">Pages</span>
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </a>
+                  <ul
+                    class="dropdown-menu absolute hidden text-gray-700 pt-1 w-52 z-10"
+                  >
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="about.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="appointment-confirm.html"
+                        >Appointment Confirm</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-doctor.html"
+                        >Book a Doctor</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-a-Lab-Test.html"
+                        >Book a Lab Test</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine-sort-list.html"
+                        >Book Medicine Sort List</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="book-medicine.html"
+                        >Book-Medicine</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="insurance.html"
+                        >Insurance</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="payment.html"
+                        >Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-medicine-list.html"
+                        >Re-order Medicine List</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order-payment.html"
+                        >Re-order Payment</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="re-order.html"
+                        >Re-order</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="reminders.html"
+                        >Reminders</a
+                      >
+                    </li>
+
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="shop.html"
+                        >Shop</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="track.html"
+                        >Track</a
+                      >
+                    </li>
+                    <li class="">
+                      <a
+                        class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="vacctination.html"
+                        >Vacctination</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex nav_icon">
+              <div class="notification-icon" id="notificationIcon">
+                <i
+                  class="fa-solid fa-bell text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i>
+              </div>
+              <div class="notification-popup" id="notificationPopup">
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+                <div class="notification_card">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="30"
+                    viewBox="0 0 25 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M25 23.697V25.0859H0V23.697L2.77778 20.9193V12.5859C2.77778 8.28038 5.59722 4.48872 9.72222 3.26649V2.86372C9.72222 2.127 10.0149 1.42046 10.5358 0.89953C11.0567 0.378595 11.7633 0.0859375 12.5 0.0859375C13.2367 0.0859375 13.9432 0.378595 14.4642 0.89953C14.9851 1.42046 15.2778 2.127 15.2778 2.86372V3.26649C19.4028 4.48872 22.2222 8.28038 22.2222 12.5859V20.9193L25 23.697ZM15.2778 26.4748C15.2778 27.2115 14.9851 27.9181 14.4642 28.439C13.9432 28.9599 13.2367 29.2526 12.5 29.2526C11.7633 29.2526 11.0567 28.9599 10.5358 28.439C10.0149 27.9181 9.72222 27.2115 9.72222 26.4748"
+                      fill="#393BCB"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl">Doctor visit completed</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                  </div>
+                  <p class="time">20 min ago</p>
+                </div>
+              </div>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-cart-shopping text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-magnifying-glass text-2xl pr-8 transition duration-300 focus:text-teal-600 hover:text-teal-600"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div
+            id="mobileMenu"
+            class="hidden flex w-full mx-auto py-8 text-center"
+          >
+            <div class="flex flex-col justify-center items-center w-full">
+              <a
+                href="index.html"
+                class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+                >About Us</a
+              >
+              <a
+                href="track.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                TRACK
+              </a>
+              <a
+                href="shop.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                SHOP
+              </a>
+              <a
+                href="reminders.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                REMINDERS
+              </a>
+              <a
+                href="profile.html"
+                class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-teal-600 focus:underline hover:text-teal-600"
+                style="text-underline-offset: 8px"
+              >
+                PROFILE
+              </a>
+            </div>
+          </div>
+        </nav>
+        <!--================ navbar section End ==================-->
+        <div class="p-10 breadcam_heading">
+          <h2
+            class="text-indigo-900 text-3xl md:text-4xl px-0 md:px-10 uppercase"
+          >
+            <b>Terms & Conditions</b>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- =============== Hero Section End ================= -->
+
+    <!-- =============== Main Section Start ================= -->
+    <div class="container_trems py-5 mt-16">
+      <div class="WordSection1">
+        <h1 class="text-4xl mb-4">
+          TERMS &amp; CONDITIONS: JEEVONE TERMS OF USE
+        </h1>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >Jeevone Care And Tech Services Private Limited (“Jeevone”) is the
+            author and publisher of the internet resource </span
+          ><a href="http://www.jeevone.com"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.com</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.in</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.org"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.org</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.care"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.care</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.health"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.health</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.net"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.net</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.co.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.co.in</span
+            ></a
+          ><span lang="EN-IN" style="color: #212529"
+            >, the mobile application ‘JEEVONE’ and the Jeevone Care And Tech
+            Services Private Limited. Chatbot (any component of the services
+            offered which automatically interacts and provides health
+            information and wellness recommendations) (includes </span
+          ><a href="http://www.jeevone.com"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.com</span
+            ></a
+          ><span style="font-family: 'Bookman Old Style', serif; color: #212529"
+            >; </span
+          ><a href="http://www.jeevone.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.in</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.org"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.org</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.care"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.care</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.health"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.health</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.net"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.net</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.co.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.co.in</span
+            ></a
+          ><span style="color: #212529"> </span
+          ><span lang="EN-IN" style="color: #212529"
+            >and any other partner domains) are hereafter, jointly referred to
+            as “Website/ App</span
+          ><span lang="EN-IN" style="color: black">”.</span
+          ><span lang="EN-IN" style="color: red"> </span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE owns and operates the services provided through the
+            Website/ App, mobile applications and the chatbot.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >1.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >NATURE AND APPLICABILITY OF TERMS</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >Please carefully go through these terms and conditions (“Terms”)
+            and the privacy policy available at </span
+          ><a href="http://www.jeevone.com"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.com</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.in</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.org"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.org</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.care"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.care</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.health"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.health</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.net"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.net</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.co.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.co.in</span
+            ></a
+          ><span style="color: #212529"> </span
+          ><span lang="EN-IN" style="color: #212529"
+            >(“Privacy Policy”) before you decide to access the Website/ App or
+            avail the services made available on the Website/ App by JEEVONE.
+            These Terms and the Privacy Policy together constitute a legal
+            agreement (“Agreement”) between you and JEEVONE in connection with
+            your Jeevone to the Website/ App</span
+          ><span lang="EN-IN" style="color: red"> </span
+          ><span lang="EN-IN" style="color: #212529"
+            >and your use of the Services (as defined below).</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >The Agreement applies to you whether you are –</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >I.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >A medical practitioner or healthcare/wellness provider (whether an
+            individual professional or an organization) or similar institution
+            including Hospitals, Clinics, Diagnostic Labs, Nursing Homes,
+            on-line and off-line medical stores, and any other services wishing
+            to be listed, or already listed, and providing healthcare services,
+            on the Website/ App, including designated, authorised associates of
+            such practitioners or institutions (“Practitioner(s)”, “you” or
+            “User”); or</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >II.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >A person availing this service on his/her consent, being or not
+            being sponsored/promoted by any organisation/body to utilise the
+            services through the Website/ App, his/her representatives or
+            affiliates, searching for availing health and medical services
+            through the Website/App (“End-User”, “you” or “User”); or.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >III.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Otherwise a user of the Website/ App (“you” or “User”).</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >This Agreement applies to those services made available by JEEVONE
+            on the Website/ App, which are offered to the Users (“Services”),
+            including the following:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >I.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >For Practitioners: Outreach of Practitioners and their profiles
+            along with options made available to the other Users and visitors of
+            the Website/ App for teleconsultations or in-person
+            consultations;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 27pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >II.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >For other Users: Facility to</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.4in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >create and maintain ‘Health Accounts/records’,
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.4in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >search and avail services for Practitioners by specialty, services
+            offered or any other criteria that may be developed and made
+            available by JEEVONE,</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.4in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >make appointments with Practitioners,</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.4in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >interact with healthcare chatbot, and</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.4in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(v)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >To avail other services offered by Jeevone and its partners, like
+            but not limited to, medicine delivery, diagnostics, home-healthcare,
+            health camps, etc.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >The Services may change from time to time, at the sole discretion
+            of Jeevone, and the Agreement will apply to your Jeevone to and your
+            use of the </span
+          ><span lang="EN-IN" style="color: black">Website/App </span
+          ><span lang="EN-IN" style="color: #212529"
+            >to avail the Service, as well as to all information provided by you
+            on the Website/App at any given point in time.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >This Agreement defines the terms and conditions under which you are
+            allowed to use the Website/ App and describes the manner in which we
+            shall treat your account while you are registered as a member with
+            us. If you have any questions about any part of the Agreement, feel
+            free to contact us at </span
+          ><a href="mailto:contact@jeevone.com"
+            ><span lang="EN-IN" style="font-family: 'Bookman Old Style', serif"
+              >contact@jeevone.com</span
+            ></a
+          ><span lang="EN-IN" style="color: #212529"
+            >. By downloading or accessing the Website/ App to use the Services,
+            you irrevocably accept all the conditions stipulated in this
+            Agreement and agree to abide by them. This Agreement supersedes all
+            previous oral and written terms and conditions (if any) communicated
+            to you. By availing any Service, you signify your agreement to this
+            Agreement.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >We reserve the right to modify or terminate any portion of the
+            Agreement for any reason and at any time, and such modifications
+            shall be informed to you in writing. You should read the Agreement
+            at regular intervals. Your use of the Website/ App following any
+            such modification constitutes your agreement to follow and be bound
+            by the Agreement so modified. Any additional terms and conditions,
+            disclaimers, privacy policies and other policies applicable in
+            general and/ or to specific areas of this Website/ App or to
+            particular Service are also considered as part of the Agreement. You
+            acknowledge that you will be bound by this Agreement for availing
+            any of the Services offered by JEEVONE. If you do not agree with any
+            part of the Agreement, please do not use the Website/ App or avail
+            any Services.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >Your access to use of the Website/ App and the Services will be
+            solely at the discretion of JEEVONE.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >The Agreement is published in compliance of, and is governed by the
+            provisions of Indian law, including but not limited to:</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.5in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >the Indian Contract Act, 1872,</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.5in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >the (Indian) Information Technology Act, 2000, and.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.75in;
+            text-align: justify;
+            text-indent: -0.5in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >the rules, regulations, guidelines and clarifications framed there
+            under, including the (Indian) Information Technology (Reasonable
+            Security Practices and Procedures and Sensitive Personal
+            Information) Rules, 2011 (the “SPI Rules”), and the (Indian)
+            Information Technology (Intermediaries Guidelines) Rules, 2011 (the
+            “IG Rules”).</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >2.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >CONDITIONS OF USE</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >You must be 18 years of age or older to register, use the Services,
+            or Jeevone or use the Website/ App in any manner. By registering,
+            visiting and using the Website/ App or accepting this Agreement, you
+            represent and warrant to JEEVONE that you are 18 years of age or
+            older, and that you have the right, authority and capacity to use
+            the Website/ App and the Services available through the Website/
+            App, and agree to and abide by this Agreement. As an End User, you
+            can add minors by registering as legal guardian with the express
+            understanding that the End User shall be entirely responsible and
+            liable on all counts for compliance with these Terms for and on
+            behalf of such minor/s who is below the age of majority.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >3.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >TERMS OF USE APPLICABLE TO ALL USERS OTHER THAN
+              PRACTITIONERS</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >The terms in this paragraph 3 are applicable only to Users other
+            than Practitioners.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >END-USER ACCOUNT AND DATA PRIVACY
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The terms “personal information” and “sensitive personal data or
+            information” are defined under the SPI Rules, and are reproduced in
+            the Privacy Policy.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE may by its Services, collect information relating to the
+            devices through which you access the Website/ App, and anonymous
+            data of your usage. The collected information will be used only for
+            improving the quality of JEEVONE’s services and to build new
+            services.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The Website/ App allows JEEVONE to have access to registered Users’
+            personal email and/or phone number, for communication purpose so as
+            to provide you a better way of booking appointments and for
+            obtaining feedback in relation to the Practitioners and their
+            practice.</span
+          >
+        </p>
+        <p class="MsoListParagraphCxSpMiddle" style="text-indent: -45pt">
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The Privacy Policy sets out:
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The type of information collected from Users, including sensitive
+            personal data or information;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The purpose, means and modes of usage of such information;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >How and to whom JEEVONE will disclose such information; and,</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Other information mandated by the SPI Rules.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-bottom: 0in;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.5.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The User is expected to read and understand the Privacy Policy, so
+            as to ensure that he or she has the knowledge of:</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >fact that certain information is being collected;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >purpose for which the information is being collected;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >intended recipients of the information;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >nature of collection and retention of the information; and</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(v)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >various rights available to such Users in respect of such
+            information.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.6.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE shall not be responsible in any manner for the authenticity
+            of the personal information or sensitive personal data or
+            information supplied by the User, or his/her sponsoring/promoting
+            organisation/body, to JEEVONE or to any other person acting on
+            behalf of JEEVONE.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.7.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The User is responsible for maintaining the confidentiality of the
+            User’s account access information and password, if the User is
+            registered on the Website/ App. The User shall be responsible for
+            all usage of the User’s account and password, whether or not
+            authorized by the User. The User shall immediately notify JEEVONE of
+            any actual or suspected unauthorized use of the User’s account or
+            password. Although JEEVONE will not be liable for your losses caused
+            by any unauthorized use of your account, you may be liable for the
+            losses of JEEVONE or others due to such unauthorized use.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.8.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >If a User, or his/her sponsoring/promoting organisation/body,
+            provides any information that is untrue, inaccurate, not current or
+            incomplete (or becomes untrue, inaccurate, not current or
+            incomplete), or JEEVONE has reasonable grounds to suspect that such
+            information is untrue, inaccurate, not current or incomplete,
+            JEEVONE has the right to discontinue the Services to the User at its
+            sole discretion.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.9.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE may use such information collected from the Users from time
+            to time for the purposes of debugging customer support related
+            issues.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.10.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Against every Practitioner, Hospital, Clinic, Diagnostic Lab,
+            Nursing Home listed in the Jeevone Website/ App, you get an option
+            to “Book an Appointment”. When you choose this option, for a
+            Practitioner, you can choose to schedule a video/audio/chat session
+            with the doctor through technological services provided by JEEVONE,
+            and the records of such calls may be recorded and stored in
+            JEEVONE’s servers. When you choose to book an in-person appointment
+            with a Practitioner or “Book an Appointment” with a Hospital,
+            Clinic, Diagnostic Lab or a Nursing Home, the technological services
+            to schedule the appointment shall be provided by JEEVONE. Such
+            records and details shall be recorded by JEEVONE in accordance with
+            the terms of the Privacy Policy..</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.1.11.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE may use such information collection, including but not
+            limited to Personal information or Sensitive Personal Data or any
+            relevant information regarding the usage or medical consultations
+            and may send such information to the sponsoring/promoting
+            organisation/body.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >LISTING CONTENT AND DISSEMINATING INFORMATION.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE collects, directly or indirectly, and displays on the
+            Website/ App, relevant information regarding the profile and
+            practice of the Practitioners listed on the Website/ App, such as
+            their specialisation, qualification, fees, location, visiting hours,
+            and similar details. JEEVONE takes reasonable efforts to ensure that
+            such information is updated at frequent intervals. Although JEEVONE
+            screens and vets the information and photos submitted by the
+            Practitioners, JEEVONE or your sponsoring/promoting
+            organisation/body, cannot be held liable for any inaccuracies or
+            incompleteness represented from it, despite such reasonable
+            efforts.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The Services provided by JEEVONE or any of its licensors or service
+            providers/partners are provided on an &quot;as is&quot; and “as
+            available” basis, and without any warranties or conditions (express
+            or implied, including the implied warranties of merchantability,
+            accuracy, fitness for a particular purpose, title and
+            non-infringement, arising by statute or otherwise in law or from a
+            course of dealing or usage or trade). JEEVONE does not provide or
+            make any representation, warranty or guarantee, express or implied
+            about the Website/ App or the Services. JEEVONE does not guarantee
+            the accuracy or completeness of any content or information provided
+            by Users on the Website/ App. To the fullest extent permitted by
+            law, JEEVONE and the sponsoring/promoting organisation/body,
+            disclaims all liability arising out of the User’s use or reliance
+            upon the Website/ App, the Services, representations and warranties
+            made by other Users or any content or information provided by the
+            Users on the Website/ App.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The Website/ App may be linked to the Website/ App of third
+            parties, affiliates and business partners. JEEVONE has no control
+            over, and not liable or responsible for content, accuracy, validity,
+            reliability, quality of such Website/ Apps or made available
+            by/through our Website/ App. Inclusion of any link on the Website/
+            App does not imply that JEEVONE endorses the linked site. User may
+            use the links and these services at User’s own risk.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE and the sponsoring/promoting organisation/body, assume no
+            responsibility, and shall not be liable for, any damages to, or
+            viruses that may infect User’s equipment on account of User’s access
+            to, use of, or browsing the Website/ App or the downloading of any
+            material, data, text, images, video content, or audio content from
+            the Website/ App. If a User is dissatisfied with the Website/ App,
+            User’s sole remedy is to discontinue using the Website/ App.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.2.5.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >If JEEVONE determines that you have provided fraudulent,
+            inaccurate, or incomplete information, including through feedback,
+            JEEVONE reserves the right to immediately suspend your access to the
+            Website/ App or any of your accounts with JEEVONE and makes such
+            declaration on the Website/ App alongside your name/your clinic’s
+            name as determined by JEEVONE for the protection of its business and
+            in the interests of Users. You shall be liable to indemnify JEEVONE
+            and all sponsoring/promoting organisations/bodies, for any losses
+            incurred as a result of your misrepresentations or fraudulent
+            feedback that has adversely affected JEEVONE or its Users.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >APPOINTMENT BOOKING AND INTERACTION WITH PRACTITIONERS,
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >While JEEVONE will try to ensure a confirmed on-time appointment
+            for a End-User who requested an appointment on Website/ App, JEEVONE
+            does not guarantee that a User will get a confirmed appointment.
+            Further, JEEVONE and the Practitioner/ sponsoring/promoting
+            organisation/body, has no liability if such appointment is confirmed
+            but later cancelled by Practitioners, for the given appointment time
+            over text, video, audio or in-person.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >You understand and agree that any interactions and associated
+            issues with other Users including but not limited to your health
+            issues and your experiences is strictly between you and the other
+            Users. You shall not hold JEEVONE or or your sponsoring/promoting
+            organisation/body, responsible for any such interactions and
+            associated issues. For avoidance of doubt, JEEVONE is not involved
+            in providing any healthcare or medical advice or diagnosis and hence
+            is not responsible for any outcome between you and the Practitioner
+            you interact with, pursuant to any interactions on the Website/ App.
+            Your decision to engage with a Practitioner or chatbot for receiving
+            medical services from him/her is at your own risk. The results of
+            any search you perform on the Website/ App for Practitioners should
+            not be construed as an endorsement by JEEVONE of any such particular
+            Practitioner. JEEVONE and your sponsoring/promoting
+            organisation/body, shall not be responsible for any breach of
+            service or service deficiency by any Practitioner/chatbot. We cannot
+            assure nor guarantee the ability or intent of the Practitioner(s)
+            and chatbot (in any manner possible) to fulfill their obligations
+            towards you, although we will take complete measures to ensure your
+            satisfaction with the Practitioner/chatbot. Jeevone also advises you
+            to perform your own investigation prior to selecting a Practitioner
+            or start the use of chatbot.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Without prejudice to the generality of the above, JEEVONE and your
+            sponsoring/promoting organisation/body, will not be liable
+            for:</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any wrong medication or treatment quality being given by the
+            Practitioner(s), or any medical negligence on part of the
+            Practitioner(s);</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any type of inconvenience suffered by the User due to a failure on
+            the part of the Practitioner to provide agreed services or to make
+            himself/herself available at the appointed time, inappropriate
+            treatment, or similar difficulties;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >cancellation or rescheduling of booked appointment; .</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any medical eventualities that might occur subsequent to using the
+            services of a Practitioner, whom the User has selected on the basis
+            of the information available on the Website/ App or with whom the
+            User has booked an appointment through the Website/ App.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Further, JEEVONE and your sponsoring/promoting organisation/body,
+            shall not be liable, under any event, for any comments or feedback
+            given by any of the Users in relation to the services provided by
+            another User. The option of Users to give feedback remains at
+            JEEVONE’s sole discretion and may be modified or withdrawn at its
+            sole discretion. JEEVONE may moderate such feedback at any time.
+            JEEVONE shall not be obliged to act in any manner to give effect to
+            the content of Users’ feedback, such as suggestions for delisting of
+            a particular Practitioner from the Website/ App.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.5.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span style="font-family: 'Bookman Old Style', serif"
+            >In the event that, the Practitioner with whom User has booked a
+            paid appointment via the Website/ mobile app, has not been able to
+            meet the User, User will need to write to us at </span
+          ><a href="mailto:refund@jeevone.com"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >refund@jeevone.com</span
+            ></a
+          ><span style="font-family: 'Bookman Old Style', serif">
+            within five (5) days from the occurrence of such event; in which
+            case, the entire consultation amount as mentioned on the Website
+            will be refunded to the User within the next five (5) to six (6)
+            business days in the original mode of payment done by the User while
+            booking. In case where the User, does not show up for the
+            appointment booked with a Practitioner, without cancelling the
+            appointment beforehand, the amount will not be refunded.However,
+            where cancellation charges have been levied (as charged by the
+            Practitioner/Practice), you would not be entitled to complete refund
+            even if you have cancelled beforehand.</span
+          >
+        </p>
+        <p class="MsoListParagraphCxSpMiddle">
+          <span style="font-family: 'Bookman Old Style', serif">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.6.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span style="font-family: 'Bookman Old Style', serif"
+            >Users will not be entitled for any refunds in cases where, the
+            Practitioner is unable to meet the User at the exact time of the
+            scheduled appointment time and the User is required to wait,
+            irrespective of the fact whether the User is required to wait or
+            choose to not obtain the medical services from the said
+            Practitioner.</span
+          >
+        </p>
+        <p class="MsoListParagraphCxSpMiddle">
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.75in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.6.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Appointment cancellation can be done any time before the
+            appointment time.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.75in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.6.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >On cancellation, 100% of the amount will be refunded via the same
+            payment mode if the cancellation is done 2 hours prior to your
+            appointment time.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.75in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.3.6.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >On cancellation within two hours of the appointment, you will not
+            get any refund.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >NO DOCTOR PATIENT RELATIONSHIP FOR EMERGENCY USE.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.4.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Please note that some of the content, text, data, graphics, images,
+            information, suggestions, guidance, and other material
+            (collectively, “Information”) that may be available on the Website/
+            App (including information provided in direct response to your
+            questions or postings) may be provided by individuals in the medical
+            profession. The provision of such Information does not create a
+            licensed medical professional/patient relationship, between JEEVONE
+            and you and does not constitute an opinion, medical advice, or
+            diagnosis or treatment of any particular condition, but is only
+            provided to assist you with locating appropriate medical care from a
+            qualified practitioner.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.4.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >It is hereby expressly clarified that, the Information that you
+            obtain or receive from JEEVONE, and its employees, contractors,
+            partners, sponsors, advertisers, licensors or otherwise on the
+            Website/ App, including chatbot, is for informational purposes only.
+            We make no guarantees, representations or warranties, whether
+            expressed or implied, with respect to professional qualifications,
+            quality of work, expertise or other information provided on the
+            Website/ App. In no event shall JEEVONE and your
+            sponsoring/promoting organisation/body, be liable to you or anyone
+            else for any decision made or action taken by you in reliance on
+            such information.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.4.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The Services are not intended to be a substitute for getting in
+            touch with emergency healthcare, like suicidal tendencies and severe
+            mental ailments. If you are an End-User facing a medical emergency
+            (either on your or another person’s behalf), please contact an
+            ambulance service or hospital directly.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.5.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >CONTENT OWNERSHIP AND COPYRIGHT CONDITIONS OF ACCESS</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.5.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >The contents listed on the Website/ App are (i) User generated
+            content, or (ii) belong to JEEVONE. The information that is
+            collected by JEEVONE directly or indirectly from the End- Users and
+            the Practitioners shall belong to JEEVONE. Copying of the
+            copyrighted content published by JEEVONE on the Website/ App for any
+            commercial purpose or for the purpose of earning profit will be a
+            violation of copyright and JEEVONE reserves its rights under
+            applicable law accordingly.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.5.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE authorizes the User to view and access the content
+            available on or from the Website/ App solely for ordering,
+            receiving, delivering and communicating only as per this Agreement.
+            The contents of the Website/ App, information, text, graphics,
+            images, logos, button icons, software code, design, and the
+            collection, arrangement and assembly of content on the Website/ App
+            (collectively, &quot;JEEVONE Content&quot;), are the property of
+            JEEVONE and are protected under copyright, trademark and other laws.
+            User shall not modify the JEEVONE Content or reproduce, display,
+            publicly perform, distribute, or otherwise use the JEEVONE Content
+            in any way for any public or commercial purpose or for personal
+            gain.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.5.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >User shall not access the Services for purposes of monitoring their
+            availability, performance or functionality, or for any other
+            benchmarking or competitive purposes.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.6.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >REVIEWS, FEEDBACK &amp; SERVICES.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >By using this Website/ App, you agree that any relevant information
+            shared by you with JEEVONE, your sponsoring/promoting
+            organisation/body, or with any Practitioner will be subject to our
+            Privacy Policy.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.6.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >You are solely responsible for the content that you choose to
+            submit for publication on the Website/ App, including any feedback,
+            ratings, or reviews (“Critical Content”) relating to Practitioners
+            or other healthcare professionals. The role of JEEVONE in publishing
+            Critical Content is restricted to that of an ‘intermediary’ under
+            the Information Technology Act, 2000. JEEVONE and your
+            sponsoring/promoting organisation/body, disclaims all responsibility
+            with respect to the content of Critical Content, and its role with
+            respect to such content is restricted to its obligations as an
+            ‘intermediary’ under the said Act. JEEVONE shall not be liable to
+            pay any consideration to any User for re-publishing any content
+            across any of its platforms.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.6.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Your publication of reviews and feedback on the Website/ App is
+            governed by Paragraph 6 of these Terms. Without prejudice to the
+            detailed terms stated in Paragraph 6, you hereby agree not to post
+            or publish any content on the Website/ App that (a) infringes any
+            third-party intellectual property or publicity or privacy rights, or
+            (b) violates any applicable law or regulation, including but not
+            limited to the IG Rules and SPI Rules. JEEVONE, at its sole
+            discretion, may choose not to publish your reviews and feedback, if
+            so required by applicable law, and in accordance with Paragraph 6 of
+            these Terms.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.6.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >You agree that JEEVONE may contact you through telephone, email,
+            SMS, or any other electronic means of communication for the purpose
+            of:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Obtaining feedback in relation to Website/ App or JEEVONE’s
+            services, including chatbot; and/or.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Obtaining feedback in relation to any Practitioners listed on the
+            Website/ App; and/or.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Connecting for any further details like diagnostics, medicine
+            delivery requests, product redemptions, consultation management,
+            etc.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 85.5pt;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Resolving any complaints, information, or queries by Practitioners
+            regarding your Critical Content; and you agree to provide your
+            fullest cooperation further to such communication by JEEVONE.
+          </span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 67.5pt;
+            text-align: justify;
+            text-indent: -45pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >3.6.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE’s Feedback Collection and Fraud Detection Policy, is
+            annexed as the Schedule hereto, and remains subject always to these
+            Terms.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >4.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >TERMS OF USE FOR PRACTITIONERS</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >The terms of use for Practitioners are defined under the
+            Practitioners’ terms of use (</span
+          ><a href="http://www.jeevone.com"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.com</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.in</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.org"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.org</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.care"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.care</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.health"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.health</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.net"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.net</span
+            ></a
+          ><span style="color: #212529">; </span
+          ><a href="http://www.jeevone.co.in"
+            ><span style="font-family: 'Bookman Old Style', serif"
+              >www.jeevone.co.in</span
+            ></a
+          ><span lang="EN-IN" style="color: #212529"
+            >. Practitioners are bound by the terms defined here and in the
+            Practitioners’ terms of use. In case of any
+            clash/discrepancy/conflict, the Practitioner is bound to the terms
+            defined under the Practitioner’s terms of use.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >5.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >JEEVONE SPONSOR RIGHTS</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >5.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE reserves the rights to display sponsored ads on the
+            Website/ App. Without prejudice to the status of other content,
+            JEEVONE will not be liable for the accuracy of information or the
+            claims made in the Sponsored Listings. JEEVONE does not encourage
+            the Users to Jeevone the Sponsored Listings page or to avail any
+            services from them. JEEVONE and your sponsoring/promoting
+            organisation/body, will not be liable for the services of the
+            providers of the Sponsored Listings. .</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >5.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >You represent and warrant that you will use these Services in
+            accordance with applicable law. Any contravention of applicable law
+            as a result of your use of these Services is your sole
+            responsibility, and JEEVONE and your sponsoring/promoting
+            organisation/body accept no liability for the same.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >6.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >RIGHTS AND OBLIGATIONS RELATING TO CONTENT</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >6.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >As mandated by Regulation 3(2) of the IG Rules, JEEVONE hereby
+            informs Users that they are not permitted to host, display, upload,
+            modify, publish, transmit, update or share any information
+            that:</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >belongs to another person and to which the User does not have any
+            right to;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >is grossly harmful, harassing, blasphemous, defamatory, obscene,
+            pornographic, paedophilic, libellous, invasive of another's privacy,
+            hateful, or racially, ethnically objectionable, disparaging,
+            relating or encouraging money laundering or gambling, or otherwise
+            unlawful in any manner whatever;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >harm minors in any way;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >infringes any patent, trademark, copyright or other proprietary
+            rights;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(v)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >violates any law for the time being in force;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(vi)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >deceives or misleads the addressee about the origin of such
+            messages or communicates any information which is grossly offensive
+            or menacing in nature;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(vii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >impersonate another person;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(viii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >contains software viruses or any other computer code, files or
+            programs designed to interrupt, destroy or limit the functionality
+            of any computer resource;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ix)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >threatens the unity, integrity, defence, security or sovereignty of
+            India, friendly relations with foreign states, or public order or
+            causes incitement to the commission of any cognisable offence or
+            prevents investigation of any offence or is insulting any other
+            nation.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >6.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Users are also prohibited from:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >violating or attempting to violate the integrity or security of the
+            Website/ App or any JEEVONE Content;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >transmitting any information (including job posts, messages and
+            hyperlinks) on or through the Website/ App that is disruptive or
+            competitive to the provision of Services by JEEVONE;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >intentionally submitting on the Website/ App any incomplete, false
+            or inaccurate information;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >making any unsolicited communications to other Users;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(v)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >using any engine, software, tool, agent or other device or
+            mechanism (such as spiders, robots, avatars or intelligent agents)
+            to navigate or search the Website/ App;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(vi)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >attempting to decipher, decompile, disassemble or reverse engineer
+            any part of the Website/ App;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(vii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >copying or duplicating in any manner any of the JEEVONE Content or
+            other information available from the Website/ App;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 81pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(viii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >framing or hot-linking or deep linking any JEEVONE Content, unless
+            otherwise expressly granted permission.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >6.3.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE, upon obtaining knowledge by itself or been brought to
+            actual knowledge by an affected person in writing or through email
+            signed with electronic signature about any such information (as
+            mentioned above) generated by Users, or on being notified by the
+            appropriate Government or its agency that the Website/ App is being
+            used by the User to commit any unlawful act and/or is being used in
+            violation of Paragraphs 6.1 and 6.2 above, shall be entitled to
+            remove or disable access to the material or information that is in
+            contravention of this Paragraph 6. JEEVONE is entitled to act, as
+            required by the IG Rules, within thirty six hours of obtaining such
+            knowledge and, where applicable, work with Users to disable such
+            information that is in contravention of applicable law.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >6.4.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >In case of non-compliance with any applicable laws, rules or
+            regulations, or the Agreement (including the Privacy Policy) by a
+            User, JEEVONE has the right to immediately terminate the access or
+            usage rights of the User to the Website/ App and Services and to
+            remove non-compliant information from the Website/ App.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >6.5.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE may disclose or transfer User-generated information to its
+            affiliates or governmental authorities in such manner as permitted
+            or required by applicable law, and you hereby consent to such
+            transfer. JEEVONE will comply with any duly-issued government or
+            court directions to disable access to the User-generated
+            information, should it be found to be illegal by a competent
+            governmental authority.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >7.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><b><span lang="EN-IN" style="color: #212529">TERMINATION</span></b>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >7.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE reserves the right to suspend or terminate a User’s access
+            to the Website/ App, Mobile Application and the Services with or
+            without notice and to exercise any other remedy available under law,
+            in cases where,</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -22.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Such User breaches any terms and conditions of the Agreement;
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -22.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >A third party reports violation of any of its right as a result of
+            your use of the Services.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -22.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE is unable to verify or authenticate any information
+            provided to JEEVONE by a User;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -22.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE has reasonable grounds for suspecting any illegal,
+            fraudulent or abusive activity on part of such User; or.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -22.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(v)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >JEEVONE believes in its sole discretion that User’s actions may
+            cause legal liability for such User, other Users or for JEEVONE or
+            are contrary to the interests of the Website/ App.
+          </span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >7.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Once temporarily suspended, indefinitely suspended or terminated,
+            the User may not continue to use the Website/ App under the same
+            account, a different account or re-register under a new account. On
+            termination of an account due to the reasons mentioned herein, such
+            User shall no longer have access to data, messages, files and other
+            material kept on the Website/ App by such User. The User shall
+            ensure that he/she/it has continuous backup of any medical services
+            the User has rendered in order to comply with the User’s record
+            keeping process and practices.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >8.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >LIMITATION OF LIABILITY</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >8.1.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >In no event, including but not limited to negligence, shall
+            JEEVONE, or any of its directors, officers, employees, agents or
+            content or service providers or your sponsoring/promoting
+            organisation/body,(collectively, the “Protected Entities”) be liable
+            for any direct, indirect, special, incidental, consequential,
+            exemplary or punitive damages arising from, or directly or
+            indirectly related to, the use of, or the inability to use, the
+            Website/ App or the content, materials and functions related
+            thereto, the Services, User’s provision of information via the
+            Website/ App, lost business or lost End-Users, even if such
+            Protected Entity has been advised of the possibility of such
+            damages. In no event shall the Protected Entities be liable
+            for:</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(i)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >provision of or failure to provide all or any service by
+            Practitioners to End- Users contacted or managed through the
+            Website/ App;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(ii)<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any content posted, transmitted, exchanged or received by or on
+            behalf of any User or other person on or through the Website/
+            App;</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iii)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any unauthorized access to or alteration of your transmissions or
+            data; or</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 1in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >(iv)<span style="font: 7pt 'Times New Roman'"> </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >any other matter relating to the Website/ App or the Service.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >8.2.<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >In no event shall the total aggregate liability of the Protected
+            Entities to a User for all damages, losses, and causes of action
+            (whether in contract or tort, including, but not limited to,
+            negligence or otherwise) arising from this Agreement or a User’s use
+            of the Website/ App or the Services exceed, in the aggregate Rs.
+            1000/- (Rupees One Thousand Only).</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >9.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b><span lang="EN-IN" style="color: #212529">INDEMNITY</span></b>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >User agrees to indemnify and hold harmless its sponsoring/promoting
+            organisation/body and JEEVONE, its affiliates, officers, directors,
+            employees, consultants, licensors, agents, and representatives from
+            any and all third party claims, losses, liability, damages, and/or
+            costs (including reasonable attorney fees and costs) arising from
+            User’s access to or use of Service, violation of this Agreement, or
+            infringement, or infringement by any other User of his/her/its
+            account, of any intellectual property or other right of any person
+            or entity. JEEVONE will notify you promptly of any such claim, loss,
+            liability, or demand, and in addition to your foregoing obligations,
+            you agree to provide us with reasonable assistance, at your expense,
+            in defending any such claim, loss, liability, damage, or cost.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >10.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >APPLICABLE LAW AND DISPUTE SETTLEMENT</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >10.1.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >You agree that this Agreement and any contractual obligation
+            between JEEVONE and User will be governed by the laws of India.
+          </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >10.2.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Any dispute, claim or controversy arising out of or relating to
+            this Agreement, including the determination of the scope or
+            applicability of this Agreement to arbitrate, or your use of the
+            Website/ App or the Services or information to which it gives
+            access, shall be determined by arbitration in India, before a sole
+            arbitrator appointed by JEEVONE. Arbitration shall be conducted in
+            accordance with the Arbitration and Conciliation Act, 1996. The seat
+            of such arbitration shall be New Delhi. All proceedings of such
+            arbitration, including, without limitation, any awards, shall be in
+            the English language. The award shall be final and binding on the
+            parties to the dispute.</span
+          >
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >10.3.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >Subject to the above Paragraph 10.2, the courts at Bengaluru, India
+            shall have exclusive jurisdiction over any disputes arising out of
+            or in relation to this Agreement, your use of the Website/ App or
+            the Services or the information to which it gives access.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >11.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b
+            ><span lang="EN-IN" style="color: #212529"
+              >CONTACT INFORMATION</span
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpFirst"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >11.1.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >If a User has any questions concerning JEEVONE, the Website/ App,
+            this Agreement, the Services, or anything related to any of the
+            foregoing, JEEVONE customer support can be reached at the following
+            email address </span
+          ><a href="mailto:support@jeevone.com"
+            ><span lang="EN-IN" style="font-family: 'Bookman Old Style', serif"
+              >support@jeevone.com</span
+            ></a
+          ><span lang="EN-IN" style="color: #212529"> </span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpMiddle"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraphCxSpLast"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            text-indent: -31.5pt;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >11.2.<span style="font: 7pt 'Times New Roman'">&nbsp; </span></span
+          ><span lang="EN-IN" style="color: #212529"
+            >In accordance with the Information Technology Act, 2000, and the
+            rules made there under, if you have any grievance with respect to
+            the Website/ App or the service, including any discrepancies and
+            grievances with respect to processing of information, you can
+            contact:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"> </span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529; background: yellow"
+            >Name:
+          </span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529; background: yellow"
+            >Designation:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529; background: yellow"
+            >Address:
+          </span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529; background: yellow"
+            >Email:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529; background: yellow"
+            >Telephone:</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 49.5pt;
+            text-align: justify;
+            line-height: normal;
+          "
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >In the event you suffer as a result of access or usage of our
+            Website/ App by any person in violation of Rule 3 of the IG Rules,
+            please address your grievance to the above person.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoListParagraph"
+          style="
+            margin-top: 0in;
+            margin-right: 0in;
+            margin-bottom: 0in;
+            margin-left: 0.25in;
+            text-align: justify;
+            text-indent: -0.25in;
+            line-height: normal;
+          "
+        >
+          <b
+            ><span lang="EN-IN" style="color: #212529"
+              >12.<span style="font: 7pt 'Times New Roman'"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span></span
+            ></b
+          ><b><span lang="EN-IN" style="color: #212529">SEVERABILITY</span></b>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >If any provision of the Agreement is held by a court of competent
+            jurisdiction or arbitral tribunal to be unenforceable under
+            applicable law, then such provision shall be excluded from this
+            Agreement and the remainder of the Agreement shall be interpreted as
+            if such provision were so excluded and shall be enforceable in
+            accordance with its terms; provided however that, in such event, the
+            Agreement shall be interpreted so as to give effect, to the greatest
+            extent consistent with and permitted by applicable law, to the
+            meaning and intention of the excluded provision as determined by
+            such court of competent jurisdiction or arbitral tribunal.</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"> </span>
+        </p>
+        <span
+          lang="EN-IN"
+          style="font-size: 11pt; line-height: 107%; color: #212529"
+          ><br clear="all" style="page-break-before: always" />
+        </span>
+        <p class="MsoNormal" style="margin-bottom: 8pt; line-height: 107%">
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          align="center"
+          style="margin-bottom: 0in; text-align: center; line-height: normal"
+        >
+          <b
+            ><u><span lang="EN-IN" style="color: #212529">Schedule</span></u></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          align="center"
+          style="margin-bottom: 0in; text-align: center; line-height: normal"
+        >
+          <b
+            ><u
+              ><span lang="EN-IN" style="color: #212529"
+                ><span style="text-decoration: none">&nbsp;</span></span
+              ></u
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          align="center"
+          style="margin-bottom: 0in; text-align: center; line-height: normal"
+        >
+          <b
+            ><u
+              ><span lang="EN-IN" style="color: #212529"
+                >JEEVONE’s Feedback Collection and Fraud Detection Policy</span
+              ></u
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          align="center"
+          style="margin-bottom: 0in; text-align: center; line-height: normal"
+        >
+          <b
+            ><u
+              ><span lang="EN-IN" style="color: #212529"
+                ><span style="text-decoration: none">&nbsp;</span></span
+              ></u
+            ></b
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="margin-bottom: 0in; text-align: justify; line-height: normal"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >YOU HAVE READ THESE TERMS OF USE AND AGREE TO ALL OF THE PROVISIONS
+            CONTAINED ABOVE</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="text-align: justify; line-height: normal; background: white"
+        >
+          <span lang="EN-IN" style="color: #212529">&nbsp;</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="text-align: justify; line-height: normal; background: white"
+        >
+          <span lang="EN-IN" style="color: #212529">Grievance Officer</span>
+        </p>
+        <p
+          class="MsoNormal"
+          style="text-align: justify; line-height: normal; background: white"
+        >
+          <span lang="EN-IN" style="color: #212529"
+            >In case you are dissatisfied with the resolution from our customer
+            service team or you have not received a response, you can lodge a
+            complaint with our grievance officer -</span
+          >
+        </p>
+        <p
+          class="MsoNormal"
+          style="text-align: justify; line-height: normal; background: white"
+        >
+          <b><span lang="EN-IN" style="color: #212529">Name:&nbsp;</span></b>
+        </p>
+        <p
+          class="MsoNormal"
+          style="text-align: justify; line-height: normal; background: white"
+        >
+          <b><span lang="EN-IN" style="color: #212529">Email:&nbsp;</span></b>
+        </p>
+      </div>
+    </div>
+    <!-- =============== Main Section End ================= -->
+
+    <!-- =============== Footer Section Start ============= -->
+    <footer>
+      <div class="footer_inner flex-col">
+        <div class="grid grid-cols-1 gap-8 2xsm:grid-cols-1 md:grid-cols-2">
+          <div>
+            <div class="mb-5 footer_logo">
+              <img src="./images/footer-logo.png" alt="footer-logo" />
+            </div>
+            <div class="flex mb-5">
+              <div class="text-white lg:pr-10 mr-10">
+                <h2 class="mb-5">About Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>Jeevone Story</li>
+                  </a>
+                  <li>
+                    <a href="refund-policy.html">Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="trems-and-condition.html">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-white lg:pl-10">
+                <h2 class="mb-5">Contact Us</h2>
+                <ul class="footer_link">
+                  <a href="#">
+                    <li>
+                      Training
+                      <span style="font-size: 10px">(Coming Soon)</span>
+                    </li>
+                  </a>
+                  <li onclick="toggleModalFooterFour()">Schedule a Demo</li>
+                  <li onclick="toggleModalFooterFive()">Reach Us</li>
+                </ul>
+              </div>
+
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFour"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFour()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
+                id="modalFive"
+              >
+                <div
+                  class="flex items-center justify-center pt-4 px-4 pb-20 text-center block sm:p-0"
+                >
+                  <div
+                    class="fixed flex items-center justify-center inset-0 transition-opacity"
+                  >
+                    <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+                    <span class="hidden inline-block align-middle h-screen"
+                      >&#8203;</span
+                    >
+                    <div
+                      class="rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-11/12 md:w-4/12 modal"
+                      style="
+                        background-color: #09096d;
+                        padding: 0px;
+                        border-radius: 15px;
+                      "
+                      role="dialog"
+                      aria-modal="true"
+                      aria-labelledby="modal-headline"
+                    >
+                      <div
+                        class="modal_cross_button"
+                        onclick="toggleModalFooterFive()"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 48 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M23.6747 42.6145C13.2342 42.6145 4.73494 34.1153 4.73494 23.6747C4.73494 13.2342 13.2342 4.73494 23.6747 4.73494C34.1153 4.73494 42.6145 13.2342 42.6145 23.6747C42.6145 34.1153 34.1153 42.6145 23.6747 42.6145ZM23.6747 0C10.5826 0 0 10.5826 0 23.6747C0 36.7668 10.5826 47.3494 23.6747 47.3494C36.7668 47.3494 47.3494 36.7668 47.3494 23.6747C47.3494 10.5826 36.7668 0 23.6747 0ZM29.8065 14.2048L23.6747 20.3366L17.543 14.2048L14.2048 17.543L20.3366 23.6747L14.2048 29.8065L17.543 33.1446L23.6747 27.0129L29.8065 33.1446L33.1446 29.8065L27.0129 23.6747L33.1446 17.543L29.8065 14.2048Z"
+                            fill="#B3B3B3"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="footer_from">
+                        <h2 class="text-white">Reach Us</h2>
+                        <form action="">
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >I am a</label
+                              >
+                              <select
+                                class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                              >
+                                <option value="">Partner</option>
+                                <option value="option 1">Consumer</option>
+                                <option value="option 1">Doctor</option>
+                              </select>
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Enter Name"
+                                class="border border-red-300 shadow p-3 w-full rounded"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+                          >
+                            <div class="mb-5">
+                              <label
+                                for="name"
+                                class="block mb-2 text-white font-semibold"
+                                >Phone</label
+                              >
+                              <input
+                                type="number"
+                                placeholder="Enter Phone Number"
+                                class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label
+                                for="twitter"
+                                class="block mb-2 text-white font-semibold"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                placeholder="Enter Email I’D"
+                                class="border border-red-300 shadow p-3 w-full rounded mb-"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <button
+                              class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                            >
+                              SUBMIT
+                            </button>
+                            <p class="text-center text-white text-sm mt-1">
+                              Add pop up for OTP (for developer)
+                            </p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white mb-5">Connect</h2>
+              <div class="flex">
+                <div class="footer_icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer_icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_from">
+            <h2 class="text-white">Reach Us</h2>
+            <form action="">
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >I am a</label
+                  >
+                  <select
+                    class="border border-gray-300 text-gray-400 p-3 w-full rounded"
+                  >
+                    <option value="">Partner</option>
+                    <option value="option 1">Option 1</option>
+                  </select>
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    class="border border-red-300 shadow p-3 w-full rounded"
+                  />
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-1 md:gap-8 2xsm:grid-cols-1 md:grid-cols-2"
+              >
+                <div class="mb-5">
+                  <label for="name" class="block mb-2 text-white font-semibold"
+                    >Phone</label
+                  >
+                  <input
+                    type="number"
+                    placeholder="Enter Phone Number"
+                    class="border border-gray-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+
+                <div class="mb-5">
+                  <label
+                    for="twitter"
+                    class="block mb-2 text-white font-semibold"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Enter Email I’D"
+                    class="border border-red-300 shadow p-3 w-full rounded mb-"
+                  />
+                </div>
+              </div>
+              <div>
+                <button
+                  class="block w-full text-white font-bold p-4 rounded-lg main_btn_second"
+                >
+                  SUBMIT
+                </button>
+                <p class="text-center text-white text-sm mt-1">
+                  Add pop up for OTP (for developer)
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white pb-6">
+        <p>Copyright © 2023 Jeevone</p>
+      </div>
+    </footer>
+    <!-- =============== Footer Section End =============== -->
+  </body>
+</html>
