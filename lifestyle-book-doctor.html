@@ -559,7 +559,7 @@
                   <p class="font-normal">Physiotherapist</p>
                 </div>
 
-                <div class="specialization_box" data-specialization="">
+                <div class="specialization_box deactive" data-specialization="">
                   <div class="specialization_card">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -598,10 +598,10 @@
                       />
                     </svg>
                   </div>
-                  <p class="font-normal">Commng Soon</p>
+                  <p class="font-normal">Coming Soon</p>
                 </div>
 
-                <div class="specialization_box" data-specialization="">
+                <div class="specialization_box deactive" data-specialization="">
                   <div class="specialization_card">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -616,7 +616,7 @@
                       />
                     </svg>
                   </div>
-                  <p class="font-normal">Commng Soon</p>
+                  <p class="font-normal">Coming Soon</p>
                 </div>
               </div>
             </div>
@@ -1376,5 +1376,127 @@
       </div>
     </footer>
     <!-- =============== Footer Section End =============== -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+
+    <!-- <script>
+			const specializationBoxes = document.querySelectorAll(
+				'.specialization_box'
+			);
+			const doctorCards = document.querySelectorAll('.book_doctor_card');
+
+			// Define the default specialization
+			const defaultSpecialization = 'Yoga Instructor';
+
+			// Function to filter doctor cards by specialization
+			function filterDoctorsBySpecialization(specialization) {
+				doctorCards.forEach((card) => {
+					const cardSpecialization = card.getAttribute(
+						'data-specialization'
+					);
+					if (cardSpecialization === specialization) {
+						card.style.display = 'block';
+					} else {
+						card.style.display = 'none';
+					}
+				});
+			}
+
+			// Set the default specialization when the page loads
+			filterDoctorsBySpecialization(defaultSpecialization);
+
+			// Add click event listeners to specialization boxes
+			specializationBoxes.forEach((box) => {
+				box.addEventListener('click', () => {
+					const selectedSpecialization = box.getAttribute(
+						'data-specialization'
+					);
+					filterDoctorsBySpecialization(selectedSpecialization);
+				});
+			});
+		</script> -->
+    <script>
+      function toggleModalFooter() {
+        document.getElementById("modal").classList.toggle("hidden");
+      }
+    </script>
+    <script>
+      function toggleModalFooterTwo() {
+        document.getElementById("modalTwo").classList.toggle("hidden");
+      }
+    </script>
+    <script>
+      function toggleModalFooterThree() {
+        document.getElementById("modalThree").classList.toggle("hidden");
+      }
+    </script>
+    <script>
+      function toggleModalFooterFour() {
+        document.getElementById("modalFour").classList.toggle("hidden");
+      }
+    </script>
+    <script>
+      function toggleModalFooterFive() {
+        document.getElementById("modalFive").classList.toggle("hidden");
+      }
+    </script>
+    <script>
+      const specializationBoxes = document.querySelectorAll(
+        ".specialization_box"
+      );
+      const doctorCards = document.querySelectorAll(".book_doctor_card");
+
+      // Define the default specialization
+      const defaultSpecialization = "Yoga Instructor";
+
+      // Flag to track whether it's the initial page load
+      let isFirstLoad = true;
+
+      // Function to filter doctor cards by specialization
+      function filterDoctorsBySpecialization(specialization) {
+        let firstVisibleCard = null;
+
+        doctorCards.forEach((card) => {
+          const cardSpecialization = card.getAttribute("data-specialization");
+          if (cardSpecialization === specialization) {
+            card.style.display = "block";
+
+            // If the first visible card is not set, set it to the current card
+            if (!firstVisibleCard) {
+              firstVisibleCard = card;
+            }
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Scroll to the first visible card after a click event
+        if (!isFirstLoad && firstVisibleCard) {
+          firstVisibleCard.scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Reset the flag after the first load
+        isFirstLoad = false;
+      }
+
+      // Set the default specialization when the page loads
+      filterDoctorsBySpecialization(defaultSpecialization);
+
+      // Add click event listeners to specialization boxes
+      specializationBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          const selectedSpecialization = box.getAttribute(
+            "data-specialization"
+          );
+          filterDoctorsBySpecialization(selectedSpecialization);
+        });
+      });
+    </script>
   </body>
 </html>

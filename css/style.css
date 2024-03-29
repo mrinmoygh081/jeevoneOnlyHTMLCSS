@@ -79,6 +79,10 @@ input[type="number"]::-webkit-outer-spin-button {
   clear: both;
 }
 
+.w_85 {
+  width: 85px;
+}
+
 /* ======================================== 
                   Buttons 
   ======================================== */
@@ -156,6 +160,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .nav_radius {
   border-radius: 0px 0px 50px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 .nav_radius ul li a {
   font-size: 15px;
@@ -183,8 +192,8 @@ input[type="number"]::-webkit-outer-spin-button {
   background-image: url(../images/banner.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  height: 98vh;
+  background-size: cover;
+  height: 85vh;
   position: relative;
   border-radius: 0px 0px 80px 80px;
 }
@@ -285,12 +294,6 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (min-width: 1600px) {
   .bg_bnner {
     background-size: cover;
-  }
-}
-
-@media (max-width: 1440px) {
-  .bg_bnner {
-    background-image: url(../images/banner.png);
   }
 }
 
@@ -2705,6 +2708,9 @@ a.ui-button:active,
 .targetDiv.active {
   display: flex !important;
 }
+.deactive svg {
+  color: #31329996;
+}
 
 /*======= Media Query For Responsive Screens ========*/
 
@@ -2828,10 +2834,23 @@ a.ui-button:active,
     margin-top: 150px;
   }
 }
+/* @media (max-width: 1440px) {
+  .bg_bnner {
+    background-image: url(../images/banner.png);
+  }
+} */
 
-@media only screen and (max-width: 1200px) {
-  .feature_box {
-    width: 15%;
+@media only screen and (min-width: 1023px) {
+  .bg_bnner {
+    background-size: cover;
+    background-position-x: center;
+    height: 80vh;
+    background-image: url(../images/banner/jeevana1800x650_v1.jpg);
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .bg_bnner {
+    background-image: url(../images/banner/jeevana1800x650.jpg);
   }
 }
 
@@ -2854,6 +2873,7 @@ a.ui-button:active,
     background-size: cover;
     background-position-x: center;
     height: 80vh;
+    background-image: url(../images/banner/jeevana1800x650.jpg);
   }
   .hamburger {
     color: var(--primaryColor) !important;
@@ -3130,6 +3150,7 @@ a.ui-button:active,
     background-size: cover;
     background-position-x: center;
     height: 80vh;
+    background-image: url(../images/banner/jeevana350x500.jpg);
   }
 
   .feature_box {
