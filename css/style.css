@@ -38,7 +38,7 @@ html,
 body {
   color: #212226;
   outline: none;
-  font-family: var(--textFont);
+  font-family: var(--primaryFont);
 }
 
 h1,
@@ -51,7 +51,7 @@ h6 {
   font-weight: 100;
 }
 p {
-  font-family: var(--textFont);
+  font-family: var(--primaryFont);
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -81,6 +81,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .w_85 {
   width: 85px;
+}
+.w_20 {
+  width: 20%;
 }
 
 /* ======================================== 
@@ -128,11 +131,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .breadcam_heading {
   font-weight: bold;
-  font-family: "Nexa Black";
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  margin-top: -100px;
+  position: absolute;
+  bottom: 113px;
+  left: 80px;
+  padding: 0;
 }
 .breadcam_heading_track {
   flex-direction: column;
@@ -147,7 +149,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: "Poppins";
 }
 .breadcam_heading h2 b {
-  font-size: 48px;
+  font-size: 54px;
 }
 .show {
   display: block !important;
@@ -644,12 +646,6 @@ footer {
 }
 .book_doctoe_bg_bnner {
   background-image: url(../images/Book-a-Docot-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  border-radius: 0px 0px 80px 80px;
 }
 .payment_bg_bnner {
   background-image: url(../images/Payment-bg.png);
@@ -671,12 +667,45 @@ footer {
 }
 .book_a_doctor_bg_bnner {
   background-image: url(../images/Book-a-Docot-2.png);
+}
+.my_bg_bnner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 400px;
   position: relative;
-  border-radius: 0px 0px 80px 80px;
+  border-radius: 0px 0px 120px 120px;
+}
+.my_bg_bnner .input_box {
+  width: 650px;
+  background-color: var(--btn_color);
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+.my_bg_bnner .search__box {
+  height: auto;
+  width: 100%;
+  background: none;
+  color: #f7f7f7;
+  font-size: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+  font-family: "Nexa Black Light";
+  padding: 20px 4px;
 }
 .lifestyle_bg_bnner {
   background-image: url(../images/lifestyle_bg.png);
@@ -743,8 +772,7 @@ footer {
 /* ======== reminder Page Banner Section style End ======= */
 
 /* ======== Re-order medicine Page Banner Section style End ======= */
-.input_box {
-  position: absolute;
+/* .input_box {
   width: 40%;
   height: 50px;
   background-color: var(--btn_color);
@@ -757,7 +785,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .input_box_test {
   width: 40%;
   height: 50px;
@@ -780,7 +808,7 @@ footer {
   align-items: center;
   margin: 0 auto;
 }
-.search__box {
+/* .search__box {
   height: auto;
   width: 100%;
   background: none;
@@ -795,7 +823,7 @@ footer {
   transition: all 0.75s ease-in;
   cursor: pointer;
   font-family: "Nexa Black Light";
-}
+} */
 
 .search__icon {
   font-size: 1.5rem;
@@ -1445,8 +1473,10 @@ footer {
   line-height: 132%;
   text-transform: uppercase;
 }
+.d_book_card {
+  width: 20%;
+}
 .book_doctor_card {
-  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1459,6 +1489,7 @@ footer {
   padding: 15px;
   transition: 0.3s ease all;
   color: var(--primaryColor);
+  margin: 10px;
   margin-bottom: 20px;
 }
 .book_doctor_card:hover {
@@ -3019,9 +3050,6 @@ a.ui-button:active,
     right: 50%;
     transform: translate(50%, 0);
   }
-  .book_doctor_card {
-    width: 46%;
-  }
   .book_doctor_card img {
     width: 100%;
     height: auto;
@@ -3124,14 +3152,8 @@ a.ui-button:active,
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .book_doctor_card {
-    width: 18%;
-  }
   .tab {
     width: 31%;
-  }
-  .book_doctor_card {
-    width: 48%;
   }
   .specialization_box {
     width: 29%;
@@ -3145,12 +3167,61 @@ a.ui-button:active,
 }
 @media (min-width: 980px) and (max-width: 1023px) {
 }
+
+.doctor_details h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+.doctor_details .specialty {
+  font-size: 19px;
+  padding: 4px 14px;
+  font-weight: 600;
+}
+.doctor_details .doctor_name {
+  margin-bottom: 60px;
+}
+.doctor_details .doctor_desc {
+  margin-bottom: 30px;
+}
+.doctor_details .doctor_desc h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.doctor_details .doctor_desc ul {
+  font-family: var(--secondaryFont);
+  font-size: 20px;
+}
+.doctor_details .doctor_loc {
+  font-family: var(--secondaryFont);
+}
+@media (max-width: 799px) {
+  .d_book_card {
+    width: 33.33%;
+  }
+}
 @media (max-width: 586px) {
   .bg_bnner {
     background-size: cover;
     background-position-x: center;
     height: 80vh;
     background-image: url(../images/banner/jeevana350x500.jpg);
+  }
+  .my_bg_bnner {
+    height: 260px;
+    border-radius: 0px;
+  }
+  .my_bg_bnner .input_box {
+    width: 92%;
+  }
+  .breadcam_heading {
+    left: 10px;
+    bottom: 50px;
+  }
+  .specialization {
+    margin-top: 80px;
+  }
+  .d_book_card {
+    width: 50%;
   }
 
   .feature_box {
