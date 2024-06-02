@@ -439,41 +439,31 @@
     <!-- =============== Hero Section End ================= -->
 
     <!-- =============== Main Section Start ================= -->
-    <main class="relative">
+    <main class="relative mt_top doctor_question">
       <div class="absolute round1 top-1/4">
         <img src="./images/round-2.png" alt="" />
       </div>
       <div class="container">
-        <p
-          class="uppercase mt-12 text-2xl font-semibold mb-4 text-indigo-900 mb-8"
-        >
+        <p class="uppercase mt-12 mb-8 headline">
           Pre- Consultation Questionnaire
         </p>
         <div>
-          <ul class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 consultation">
+          <ul class="gap-4 md:gap-4 consultation">
             <li>Name: <span>Praveen Kumar</span></li>
             <li>Gender: <span>Male</span></li>
             <li>Age: <span>32Yrs 3mn </span></li>
             <li>Blood group: <span>O+</span></li>
             <li>Height: <span>5.8 ft-Inch</span></li>
             <li>Weight: <span>72</span></li>
-          </ul>
-          <ul class="flex flex-wrap md:flex-nowrap gap-8 consultation">
             <li>Alcohol: <span>No</span></li>
             <li>Smoking: <span>No</span></li>
             <li>Lifestyle: <span>Sedentary </span></li>
             <li>Work Env: <span>No Stress</span></li>
-            <li></li>
-            <li></li>
           </ul>
         </div>
       </div>
       <div class="container">
-        <p
-          class="uppercase mt-12 text-2xl font-semibold mb-4 text-indigo-900 mb-8"
-        >
-          Filled by Self
-        </p>
+        <p class="uppercase font-semibold headline my_mrin">Filled by Self</p>
         <div>
           <button class="filled_btn font-medium text-lg mb-3">Allergies</button>
           <div
@@ -517,9 +507,9 @@
         </div>
         <div class="flex flex-wrap md:flex-nowrap gap-8">
           <div class="w-full md:w-1/2">
-            <div class="w-full md:w-96 mb-4">
+            <div class="mb-4">
               <div class="flex items-center justify-between gap-4 mb-4">
-                <p class="font-semibold">
+                <p class="font_label">
                   Are you currently taking any medications?
                 </p>
                 <select class="select_dropdown rounded-md">
@@ -538,9 +528,9 @@
             </div>
           </div>
           <div class="w-full md:w-1/2">
-            <div class="w-full md:w-96 mb-4">
+            <div class="mb-4">
               <div class="flex items-center justify-between gap-4 mb-4">
-                <p class="font-semibold">History of similar symptoms?</p>
+                <p class="font_label">History of similar symptoms?</p>
                 <select class="select_dropdown rounded-md">
                   <option>Select</option>
                   <option>Yes</option>
@@ -558,9 +548,9 @@
           </div>
         </div>
         <div class="w-full md:w-1/2">
-          <div class="w-full md:w-96 mb-4">
+          <div class="mb-4">
             <div class="flex items-center justify-between gap-4 mb-8">
-              <p class="font-semibold">Number of days of present symptoms?</p>
+              <p class="font_label">Number of days of present symptoms?</p>
               <select class="select_dropdown rounded-md">
                 <option>Select</option>
                 <option>3 to 5</option>
@@ -572,9 +562,9 @@
 
         <div class="flex flex-wrap md:flex-nowrap gap-8">
           <div class="w-full md:w-1/2">
-            <div class="w-full md:w-96 mb-4">
+            <div class="mb-4">
               <div class="flex items-center justify-between gap-4 mb-4">
-                <p class="font-semibold">Report is Ready?</p>
+                <p class="font_label">Report is Ready?</p>
                 <select
                   class="select_dropdown rounded-md"
                   id="reportStatusDropdown"
@@ -592,7 +582,7 @@
             id="attachButton"
           >
             <div>
-              <p class="font-semibold">Upload Report Manually</p>
+              <p class="font_label">Upload Report Manually</p>
               <div id="filesList">
                 <div id="files-names"></div>
               </div>
@@ -671,10 +661,8 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <p class="font-semibold mb-3 mt-3">
-                    Drag & Drop Your File Here
-                  </p>
-                  <p class="font-semibold mb-3">Or</p>
+                  <p class="font_label mb-3 mt-3">Drag & Drop Your File Here</p>
+                  <p class="font_label mb-3">Or</p>
                 </div>
                 <div
                   class="flex items-center justify-between mt-5 mb-3 gap-4 px-12"
@@ -724,64 +712,59 @@
         </div>
       </div>
       <div class="container">
-        <p
-          class="uppercase mt-12 text-2xl font-semibold mb-4 text-indigo-900 mb-8"
-        >
+        <p class="uppercase mt-12 headline mb-8">
           Filled by nurse / reception / self
         </p>
         <div>
           <div class="mb-8">
-            <p class="font-semibold mb-4">Blood Pressure</p>
-            <div class="flex items-center gap-4 ml-5">
-              <p class="font-semibold">Systolic</p>
+            <p class="font_label mb-4">Blood Pressure</p>
+            <div class="flex items-center gap-4 md:ml-12">
+              <p class="font_label font_width">Systolic</p>
               <div class="relative">
                 <input
                   type="number"
                   value="110"
-                  class="border border-gray-300 p-4 w-16 rounded-md"
+                  class="border border-gray-300 input_bdq rounded-md"
                 />
                 <span class="text-sm absolute pl-3">mmHg</span>
               </div>
             </div>
           </div>
-          <div class="mb-6 md:mb-0 ml-5">
+          <div class="mb-6 md:mb-0 md:ml-12">
             <div class="flex items-center gap-4">
-              <p class="font-semibold">Diastolic</p>
+              <p class="font_label font_width">Diastolic</p>
               <div class="relative">
                 <input
                   type="number"
                   value="80"
-                  class="border border-gray-300 p-4 w-16 rounded-md"
+                  class="border border-gray-300 input_bdq rounded-md"
                 />
                 <span class="text-sm absolute pl-3">mmHg</span>
               </div>
             </div>
           </div>
           <div class="mt-6 mb-6 md:mb-0">
-            <div class="flex gap-6 pr-12">
-              <div class="flex items-center">
-                <p class="font-semibold pr-4">Temperature</p>
-                <div class="relative">
-                  <!-- <p class="font-semibold">&#8457</p> -->
-                  <input
-                    type="number"
-                    value="100.1"
-                    class="border border-gray-300 p-4 w-20 rounded-md"
-                  />
-                  <span class="text-sm absolute pl-3"><sup>o</sup>F</span>
-                </div>
+            <div class="flex items-center gap-6 pr-12">
+              <p class="font_label font_width">Temperature</p>
+              <div class="relative">
+                <input
+                  type="number"
+                  value="100.1"
+                  class="border border-gray-300 input_bdq rounded-md"
+                />
+                <span class="text-sm absolute pl-3"><sup>o</sup>F</span>
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-4 mt-6 mb-6 md:mb-0">
-            <p class="font-semibold">Sp02</p>
+          <div class="flex items-center gap-6 mt-6 mb-6 md:mb-0">
+            <p class="font_label font_width">Sp02</p>
             <div class="flex gap-8 pr-12">
               <div class="flex items-center gap-4">
                 <div class="relative">
                   <input
                     type="number"
                     value="98"
-                    class="border border-gray-300 p-4 w-16 rounded-md"
+                    class="border border-gray-300 input_bdq rounded-md"
                   />
                   <span class="text-sm absolute pl-3">%</span>
                 </div>

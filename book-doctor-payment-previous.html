@@ -18,7 +18,7 @@
   <body>
     <!-- =============== Hero Section Start ================= -->
     <section>
-      <div class="payment_bg_bnner">
+      <div class="my_bg_bnner payment_bg_bnner">
         <nav
           class="bg-white text-gray-200 nav_radius"
           style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px"
@@ -445,24 +445,24 @@
     </section>
     <!-- ===================banner section end================ -->
     <!-- =============== Main Section Start ================= -->
-    <section class="relative">
+    <section class="relative px-4">
       <div class="absolute round1">
         <img src="./images/round-2.png" alt="" />
       </div>
       <div class="container mt-12">
-        <div class="flex flex-wrap md:flex-nowrap justify-around gap-12 mb-8">
-          <div class="w-full md:w-2/5 bg-gray-100 rounded-2xl p-10">
-            <div class="border-b-2 border-gray-300 pb-3">
-              <p class="font-semibold text-xl md:text-2xl mb-3">
-                In-Person Consultation
-              </p>
-              <p class="text-indigo-600 text-sm">Doctor Name</p>
-              <p class="text-sm"><em>09:10pm, Tuesday, 11 Mar, 2023</em></p>
+        <div
+          class="flex flex-wrap md:flex-nowrap justify-around gap-12 mt-8 mb-8"
+        >
+          <div class="pay_form bg-gray-100 rounded-xl md:p-10 p-5">
+            <div class="border-b-2 border-gray-300 pt-2 pb-3">
+              <p class="font_label_pay mb-3">In-Person Consultation</p>
+              <p class="pay_doctor_name">Doctor Name</p>
+              <p class="pay_doctor_time">09:10pm, Tuesday, 11 Mar, 2023</p>
             </div>
             <div class="border-b-2 border-gray-300 py-3">
-              <p class="font-semibold text-xl md:text-2xl mb-3">Location</p>
+              <p class="font_label_pay mb-3">Location</p>
               <div class="flex justify-between items-end">
-                <p class="font-medium">
+                <p class="font_label_para">
                   Akshya Nagar 1st Block 1st Cross,<br />Rammurthy nagar,
                   Bangalore-560016
                 </p>
@@ -472,8 +472,8 @@
               </div>
             </div>
 
-            <div class="border-b-2 border-gray-300 pb-3">
-              <p class="font-semibold text-xl md:text-2xl mb-3">Discount</p>
+            <div class="border-b-2 border-gray-300 pt-2 pb-3">
+              <p class="font_label_pay mb-3">Discount</p>
               <div class="flex justify-between">
                 <p class="flex items-center text-2xl mb-1">
                   <svg
@@ -514,7 +514,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span class="font-semibold text-lg md:text-xl">Discount</span>
+                  <span class="font_label_sub">Discount</span>
                 </p>
                 <p class="font-semibold text-xl">₹0.00</p>
               </div>
@@ -572,16 +572,16 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span class="font-semibold text-xl">Coupon Discount</span>
+                  <span class="font_label_sub">Coupon Discount</span>
                 </p>
                 <p class="font-semibold text-xl">₹0.00</p>
               </div>
 
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center mt-3">
                 <div>
                   <input
                     type="text"
-                    placeholder="Coupon code"
+                    placeholder="COUPON CODE"
                     class="bg-transparent border-b border-indigo-800"
                   />
                 </div>
@@ -594,28 +594,26 @@
             </div>
 
             <div class="border-b-2 border-gray-300 py-3">
-              <p class="font-semibold text-xl md:text-2xl mb-3">
-                Payment Information
-              </p>
+              <p class="font_label_pay mb-3">Payment Information</p>
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <p class="font-semibold text-gray-500">Test Charge</p>
-                  <p class="font-semibold">₹300</p>
+                <div class="flex justify-between items-center mb-2">
+                  <p class="font_label_charge">Consultancy Fee</p>
+                  <p class="font_bold">₹300</p>
                 </div>
-                <div class="flex justify-between items-center mb-1">
-                  <p class="font-semibold text-gray-500">Convenience Charge</p>
-                  <p class="font-semibold">₹20</p>
+                <div class="flex justify-between items-center mb-2">
+                  <p class="font_label_charge">Convenience Charge</p>
+                  <p class="font_bold">₹20</p>
                 </div>
                 <div class="flex justify-between items-center">
-                  <p class="font-semibold text-gray-500">GST@18%</p>
-                  <p class="font-semibold">₹12</p>
+                  <p class="font_label_charge">GST@18%</p>
+                  <p class="font_bold">₹12</p>
                 </div>
               </div>
             </div>
             <div>
               <div class="flex justify-between items-center py-4">
-                <p class="font-semibold text-gray-500 text-2xl">Total</p>
-                <p class="font-semibold text-2xl">₹332</p>
+                <p class="font_label_charge">Total</p>
+                <p class="font_bold text-2xl">₹332</p>
               </div>
             </div>
           </div>
@@ -627,30 +625,28 @@
               id="termsCheckbox"
               onchange="toggleButton()"
             />
-            <label style="color: black" class="font-medium" for="termsCheckbox"
+            <label class="font_bold_600" for="termsCheckbox"
               >I have read and agreed to
               <a
                 href="trems-and-condition.html"
-                class="font-bold"
-                style="color: #393bcb"
+                class="font-bold font_link"
                 target="_blank"
               >
-                Terms & Conditions
+                terms & conditions
               </a>
               and
               <a
                 href="privacy-policy.html"
                 target="_blank"
-                class="font-bold"
-                style="color: #393bcb"
+                class="font-bold font_link"
               >
-                Privacy Policy
+                privacy policy
               </a>
             </label>
           </div>
         </div>
-        <div class="container w-52 buy-medicine-button mt-6">
-          <button onclick="toggleModal()" id="paymentButton" disabled>
+        <div class="container text-center buy-medicine-button">
+          <button onclick="toggleModal()" id="paymentButton" class="pay_btn">
             Procced to payment
           </button>
           <div

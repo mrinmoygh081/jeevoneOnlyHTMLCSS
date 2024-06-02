@@ -649,12 +649,6 @@ footer {
 }
 .payment_bg_bnner {
   background-image: url(../images/Payment-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  border-radius: 0px 0px 80px 80px;
 }
 .creators_bg_bnner {
   background-image: url(../images/creators_bg.png);
@@ -1349,13 +1343,14 @@ footer {
 .doctor_img {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .doctor_img img {
   width: 350px;
-  height: 350px;
+  height: auto;
   border-radius: 50px;
   margin-right: 10px;
-  margin-top: -50px;
+  margin-top: -110px;
 }
 .doctor_img_list {
   display: flex;
@@ -1656,14 +1651,48 @@ footer {
 /* ======== Pre-Consultation page style Start ======= */
 .consultation {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .consultation li {
   width: 16.66%;
   line-height: 12px;
   color: var(--gray-color);
 }
+.doctor_question {
+  padding: 0 15px;
+}
+.doctor_question .headline {
+  color: var(--primaryColor);
+  font-family: var(--secondaryFont);
+  font-size: 28px;
+}
+.doctor_question .headline.my_mrin {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.font_label {
+  font-family: var(--secondaryFont);
+  font-size: 18px;
+}
+.font_width {
+  width: 130px;
+}
+.font_label_pay {
+  font-family: var(--secondaryFont);
+  font-size: 24px;
+}
+.input_bdq {
+  width: 110px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding: 18px 0;
+}
 .consultation li span {
   color: #000;
+  font-family: var(--secondaryFont);
 }
 .filled_btn {
   padding: 5px 20px;
@@ -1671,6 +1700,7 @@ footer {
   background: #fff;
   color: var(--primaryColor);
   box-shadow: 4px 4px 4px 0px rgba(8, 8, 101, 0.42);
+  font-family: var(--secondaryFont);
 }
 .filled_btn2 {
   padding: 10px 20px;
@@ -2890,9 +2920,9 @@ a.ui-button:active,
     font-size: 42px;
     line-height: 48px;
   }
-  .container {
+  /* .container {
     padding: 0px 15px;
-  }
+  } */
   .main_section {
     max-width: 90%;
     margin: 260px auto 0px;
@@ -3032,8 +3062,8 @@ a.ui-button:active,
     margin-top: 50px;
   }
   .doctor_img img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     margin-top: 50px;
   }
   .consultation li {
@@ -3194,9 +3224,75 @@ a.ui-button:active,
 .doctor_details .doctor_loc {
   font-family: var(--secondaryFont);
 }
+.doctor_details .doctor_loc > a {
+  color: #393bcb;
+  font-size: 18px;
+  font-family: var(--primaryFont);
+}
+.book_doctor_slot label .flex {
+  padding: 20px 20px;
+  border-radius: 16px;
+}
+.book_doctor_slot label p {
+  font-size: 18px;
+  font-family: var(--secondaryFont);
+}
+.mt_top {
+  margin-top: 90px;
+}
+.pay_form {
+  max-width: 480px;
+  width: 100%;
+}
+.font_label_sub {
+  font-size: 17px;
+  font-family: var(--secondaryFont);
+  margin-left: 8px;
+}
+.font_bold {
+  font-family: var(--secondaryFont);
+}
+.font_bold_600 {
+  font-weight: 600;
+}
+.font_label_para {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.font_label_charge {
+  font-weight: 600;
+  font-size: 17px;
+  color: #afafaf;
+}
+.pay_doctor_name {
+  font-size: 14px;
+  color: blue;
+  font-weight: 600;
+}
+.pay_doctor_time {
+  font-size: 13px;
+  font-weight: 800;
+}
+.pay_btn {
+  margin-top: 30px !important;
+  max-width: 300px;
+  font-weight: 700;
+  height: 50px !important;
+}
+.font_link {
+  color: #393bcb;
+  text-decoration: underline;
+}
 @media (max-width: 799px) {
   .d_book_card {
     width: 33.33%;
+  }
+
+  .doctor_img img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 586px) {
@@ -3236,5 +3332,17 @@ a.ui-button:active,
 
   .banner_feature_box {
     bottom: -235px;
+  }
+
+  .doctor_img img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .container.mx-auto {
+    padding: 0 10px;
+  }
+  .doctor_details .doctor_desc ul {
+    font-size: 16px;
   }
 }
