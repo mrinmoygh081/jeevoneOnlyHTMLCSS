@@ -89,6 +89,22 @@ input[type="number"]::-webkit-outer-spin-button {
 /* ======================================== 
                   Buttons 
   ======================================== */
+.search__box {
+  height: auto;
+  width: 100%;
+  background: none;
+  color: #f7f7f7;
+  font-size: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+  font-family: "Nexa Black Light";
+}
 .main_btn_first {
   text-decoration: none;
   border-radius: 30px;
@@ -610,12 +626,6 @@ footer {
 }
 .medicine_reorder_bg_bnner {
   background-image: url(../images/Re-order-Meds.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  border-radius: 0px 0px 80px 80px;
 }
 .appointment_bg_bnner {
   background-image: url(../images/book_appoinmetn.png);
@@ -800,7 +810,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 /* .search__box {
   height: auto;
@@ -1052,6 +1062,9 @@ footer {
   color: #393bcb;
 }
 
+.done-appoinment {
+  margin-top: 40px;
+}
 .confirm_btn {
   border: 2px solid #393bcb;
   background-color: #393bcb;
@@ -1067,6 +1080,9 @@ footer {
   border: 2px solid #393bcb;
   background-color: white;
   color: #393bcb;
+}
+.wx_high {
+  padding: 10px 150px;
 }
 .set-button {
   text-align: center;
@@ -1426,6 +1442,8 @@ footer {
 }
 .confirm-text a {
   text-decoration: underline;
+  font-weight: 600;
+  color: #393bcb;
 }
 .location-heading {
   font-size: 1.2rem;
@@ -1602,6 +1620,7 @@ footer {
   border-radius: 5px;
   color: white;
   transition: 0.3s ease all;
+  font-weight: 600;
 }
 .modal_button button:hover {
   background-color: white;
@@ -2123,6 +2142,9 @@ a.ui-button:active,
   margin: 0 auto;
   margin-top: 28px;
 }
+.doctor_card_box .list_items form .qty {
+  min-width: 100px;
+}
 .doctor_card_inner_box {
   display: flex;
   flex-wrap: wrap;
@@ -2132,13 +2154,12 @@ a.ui-button:active,
 .doctor_card {
   width: 48%;
   background-color: #b6b6b6;
-  padding: 28px;
+  padding: 42px 25px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 160px;
-  font-family: Nexa;
   color: white;
   transition: 0.3s ease;
   cursor: pointer;
@@ -2157,10 +2178,13 @@ a.ui-button:active,
   border: 1px solid #bfbfbf;
   padding: 10px 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .list_items p {
   font-weight: bold;
+  font-family: var(--secondaryFont);
+  font-size: 18px;
 }
 .select_all {
   width: 100%;
@@ -2215,6 +2239,12 @@ a.ui-button:active,
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.upload_card h3 {
+  font-size: 20px;
+}
+.font_17 {
+  font-size: 17px;
 }
 .upload_list_card {
   border-radius: 20px;
@@ -3099,9 +3129,6 @@ a.ui-button:active,
   .doctor_card_box {
     width: 90%;
   }
-  .doctor_card {
-    width: 100%;
-  }
   .form_col {
     width: 90%;
     margin: 0 auto;
@@ -3137,8 +3164,6 @@ a.ui-button:active,
     margin-top: 0px;
   }
   .doctor_img_list img {
-    width: 50px;
-    height: 50px;
     margin-bottom: 10px;
   }
   .card-img-text {
@@ -3284,6 +3309,19 @@ a.ui-button:active,
   color: #393bcb;
   text-decoration: underline;
 }
+.doctor_img_list {
+  width: 35%;
+}
+.prescribed_by {
+  width: 65%;
+}
+.prescribed_by p {
+  font-weight: 600;
+}
+.prescribed_by h5 {
+  font-size: 18px;
+}
+
 @media (max-width: 799px) {
   .d_book_card {
     width: 33.33%;
@@ -3344,5 +3382,26 @@ a.ui-button:active,
   }
   .doctor_details .doctor_desc ul {
     font-size: 16px;
+  }
+  .wx_high {
+    padding: 10px 90px;
+  }
+  .confirm-text h2 {
+    font-size: 26px;
+  }
+  .doctor_card {
+    width: 100%;
+  }
+  .upload_box {
+    padding: 30px 15px;
+  }
+  .input_box_test {
+    width: 90%;
+  }
+  .list_items p {
+    font-size: 16px;
+  }
+  .select-box-radio {
+    width: 100%;
   }
 }

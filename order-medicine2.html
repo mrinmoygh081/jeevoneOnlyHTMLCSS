@@ -18,7 +18,7 @@
   <body>
     <!-- =============== Hero Section Start ================= -->
     <section>
-      <div class="medicine_reorder_bg_bnner">
+      <div class="my_bg_bnner medicine_reorder_bg_bnner">
         <!--================ navbar section Start ==================-->
         <nav
           class="bg-white text-gray-200 nav_radius"
@@ -451,7 +451,7 @@
         <img src="./images/round-2.png" alt="" />
       </div>
 
-      <section class="container">
+      <section class="container px-10">
         <div class="flex gap-2 mt-16">
           <a href="order-medicine.html"
             ><svg
@@ -467,23 +467,26 @@
               />
             </svg>
           </a>
-          <p class="font-bold text-xl" style="color: #09096d">
+          <p class="font_bold text-xl" style="color: #09096d">
             Upload Prescription File
           </p>
         </div>
         <div class="flex flex-wrap gap-2">
-          <div class="unknown_card mt-10 active" onclick="toggleActive(1)">
+          <div
+            class="unknown_card md:mt-10 mt-5 active"
+            onclick="toggleActive(1)"
+          >
             <div class="circle"></div>
             <div>
-              <p>Name</p>
-              <p>Hunaline</p>
+              <p class="font_bold_600">Name</p>
+              <p class="font_bold_600">Hunaline</p>
             </div>
           </div>
-          <div class="unknown_card mt-10" onclick="toggleActive(2)">
+          <div class="unknown_card md:mt-10 mt-5" onclick="toggleActive(2)">
             <div class="circle"></div>
             <div>
-              <p>Name</p>
-              <p>Hunaline</p>
+              <p class="font_bold_600">Name</p>
+              <p class="font_bold_600">Hunaline</p>
             </div>
           </div>
         </div>
@@ -525,9 +528,9 @@
               multiple
             />
           </p>
-          <p class="mt-16">
-            Only <strong>.pdf, .jpg &.png </strong>are supported. Maximum 3
-            files can be uploaded at a time.
+          <p class="mt-16 font_bold font_17">
+            Only <strong>.pdf, .jpg &.png </strong>are supported. <br />
+            Maximum 3 files can be uploaded at a time.
           </p>
           <p id="files-area">
             <span id="filesList">
@@ -537,10 +540,10 @@
         </div>
         <div class="upload_list_card">
           <div>
-            <h3 class="text-2xl" style="color: #09096d">
+            <h3 class="text-2xl mb-4" style="color: #09096d">
               Delivery Information
             </h3>
-            <p style="color: #afafaf">
+            <p style="color: #afafaf" class="font_bold_600">
               It Seems you haven’t added any address. We won’t be able to<br />
               deliver your product unless you add any address.
             </p>

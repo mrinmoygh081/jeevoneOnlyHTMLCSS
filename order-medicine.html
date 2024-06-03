@@ -18,7 +18,7 @@
   <body>
     <!-- =============== Hero Section Start ================= -->
     <section>
-      <div class="medicine_reorder_bg_bnner">
+      <div class="my_bg_bnner medicine_reorder_bg_bnner">
         <!--================ navbar section Start ==================-->
         <nav
           class="bg-white text-gray-200 nav_radius"
@@ -451,19 +451,21 @@
       <div class="absolute round1 top-1/4">
         <img src="./images/round-2.png" alt="" />
       </div>
-      <div class="input_box_test mt-20">
-        <i class="fas fa-search search__icon"></i>
-        <input
-          type="text"
-          id="box"
-          placeholder="Book Diagnostics"
-          class="search__box"
-        />
+      <div class="mt-20">
+        <div class="input_box_test">
+          <i class="fas fa-search search__icon"></i>
+          <input
+            type="text"
+            id="box"
+            placeholder="Search Medicine"
+            class="search__box"
+          />
+        </div>
       </div>
       <div class="upload_box mt-10">
         <div>
           <h2 class="text-lg :text-xl">Book with Prescription</h2>
-          <p class="text-gray-500 text-sm">Confirm by uploading prescription</p>
+          <p class="text-gray-500 text-sm">Order by uploading prescription</p>
         </div>
         <a href="order-medicine2.html">
           <div class="buy-medicine-button">
@@ -479,7 +481,7 @@
               <div class="doctor_img_list">
                 <img src="./images/Doctor-appointment.png" />
               </div>
-              <div>
+              <div class="prescribed_by">
                 <h5>Prescribed by</h5>
                 <p>Dr. Suresh</p>
                 <p>09 Oct 2023</p>
@@ -489,7 +491,7 @@
               <div class="doctor_img_list">
                 <img src="./images/Doctor-appointment.png" />
               </div>
-              <div>
+              <div class="prescribed_by">
                 <h5>Prescribed by</h5>
                 <p>Dr. Suresh</p>
                 <p>09 Oct 2023</p>
@@ -610,7 +612,14 @@
             </label>
             <div class="mb-6 mt-12 flex justify-center">
               <a href="order-medicine3.html" class="modal_button">
-                <button class="mr-10" style="border: 2px solid #393bcb">
+                <button
+                  class="mr-10"
+                  style="
+                    border: 2px solid #393bcb;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                  "
+                >
                   Select store
                 </button>
               </a>
