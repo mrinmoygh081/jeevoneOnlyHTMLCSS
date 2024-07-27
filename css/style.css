@@ -672,45 +672,7 @@ footer {
 .book_a_doctor_bg_bnner {
   background-image: url(../images/Book-a-Docot-2.png);
 }
-.my_bg_bnner {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  position: relative;
-  border-radius: 0px 0px 120px 120px;
-}
-.my_bg_bnner .input_box {
-  width: 650px;
-  background-color: var(--btn_color);
-  position: absolute;
-  bottom: -38px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-  padding: 0 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9;
-}
-.my_bg_bnner .search__box {
-  height: auto;
-  width: 100%;
-  background: none;
-  color: #f7f7f7;
-  font-size: 1rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  outline: none;
-  border: none;
-  position: relative;
-  opacity: 1;
-  transition: all 0.75s ease-in;
-  cursor: pointer;
-  font-family: "Nexa Black Light";
-  padding: 20px 4px;
-}
+
 .lifestyle_bg_bnner {
   background-image: url(../images/lifestyle_bg.png);
   background-repeat: no-repeat;
@@ -720,6 +682,7 @@ footer {
   position: relative;
   border-radius: 0px 0px 80px 80px;
 }
+
 .homecare_bg_bnner {
   background-image: url(../images/homecare_banner.png);
   background-repeat: no-repeat;
@@ -1046,6 +1009,7 @@ footer {
 }
 
 .buy-medicine-button button {
+  display: block;
   border: 2px solid #393bcb;
   background-color: #393bcb;
   width: 100%;
@@ -1056,7 +1020,23 @@ footer {
   text-transform: uppercase;
   transition: 0.3s ease all;
 }
-.buy-medicine-button button:hover {
+.buy-medicine-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border: 2px solid #393bcb;
+  background-color: #393bcb;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+}
+
+.buy-medicine-button button:hover,
+.buy-medicine-button a:hover {
   border: 2px solid #393bcb;
   background-color: white;
   color: #393bcb;
@@ -1364,7 +1344,7 @@ footer {
 .doctor_img img {
   width: 350px;
   height: auto;
-  border-radius: 50px;
+  border-radius: 194px;
   margin-right: 10px;
   margin-top: -110px;
 }
@@ -1490,7 +1470,7 @@ footer {
   width: 20%;
 }
 .book_doctor_card {
-  display: flex;
+  display: inline-flex !important;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -1499,24 +1479,46 @@ footer {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 14px 23px 97px 0px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(15px);
-  padding: 15px;
+  padding: 14px;
   transition: 0.3s ease all;
   color: var(--primaryColor);
   margin: 10px;
   margin-bottom: 20px;
 }
+.book_doctor_card .image-container {
+  height: 240px;
+  overflow: hidden;
+}
 .book_doctor_card:hover {
   background: var(--primaryColor);
   color: white;
 }
-.book_doctor_card img {
-  width: 144px;
-  height: 150px;
-  margin-bottom: 10px;
-}
 .book_doctor_card .sub_heading {
   color: #a0abb9;
   font-size: 12px;
+}
+.text-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.book_doctor_card:hover .image-container {
+  height: auto;
+}
+.book_doctor_card:hover .text-container {
+  visibility: visible;
+  opacity: 1;
+  background: var(--primaryColor);
+  color: white;
+}
+
+.book_doctor_card:hover .image-container .sub_headings {
+  color: #a0abb9;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
 }
 .specialization {
   background-color: var(--primaryColor);
@@ -1748,9 +1750,9 @@ footer {
   transition: 0.3s ease all;
 }
 .filled_btn3:hover {
-  background-color: var(--bg-gray-color);
+  background-color: #393bcb;
   border: 1px solid var(--bg-gray-color);
-  color: gray;
+  color: white;
 }
 .filled_btn3.active {
   color: #fff;
@@ -2138,7 +2140,7 @@ a.ui-button:active,
 }
 /* ======== Calender style End ======= */
 .doctor_card_box {
-  width: 60%;
+  width: 68%;
   margin: 0 auto;
   margin-top: 28px;
 }
@@ -2154,7 +2156,7 @@ a.ui-button:active,
 .doctor_card {
   width: 48%;
   background-color: #b6b6b6;
-  padding: 42px 25px;
+  padding: 41px 21px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -2176,7 +2178,7 @@ a.ui-button:active,
   display: block;
   border-radius: 20px;
   border: 1px solid #bfbfbf;
-  padding: 10px 20px;
+  padding: 18px 33px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3028,8 +3030,20 @@ a.ui-button:active,
   .reminders {
     z-index: 1;
   }
+  .vision {
+    padding: 24px 17px;
+  }
+  .solution {
+    padding: 24px 17px;
+  }
+  .sol_img {
+    padding: 24px 17px;
+  }
+  .comp {
+    padding: 24px 17px;
+  }
   .about_container_bg {
-    padding: 24px 0px;
+    padding: 24px 17px;
   }
   .about_heading {
     text-align: center;
@@ -3322,6 +3336,50 @@ a.ui-button:active,
   font-size: 18px;
 }
 
+.my_bg_bnner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  border-radius: 0px 0px 120px 120px;
+}
+.my_bg_bnner .input_box {
+  width: 650px;
+  background-color: var(--btn_color);
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+.my_bg_bnner .search__box {
+  height: auto;
+  width: 100%;
+  background: none;
+  color: #f7f7f7;
+  font-size: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+  font-family: "Nexa Black Light";
+  padding: 20px 4px;
+}
+
+.pre {
+  margin-top: 90px;
+  padding: 0px 10px;
+}
 @media (max-width: 799px) {
   .d_book_card {
     width: 33.33%;
@@ -3348,8 +3406,8 @@ a.ui-button:active,
     width: 92%;
   }
   .breadcam_heading {
-    left: 10px;
-    bottom: 50px;
+    left: 40px;
+    bottom: 40px;
   }
   .specialization {
     margin-top: 80px;
