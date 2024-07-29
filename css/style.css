@@ -86,6 +86,24 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 20%;
 }
 
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.font-bold {
+  font-family: var(--secondaryFont);
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.map_link {
+  color: #393bcb;
+  font-size: 18px;
+  font-family: var(--primaryFont);
+}
 /* ======================================== 
                   Buttons 
   ======================================== */
@@ -639,12 +657,6 @@ footer {
 }
 .book_a_lab_test_bg_bnner {
   background-image: url(../images/book-a-lab-test.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  border-radius: 0px 0px 80px 80px;
 }
 .insurance_bg_bnner {
   background-image: url(../images/Insurance_bg.png);
@@ -685,13 +697,7 @@ footer {
 }
 
 .homecare_bg_bnner {
-  background-image: url(../images/homecare_banner.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 60vh;
-  position: relative;
-  border-radius: 0px 0px 80px 80px;
+  background-image: url(../images/home-care.png);
 }
 /* ======== Other Page Banner Section style End ======= */
 
@@ -1363,6 +1369,20 @@ footer {
 .doctor_img_list p {
   text-align: center;
 }
+.doctor_img_list2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.doctor_img_list2 img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.doctor_img_list2 p {
+  text-align: center;
+}
 .button_group {
   display: flex;
   flex-direction: column;
@@ -1515,11 +1535,11 @@ footer {
 }
 
 .book_doctor_card:hover .image-container .sub_headings {
-  color: #a0abb9;
-  font-size: 12px;
-  visibility: hidden;
+  color: #fff;
+  /* font-size: 12px; */
+  /* visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 0.3s, opacity 0.3s linear;
+  transition: visibility 0s 0.3s, opacity 0.3s linear; */
 }
 .specialization {
   background-color: var(--primaryColor);
@@ -2191,6 +2211,7 @@ a.ui-button:active,
 }
 .doctor_card p:nth-child(3) {
   margin-top: 10px;
+  font-size: 20px;
 }
 .doctor_card:hover,
 .doctor_card.active {
@@ -2209,7 +2230,7 @@ a.ui-button:active,
 .list_items p {
   font-weight: bold;
   font-family: var(--secondaryFont);
-  font-size: 18px;
+  font-size: 20px;
 }
 .select_all {
   width: 100%;
@@ -2309,7 +2330,7 @@ a.ui-button:active,
 .qty input {
   width: 4rem;
   height: auto;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
 }
 .qty button {
@@ -3137,8 +3158,8 @@ a.ui-button:active,
     margin-top: 50px;
   }
   .consultation li {
-    width: 45%;
-    line-height: 20px;
+    width: 100%;
+    line-height: 24px;
   }
   .modal {
     padding: 0px;
