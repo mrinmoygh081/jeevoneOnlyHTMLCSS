@@ -644,14 +644,14 @@ footer {
   border-radius: 0px 0px 80px 80px;
 }
 .medicine_reorder_bg_bnner {
-  background-image: url(../images/Re-order-Meds.png);
+  background-image: url(../images/vaccination_bg.png);
 }
 .appointment_bg_bnner {
   background-image: url(../images/book_appoinmetn.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 320px;
   position: relative;
   border-radius: 0px 0px 80px 80px;
 }
@@ -663,7 +663,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 340px;
   position: relative;
   border-radius: 0px 0px 80px 80px;
 }
@@ -1125,7 +1125,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-.insurence-buttons button {
+/* .insurence-buttons button {
   border: 2px solid #393bcb;
   width: 275px;
   height: 50px;
@@ -1136,7 +1136,23 @@ footer {
 .insurence-buttons button:hover {
   background-color: #393bcb;
   color: white;
+} */
+
+.insurence-buttons button {
+  border: 2px solid #393bcb;
+  width: 275px;
+  height: 50px;
+  border-radius: 5px;
+  color: #393bcb;
+  margin-top: 20px;
+  box-shadow: 14px 23px 97px 0px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(15px);
 }
+.insurence-buttons button {
+  background-color: #393bcb;
+  color: white;
+}
+
 .insurence-renewal {
   margin: 0px auto 28px;
   display: flex;
@@ -1147,10 +1163,12 @@ footer {
   width: 275px;
   height: 50px;
   border-radius: 5px;
-  color: #393bcb;
+  background-color: #393bcb;
+  color: white;
+  /* color: #393bcb; */
   transition: 0.3s ease all;
 }
-.insurence-renewal button:hover {
+.insurence-renewal button {
   background-color: #393bcb;
   color: white;
 }
@@ -1310,12 +1328,13 @@ footer {
 .button-box-button1 button {
   border: 2px solid #393bcb;
   background-color: #393bcb;
-  width: 275px;
+  width: 239px;
   margin: 0 auto;
-  height: 50px;
-  border-radius: 5px;
+  height: 53px;
+  border-radius: 10px;
   color: white;
   transition: 0.3s ease all;
+  margin-left: 39px;
 }
 .button-box-button1 button:hover {
   border: 2px solid #393bcb;
@@ -2402,13 +2421,26 @@ a.ui-button:active,
   font-size: 12px;
   padding: 5px 10px;
   border: 1px solid #393bcb;
+  /* background-color: white; */
+  background-color: #393bcb;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 15px;
+  /* color: #393bcb; */
+  transition: 0.3s ease all;
+}
+
+.cancelled {
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid #393bcb;
   background-color: white;
   font-weight: 600;
   border-radius: 15px;
   color: #393bcb;
   transition: 0.3s ease all;
 }
-.completed:hover {
+.cancelled:hover {
   border: 1px solid #393bcb;
   background-color: #393bcb;
   color: #fff;
@@ -2498,6 +2530,44 @@ a.ui-button:active,
 .onboarding_col .bmi {
   width: 70%;
 }
+
+.date-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#dob {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+#dob::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 3;
+}
+
+.custom-calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 63%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+.custom-calendar-renewal-icon {
+  position: absolute;
+  right: 10px;
+  top: 68%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
 .home_address input {
   margin-bottom: 10px;
 }
@@ -2995,6 +3065,15 @@ a.ui-button:active,
 }
 
 @media only screen and (max-width: 1023px) {
+  .relative2 {
+    padding: 0px 10px;
+  }
+  .calendar {
+    padding: 0px 18px;
+  }
+  .select-heading {
+    padding: 0px 18px;
+  }
   .banner_text h1 {
     font-size: 42px;
     line-height: 48px;
@@ -3191,8 +3270,8 @@ a.ui-button:active,
     width: 90%;
   }
   .form_col {
-    width: 90%;
-    margin: 0 auto;
+    width: 50%;
+    /* margin: 0 auto; */
   }
   .city_box {
     width: 75px;
@@ -3223,6 +3302,7 @@ a.ui-button:active,
   }
   .location-heading {
     margin-top: 0px;
+    padding-right: 10px;
   }
   .doctor_img_list img {
     margin-bottom: 10px;
@@ -3237,6 +3317,7 @@ a.ui-button:active,
   .insurence-renewal button {
     width: 100%;
     min-width: 140px;
+    margin-top: 49px;
   }
   .insurence-renewal {
     gap: 10px;
@@ -3265,6 +3346,9 @@ a.ui-button:active,
   }
   .icon_box {
     padding: 10px;
+  }
+  .onboarding-insurance {
+    padding: 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
