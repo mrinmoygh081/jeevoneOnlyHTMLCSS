@@ -2536,6 +2536,10 @@ a.ui-button:active,
   display: inline-block;
 }
 
+.date-wrapper1 {
+  position: relative;
+  margin-top: 6px;
+}
 #dob {
   position: relative;
   z-index: 2;
@@ -2547,6 +2551,16 @@ a.ui-button:active,
   z-index: 3;
 }
 
+.custom-calendar-icon1 {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
 .custom-calendar-icon {
   position: absolute;
   right: 10px;
