@@ -330,10 +330,28 @@ a.btn-update {
 
 .btn-update,
 a.btn-update {
-  /* width: 420px; */
+  width: 420px;
   height: 56px;
   color: #fff;
   margin-left: 6rem;
+}
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding-right: 30px; /* Adjust this if necessary */
+}
+
+.search-icon {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; /* Adjust icon color */
+  pointer-events: none;
 }
 
 .btn-back {
@@ -405,8 +423,12 @@ a.btn-update {
 
 .adress_chose .icon.editIcon {
   position: relative;
-  top: -10px;
-  left: -29px;
+  top: -8px;
+  left: -20px;
+}
+.label-descs {
+  width: 404px;
+  margin-right: -5px;
 }
 
 .adress_chose input[type="search"] {
@@ -788,6 +810,9 @@ button.btn.btn-remove svg {
 }
 
 @media only screen and (max-width: 768px) {
+  .adress_chose input[type="search"] {
+    width: auto;
+  }
   .btn-update {
     width: 100%;
     margin-left: 0;

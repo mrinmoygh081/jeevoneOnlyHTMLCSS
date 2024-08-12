@@ -2370,7 +2370,7 @@ a.ui-button:active,
   width: 100px;
 }
 .adress_chose {
-  padding: 35px;
+  padding: 35px 5px;
 }
 .form_control {
   border-bottom: 1px solid #000;
