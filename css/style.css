@@ -239,6 +239,7 @@ input[type="checkbox"] {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
+  /* width: 89%; */
 }
 .feature_box {
   width: 13%;
@@ -2992,8 +2993,38 @@ a.ui-button:active,
     height: auto;
   }
 }
-
+ 
 @media only screen and (max-width: 768px) {
+
+
+
+  .bg_bnner {
+    background-size: cover;
+    background-position-x: center;
+    height: 80vh;
+    background-image: url(../images/banner/jeevana1800x650.jpg);
+  }
+
+  .banner_text {
+    width: 90%;
+    height: 120%;
+    margin: 0 auto;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner_text h1 {
+    font-size: 58px;
+    font-weight: 500;
+    font-family: "Nexa Black Bold";
+    text-transform: uppercase;
+  }
+  .banner_text p {
+    font-weight: 400;
+    font-size: 20px;
+  }
   .btn-update {
     width: 100%;
   }
@@ -3537,12 +3568,20 @@ a.ui-button:active,
   }
 }
 @media (max-width: 586px) {
+  .banner_text  {
+    display: none;
+  }
+
   .bg_bnner {
     background-size: cover;
     background-position-x: center;
-    height: 80vh;
-    background-image: url(../images/banner/jeevana350x500.jpg);
+    height: 85vh;
+    background-image: url(../images/banner/Main-Banner-Mobile-with-Text.png);
+    /* background-image: url(../images/banner/Main-Banner-Mobile.png); */
   }
+
+
+
   .my_bg_bnner {
     height: 260px;
     border-radius: 0px;
@@ -3573,6 +3612,7 @@ a.ui-button:active,
 
   .banner_feature_box {
     bottom: -235px;
+  
   }
 
   .doctor_img img {
@@ -3607,7 +3647,14 @@ a.ui-button:active,
   .select-box-radio {
     width: 100%;
   }
+  .shop_bg_bnner {
+    background-image: url(../images/Shop.png);
+    
+   
+  }
 }
+
+
 
 .before_meal {
   width: 23%;
